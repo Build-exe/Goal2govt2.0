@@ -500,6 +500,230 @@ jobs.forEach(j=>{
 });
 
 /* ============================================================
+   FULL GUIDE — After 12th tier (12-01 .. 12-15)
+   Deep-dive reference content: job work, full syllabus, exam
+   pattern notes, physical standards, promotions, posting,
+   pros/cons, prep strategy, daily timetable and document list.
+   Keyed by job code. Attached to the matching job below and
+   rendered as an extra "Full Guide" tab in the job sheet.
+   ============================================================ */
+const fullGuides12 = {
+  "12-01": { // SSC CHSL (LDC, DEO, PA, SA)
+    jobWork: ["Day-to-day office administration, data entry, record keeping and public-facing counter work depending on the exact post (LDC/JSA, DEO, Postal Assistant, Sorting Assistant).","Follows departmental rules, safety procedures and supervisory instructions.","DEO posts are more computer/data-entry focused; LDC/PA/SA posts mix clerical and counter duties."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism, relationships, data interpretation.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, time-work, time-distance, algebra, geometry, data interpretation.","English/Language — grammar, vocabulary, comprehension, sentence correction.","Use the exact syllabus annexure in the current SSC CHSL notice — don't assume it matches another SSC exam."],
+    examPattern: "Tier-I: Computer Based Exam covering English, General Intelligence, Quantitative Aptitude and General Awareness. Tier-II adds Mathematical Abilities, Reasoning, English, GA, Computer Knowledge and skill/typing components as prescribed. Check the official notice for exact question count, marks, duration and negative marking.",
+    selection: "SSC Tier-I CBE → Tier-II CBE/skill or typing test as applicable → document verification → appointment.",
+    physical: "Not applicable unless the specific notice mentions PET/PST/medical standards for a particular posting.",
+    salary: "LDC/JSA, DEO and PA/SA sit at different pay levels within Pay Level 2–4; final in-hand depends on posting, DA, HRA, TA and NPS deductions.",
+    promotions: "Promotion follows service rules, seniority, departmental exams, vacancies and cadre structure — typical growth moves from entry clerk/DEO roles to higher grade or supervisory posts.",
+    posting: "Central Government ministries/departments/offices across India; can be urban, rural or headquarters-based with transfer liability varying by recruitment.",
+    advantages: ["Stable government/statutory employment structure.","Defined allowances, leave and retirement benefits.","Structured career progression."],
+    disadvantages: ["Competitive recruitment with uncertain notification cycles.","Possible transfers or workload variation by posting.","Promotion speed depends on cadre and vacancies."],
+    prep: ["Read the latest official CHSL notification first.","Build a topic checklist from the official syllabus.","Strengthen fundamentals before timed practice.","Solve previous-year Tier-I/Tier-II papers and analyze mistakes.","Take regular full mocks and keep an error notebook.","If applying for DEO/typing posts, practice typing speed and accuracy in parallel.","Reserve weekly time for current affairs and revision."],
+    documents: ["Educational certificates/marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "12-02": { // SSC CGL (Group B & C)
+    jobWork: ["Cadre/posting-determined work spanning administration, inspection, auditing or assistant-level duties across many central departments.","Follow departmental rules and supervisory instructions; some CGL posts (e.g. Inspector) involve field or verification duties."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism, data interpretation.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, time-work, time-distance, algebra, geometry, data interpretation.","English/Language — grammar, vocabulary, comprehension, sentence correction.","Use the exact syllabus annexure in the current CGL notice for post-specific components."],
+    examPattern: "Tier-I covers Reasoning, General Awareness, Quantitative Aptitude and English. Tier-II has a compulsory Paper-I plus additional/qualifying papers for specified posts. Check the current notice for question count, marks, duration and negative marking.",
+    selection: "SSC Tier-I → Tier-II → document verification/skill/physical standards for applicable posts → final allocation.",
+    physical: "Not applicable for most CGL posts unless the specific post (e.g. Sub-Inspector categories) specifies PET/PST/medical standards.",
+    salary: "CGL posts span Pay Level 4 through Level 7 and above depending on the exact post; in-hand varies with DA, HRA, TA and NPS.",
+    promotions: "Promotion follows service rules, seniority, departmental exams, vacancies and cadre structure — CGL is often a strong entry point into higher Group B roles over a career.",
+    posting: "Central ministries/departments across India; some posts carry all-India transfer liability.",
+    advantages: ["Access to a wide range of central government departments from one exam.","Reasonable starting pay levels with allowances.","Clear tiered promotion structure in most cadres."],
+    disadvantages: ["Highly competitive with large applicant pools.","Post allocation depends on rank, category and preference — not guaranteed.","Some posts carry transfer liability or field duty."],
+    prep: ["Download and study the latest official CGL notification first.","Build a topic checklist from the official syllabus.","Build fundamentals before attempting timed papers.","Solve previous-year Tier-I and Tier-II papers, analyzing every mistake.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Educational certificates/marksheets (degree mandatory)","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Experience/NOC documents where required"]
+  },
+  "12-03": { // SSC Stenographer
+    jobWork: ["Shorthand dictation, transcription and secretarial support for officers in central ministries and departments.","Follow departmental rules and confidentiality requirements for official correspondence."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","English Language/Comprehension — grammar, vocabulary, comprehension.","Shorthand and transcription practice in the chosen language, at the speed prescribed for Grade C/D."],
+    examPattern: "General Intelligence & Reasoning, General Awareness and English Language/Comprehension in a computer-based exam; the stenography skill test (dictation + transcription) is qualifying.",
+    selection: "SSC computer-based exam → stenography skill test → document verification → appointment.",
+    physical: "Not applicable unless the specific notice mentions medical standards.",
+    salary: "Grade C and Grade D carry different pay levels (roughly Pay Level 4–6); exact in-hand depends on department, city and allowances.",
+    promotions: "Promotion follows service rules, seniority, departmental exams and vacancies; senior stenographers can move into higher secretarial/supervisory grades.",
+    posting: "Central Government ministries, departments and attached offices, largely desk-based.",
+    advantages: ["Specialised, in-demand skill (shorthand) with steady government demand.","Desk-based role with defined working hours in most postings.","Structured pay levels by grade."],
+    disadvantages: ["Requires sustained shorthand speed practice, which takes time to build.","Skill test is a hard qualifying hurdle even after clearing the written exam.","Vacancies can be limited compared to larger SSC exams."],
+    prep: ["Read the latest official Stenographer notification first.","Build a topic checklist from the official syllabus.","Practice shorthand dictation and transcription daily, building speed gradually.","Solve previous-year papers and analyze every mistake.","Take full mocks regularly, including timed dictation practice.","Reserve weekly time for current affairs and revision."],
+    documents: ["Educational certificates/marksheets","Shorthand/typing certificate if held","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable"]
+  },
+  "12-04": { // Railway NTPC (UG)
+    jobWork: ["Commercial-cum-Ticket Clerk, Accounts Clerk and similar non-technical roles supporting railway station and office operations.","Follow railway operating and safety procedures; some posts involve shift duty and public interaction."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism, data interpretation.","Mathematics — number system, percentages, ratio/proportion, averages, profit/loss, interest, time-work, time-distance, algebra, geometry.","Post-specific topics per the exact RRB CEN notification."],
+    examPattern: "Mathematics, General Intelligence & Reasoning and General Awareness form the core CBT-1 areas; a further CBT-2/typing/aptitude stage applies for specific posts. Exact pattern varies by CEN.",
+    selection: "RRB CBT stages → typing/aptitude test for applicable posts → document verification → medical.",
+    physical: "Not applicable unless the specific notice mentions PET/medical standards for a particular post.",
+    salary: "Pay Level 2–3 depending on the exact NTPC post; railway allowances (DA, HRA, TA) affect final in-hand.",
+    promotions: "Promotion follows railway service rules, seniority, departmental exams and vacancies — clerical NTPC roles can progress into supervisory railway posts over time.",
+    posting: "Railway zones/divisions, stations and offices; posting can be urban, rural or headquarters-based with transfer liability.",
+    advantages: ["Large-scale, recurring recruitment across railway zones.","Structured pay levels with railway-specific allowances and travel benefits.","Clear promotion path within railway cadre."],
+    disadvantages: ["Very high applicant volume, making cutoffs competitive.","Shift duty or public-facing pressure in some posts.","Posting location may not match home preference initially."],
+    prep: ["Read the latest official RRB NTPC CEN notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in Maths, Reasoning and GA before timed practice.","Solve previous-year CBT papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 12 marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile certificate if required by the zone"]
+  },
+  "12-05": { // Railway Group C (Various Posts)
+    jobWork: ["Undergraduate-eligible technical and supervisory duties across railway zones — exact responsibilities depend on the specific post notified.","Follow railway safety and operating procedures; some posts are field/technical in nature."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Mathematics — number system, percentages, ratio/proportion, averages, profit/loss, interest, time-work, time-distance, algebra, geometry.","Post-specific/technical topics per the exact RRB notification; do not assume a similarly named post shares the same syllabus."],
+    examPattern: "The exact pattern, marks, duration and negative marking are recruitment-specific — use the current official RRB notification for the final pattern.",
+    selection: "Application → written/CBT or merit screening → applicable skill/physical/technical stage → document verification → medical/appointment as prescribed.",
+    physical: "Not applicable unless the specific notice mentions PET/PST/medical standards for a particular post.",
+    salary: "Pay Level 2–5 depending on the exact post; railway allowances (DA, HRA, TA) affect final in-hand.",
+    promotions: "Promotion follows railway service rules, seniority, departmental exams, vacancies and cadre structure.",
+    posting: "Depends on the recruiting zone/division and vacancy; transfers may apply.",
+    advantages: ["Wide variety of posts within one recruiting body.","Structured railway pay scale and allowances.","Recurring large-scale recruitment."],
+    disadvantages: ["Eligibility and syllabus vary by exact post — easy to misjudge fit without reading the notice carefully.","High competition on popular posts.","Posting/transfer liability depending on zone."],
+    prep: ["Read the latest official RRB Group C notification for the exact post first.","Build a topic checklist from the official syllabus.","Build fundamentals before attempting timed papers.","Solve previous-year papers for the specific post and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 12 (or higher, if required) marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Trade/technical certificate where applicable"]
+  },
+  "12-06": { // India Post Postal Assistant / Sorting Assistant
+    jobWork: ["Counter services, mail sorting, record-keeping and administrative support at post offices and sorting divisions.","Follow Department of Posts rules and public-service procedures."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, time-work, time-distance.","English/Language — grammar, vocabulary, comprehension.","If recruited through SSC/another exam, follow that exam's exact syllabus rather than a generic postal pattern."],
+    examPattern: "If recruited through SSC or another route, the syllabus and pattern follow that exam's notice — don't assume one generic pattern applies to all postal recruitment.",
+    selection: "Recruitment-route-specific written/CBT → typing/skill test where applicable → document verification → appointment.",
+    physical: "Not applicable unless the specific notice mentions PET/PST/medical standards.",
+    salary: "Regular departmental posts use the applicable pay matrix (roughly Pay Level 4); exact figure depends on post and recruitment route.",
+    promotions: "Promotion follows Department of Posts service rules, seniority, departmental exams and vacancies — PA/SA roles can progress to supervisory postal cadre posts.",
+    posting: "Post offices, mail offices, sorting offices and postal administrative units, often within the applicant's home circle.",
+    advantages: ["Stable public-service employment with defined service rules.","Local/home-circle postings are common.","Structured allowances and retirement benefits."],
+    disadvantages: ["Recruitment windows and vacancies vary by circle and year.","Counter/public-facing work can be demanding during peak periods.","Career growth pace depends on circle-level vacancies."],
+    prep: ["Read the latest official Postal Assistant/Sorting Assistant notification first.","Build a topic checklist from the official syllabus.","Build fundamentals before timed practice.","Solve previous-year papers relevant to the exact recruitment route.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 12 marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile/local-language certificate if required by the circle"]
+  },
+  "12-07": { // Bank PO
+    jobWork: ["Probationary Officer training followed by branch management, credit appraisal, customer service and administrative responsibilities.","Follow bank policies, RBI guidelines and internal compliance procedures."],
+    syllabus: ["General Awareness/Banking & Economy Awareness — current affairs, banking terms, economy, government schemes.","Reasoning — analogy, classification, series, coding-decoding, puzzles, syllogism, data interpretation.","Quantitative Aptitude/Data Analysis — number system, percentages, ratio/proportion, averages, profit/loss, interest, data interpretation.","English Language — grammar, vocabulary, comprehension, and a descriptive writing component in Mains.","Post-specific components (computer knowledge, descriptive test) vary by IBPS/SBI/RRB notification."],
+    examPattern: "Preliminary exam (Reasoning, Quantitative Aptitude, English) followed by a Main exam (adds General/Economy/Banking Awareness, Computer Knowledge and often a descriptive component), then an interview/personality stage where applicable.",
+    selection: "Preliminary exam → Main exam → interview/personality stage where applicable → final allotment.",
+    physical: "Not applicable — this is a desk/office-based officer role.",
+    salary: "Bank officer pay varies by bank and scale (roughly ₹48,000–₹55,000 gross per month for POs), plus DA/HRA and other allowances.",
+    promotions: "Promotion follows bank service rules, seniority, internal exams, performance and vacancies — POs typically move up through Scale I to higher management scales over a career.",
+    posting: "Branches and administrative offices, often within a state/zone with periodic transfers.",
+    advantages: ["Strong starting pay and structured officer-scale progression.","Clear, well-documented exam pattern (Prelims/Mains/Interview).","Wide network of public-sector and regional rural banks to apply to."],
+    disadvantages: ["Requires a bachelor's degree — not actually a 12th-only entry despite common perception.","High competition with a large applicant pool nationwide.","Transfers and target-driven work in some branches."],
+    prep: ["Read the latest official IBPS/SBI/RRB PO notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in Quant, Reasoning and English before timed practice.","Solve previous-year Prelims/Mains papers and analyze mistakes.","Take full mocks regularly, including a timed descriptive-writing practice for Mains.","Reserve weekly time for current affairs and banking/economy awareness."],
+    documents: ["Bachelor's degree certificate/marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "12-08": { // Bank Clerk
+    jobWork: ["Day-to-day banking transactions, customer service, cash handling and account-related administrative work at branch level.","Follow bank policies, RBI guidelines and internal compliance procedures."],
+    syllabus: ["English Language — grammar, vocabulary, comprehension.","Reasoning — analogy, classification, series, coding-decoding, puzzles, syllogism.","Numerical Ability/Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, data interpretation.","General/Banking Awareness — current affairs, banking terms, government schemes.","Exact pattern varies by IBPS/SBI/RRB notification."],
+    examPattern: "Prelims exam (English, Reasoning, Numerical Ability) followed by a Main exam (adds General/Banking Awareness, Computer Knowledge); pattern and weightage vary by bank/notification.",
+    selection: "Prelims → Main exam → language/eligibility requirements → final allotment.",
+    physical: "Not applicable — this is a desk/counter-based clerical role.",
+    salary: "Clerical pay varies by bank and settlement (roughly ₹29,000–₹32,000 gross per month), plus DA/HRA and other allowances.",
+    promotions: "Promotion follows bank service rules, seniority, internal/promotion exams and vacancies — clerks can move into officer cadre through internal promotion exams.",
+    posting: "Bank branches and offices, often within a state/zone/circle.",
+    advantages: ["Steady public-sector-style employment with defined service rules.","Clear path to officer cadre through internal promotion exams.","Structured pay scale with periodic revisions."],
+    disadvantages: ["Requires a bachelor's degree for most public-sector bank clerk posts.","High competition with a large applicant pool.","Target-driven or high-footfall branches can be demanding."],
+    prep: ["Read the latest official IBPS/SBI/RRB Clerk notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in English, Reasoning and Numerical Ability before timed practice.","Solve previous-year Prelims/Mains papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and banking awareness."],
+    documents: ["Bachelor's degree certificate/marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "12-09": { // State Police Constable
+    jobWork: ["Patrolling, law-and-order duties, traffic management and general policing work under the relevant state police act.","Follow departmental rules, safety procedures and supervisory instructions; involves shift duty and physically demanding work."],
+    syllabus: ["General Knowledge/Current Affairs — national and state-level events, polity, history, geography.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Arithmetic/Maths — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension in the notified language.","Exact syllabus is state-specific — use the current state notification."],
+    examPattern: "Usually General Knowledge/Current Affairs, Reasoning, Arithmetic/Maths, language and state-specific topics in a written/CBT exam; exact question count and marks are state-specific.",
+    selection: "State written/CBT → PST/PET → document verification → medical/character verification → appointment, with variations by state.",
+    physical: "PST/PET usually includes height, chest (where applicable), running and other events; exact standards vary by state.",
+    salary: "State pay scale varies significantly (roughly ₹21,000–₹69,000); allowances and in-hand depend on state, posting and deductions.",
+    promotions: "Promotion follows state police service rules, seniority, departmental exams, vacancies and performance — constables can rise through Head Constable, Assistant Sub-Inspector and beyond.",
+    posting: "Districts, commissionerates, police stations, armed reserve, traffic and special units.",
+    advantages: ["Stable uniformed government employment with defined service rules.","Structured allowances and retirement benefits.","Clear promotion ladder through departmental exams."],
+    disadvantages: ["Shift duty, field hardship and physically demanding work.","Strict physical standards to clear before the written stage matters.","Posting and transfer liability across the state."],
+    prep: ["Read the latest official state police constable notification first.","Build a topic checklist from the official syllabus.","Start running, push-ups and endurance training months in advance for PST/PET.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 12 (or as specified) marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "12-10": { // CAPF Assistant Commandant
+    jobWork: ["Officer-level command, administrative and operational responsibilities within BSF, CRPF, CISF, ITBP or SSB.","Follow force-specific rules, operational protocols and command responsibilities; involves field/uniformed duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, algebra, geometry.","General Studies, Essay and Comprehension for Paper-II.","Use the exact UPSC CAPF syllabus annexure in the current notice."],
+    examPattern: "Paper I: General Ability & Intelligence. Paper II: General Studies, Essay & Comprehension. Current UPSC notice controls exact marks and duration.",
+    selection: "UPSC written exam → Physical Standards Test/Physical Efficiency Test → medical examination → interview/personality test → final merit.",
+    physical: "Strict CAPF medical and physical standards including height, chest/expansion (where applicable), endurance and vision; exact figures are notification-specific.",
+    salary: "Officer-level pay at Pay Level 10 (roughly ₹56,100–₹1,77,500) plus allowances, as a Central Armed Police Forces post.",
+    promotions: "Promotion follows force-specific service rules, seniority, departmental exams, vacancies and performance — Assistant Commandants can rise through Deputy Commandant, Commandant and beyond.",
+    posting: "All-India CAPF formations and operational/training locations.",
+    advantages: ["Group A gazetted officer entry with strong pay and status.","Structured career progression within the force.","Leadership responsibility from an early stage."],
+    disadvantages: ["Strict physical and medical standards to clear.","Frequent transfers and challenging field postings, including border/conflict areas.","Highly competitive selection with multiple stages."],
+    prep: ["Read the latest official UPSC CAPF notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in GS and reasoning before timed practice.","Solve previous-year Paper I/II papers and analyze mistakes.","Build physical fitness early and consistently for the PST/PET.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["Bachelor's degree certificate/marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Medical fitness documents where required"]
+  },
+  "12-11": { // UPSC CDS / AFCAT
+    jobWork: ["Officer training followed by command, technical or administrative responsibilities in the Army, Navy or Air Force depending on entry.","Follow service-specific rules, operational protocols and command responsibilities."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude/Elementary Mathematics — number system, percentages, ratio/proportion, algebra, geometry.","English — grammar, vocabulary, comprehension.","Service-specific General Studies, professional knowledge or technical topics for AFCAT technical entries as prescribed."],
+    examPattern: "CDS and AFCAT have different papers/sections; English, GK, Maths or aptitude/technical content depends on the exact entry chosen.",
+    selection: "CDS: written exam → SSB interview → medical → merit. AFCAT: written exam → AFSB → medical → merit.",
+    physical: "Defence medical and physical standards are mandatory; eyesight and anthropometric standards can be strict and entry-specific.",
+    salary: "Officer-entry pay follows the defence service pay matrix and allowances; exact in-hand depends on rank, posting and allowances.",
+    promotions: "Promotion follows defence service rules, seniority, performance and vacancies — officers progress through rank over a structured career.",
+    posting: "Training academies followed by Army/Navy/Air Force postings across India.",
+    advantages: ["Prestigious officer-entry route with strong career structure.","Comprehensive training, leadership development and allowances.","Clear rank-based promotion path."],
+    disadvantages: ["Strict physical, medical and psychological screening (SSB/AFSB).","Frequent transfers and demanding postings, including field areas.","Long, multi-stage selection process."],
+    prep: ["Read the latest official UPSC CDS/AFCAT notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in GK, Maths and English before timed practice.","Solve previous-year papers and analyze mistakes.","Prepare for the SSB/AFSB stage (group tasks, interview, psychology tests) well in advance.","Build physical fitness consistently alongside academic prep."],
+    documents: ["Bachelor's degree certificate/marksheets","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Medical fitness documents where required"]
+  },
+  "12-12": { // Income Tax Inspector
+    jobWork: ["Assessment support, verification, survey and enforcement-related duties within the Income Tax Department.","Follow departmental rules and procedures; some duties involve field verification."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, algebra, geometry.","English/Language — grammar, vocabulary, comprehension.","Follows the SSC CGL examination syllabus and structure."],
+    examPattern: "Follows the SSC CGL examination structure (Tier-I and Tier-II); check the official notice for exact question count, marks, duration and negative marking.",
+    selection: "SSC CGL Tier-I → Tier-II → post preference/allocation → document verification; applicable physical standards for specified inspector posts must be checked.",
+    physical: "Generally not a combat/PET post; however, check the exact CGL post standards/conditions in the current notice.",
+    salary: "Typically Pay Level-7 in the 7th CPC framework, plus DA/HRA/TA and applicable allowances.",
+    promotions: "Promotion follows Income Tax Department service rules, seniority, departmental exams, vacancies and performance — Inspectors can rise through higher department grades over a career.",
+    posting: "Income Tax offices across India; field and office duties vary by charge.",
+    advantages: ["Respected central government post with strong pay level for a CGL entry.","Mix of office and field responsibility.","Clear promotion path within the department."],
+    disadvantages: ["Requires clearing the competitive SSC CGL exam.","Field verification duties can involve travel and sensitive work.","Posting location depends on allocation, not always home preference."],
+    prep: ["Read the latest official SSC CGL notification first.","Build a topic checklist from the official syllabus.","Build fundamentals before attempting timed papers.","Solve previous-year CGL Tier-I/Tier-II papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Bachelor's degree certificate/marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable"]
+  },
+  "12-13": { // EPFO EO/AO
+    jobWork: ["Enforcement, inspection, accounts and administrative duties managing the Employees' Provident Fund scheme for organised-sector workers.","Follow EPFO rules and procedures; Enforcement Officer duties can involve field visits to establishments."],
+    syllabus: ["General English — grammar, vocabulary, comprehension.","Indian Freedom Struggle, Economy, Polity and General Science.","Accountancy/Auditing/Insurance and Industrial Relations/Labour Laws.","Social Security and Computer Applications.","Current UPSC notice controls the exact syllabus if the UPSC EO/AO route is used."],
+    examPattern: "If the UPSC EO/AO route is used, the syllabus generally includes General English, Indian Freedom Struggle, Economy, Polity, General Science, Accountancy/Auditing/Insurance, Industrial Relations/Labour Laws, Social Security and Computer Applications; current notice controls exact weightage.",
+    selection: "Recruitment-specific written exam → interview where prescribed → document verification/appointment.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Central Government pay level (roughly Pay Level 7) varies by post; allowances and in-hand depend on posting.",
+    promotions: "Promotion follows EPFO service rules, seniority, departmental exams, vacancies and performance — EOs/AOs can move into senior enforcement or accounts leadership roles.",
+    posting: "EPFO regional/sub-regional offices across India.",
+    advantages: ["Meaningful public-service role administering a major social-security scheme.","Structured Central Government pay level and allowances.","Mix of enforcement/field and office responsibilities."],
+    disadvantages: ["Requires clearing a competitive, syllabus-heavy exam.","Enforcement Officer duties can involve travel and dealing with non-compliant employers.","Vacancies vary year to year."],
+    prep: ["Read the latest official EPFO EO/AO notification first.","Build a topic checklist from the official syllabus, including labour law and accountancy topics.","Build fundamentals before attempting timed papers.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs, especially economy and labour-law updates."],
+    documents: ["Bachelor's degree certificate/marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Relevant specialisation certificate if the post asks for one (law/accounts)"]
+  },
+  "12-14": { // State Govt LDC/Junior Assistant
+    jobWork: ["Routine office administration, file handling, record keeping and correspondence in state secretariat and department offices.","Follow state departmental rules and supervisory instructions."],
+    syllabus: ["Language — grammar, vocabulary, comprehension in the notified state language.","General Knowledge/Current Affairs — state and national events, polity, history, geography.","Maths — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Reasoning — analogy, classification, series, coding-decoding, directions.","Computer knowledge as prescribed by the specific state notification."],
+    examPattern: "Commonly language, GK/current affairs, Maths, Reasoning and computer knowledge; exact syllabus and marks are state-specific.",
+    selection: "Written/CBT → typing/skill test where prescribed → document verification → appointment.",
+    physical: "Not applicable unless the specific state notice mentions PET/PST/medical standards.",
+    salary: "State pay level varies by department; typing/computer proficiency requirements are common for this post.",
+    promotions: "Promotion follows state service rules, seniority, departmental exams, vacancies and performance — LDC/Junior Assistant roles can progress to Senior Assistant/Section Officer grades.",
+    posting: "State secretariat, district offices, departments and subordinate offices.",
+    advantages: ["Stable state government employment with defined service rules.","Local/home-state postings are common.","Structured promotion path within the state cadre."],
+    disadvantages: ["Recruitment cycles and vacancies vary by state and department.","Typing/computer skill test can be a hurdle for some candidates.","Promotion speed depends on state-level vacancies."],
+    prep: ["Read the latest official state LDC/Junior Assistant notification first.","Build a topic checklist from the official state syllabus.","Practice typing/computer skills if the post requires a skill test.","Solve previous-year state exam papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for state and national current affairs."],
+    documents: ["Class 12 marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "12-15": { // Others (Group B & C Posts)
+    jobWork: ["Cadre/posting-determined administration, public service or technical duties depending on the exact post advertised.","Follow departmental rules, safety procedures and supervisory instructions as applicable to the specific post."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, algebra, geometry.","Language — grammar, vocabulary, comprehension in the notified language.","Use the exact syllabus annexure in the specific recruitment notice — this is a catch-all category, so the syllabus varies widely."],
+    examPattern: "The exact pattern, marks, duration and negative marking are recruitment-specific — always use the current official notification for the final pattern.",
+    selection: "Usually application → written/CBT or merit screening → applicable skill/physical/technical stage → document verification → medical/appointment as prescribed.",
+    physical: "Not applicable unless the specific recruitment notice mentions PET/PST/medical standards.",
+    salary: "Pay/remuneration varies by department, pay level, organisation and posting — always confirm exact figures from the applicable notification/pay rules.",
+    promotions: "Promotion follows the recruiting department's service rules, seniority, departmental exams, vacancies and performance.",
+    posting: "Depends on the recruiting organisation, cadre, zone/circle and vacancy; transfers may apply.",
+    advantages: ["Wide net of additional Group B/C posts beyond the major named exams.","Government/statutory employment structure and defined service rules where applicable.","Structured allowances and retirement benefits."],
+    disadvantages: ["Because this spans many different posts, eligibility and pay vary widely — always verify the specific notice.","Competitive recruitment with uncertain notification cycles.","Promotion speed and posting quality depend heavily on the specific department."],
+    prep: ["Identify the exact post and download its official notification first.","Build a topic checklist from that post's official syllabus.","Build fundamentals before attempting timed papers.","Solve previous-year papers for that specific post/department where available.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 12 (or as specified) marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile/local-language certificate if required"]
+  }
+};
+jobs.forEach(j=>{
+  if (fullGuides12[j.code]) j.fullGuide = fullGuides12[j.code];
+});
+
+/* ============================================================
    GENERIC MODAL ENGINE — one tabbed sheet reused for:
    government jobs, roadmap-card careers, category overviews,
    and the career tips panel.
@@ -624,6 +848,7 @@ function openJob(id){
         </ol>
       `},
       { key:'quiz', label:'Practice Quiz', render:(el)=>renderQuiz(el, job.tier, job.name) },
+      ...(job.fullGuide ? [{ key:'fullguide', label:'Full Guide', render:(el)=>renderFullGuide(el, job.fullGuide) }] : []),
       { key:'resources', label:'Official Links', html:`
         <div class="resources">
           <ul>
@@ -634,6 +859,39 @@ function openJob(id){
       `}
     ]
   });
+}
+
+/* ---------- Full Guide rendering (deep-dive tab, when a job has fullGuide data) ---------- */
+function renderFullGuide(panel, g){
+  const list = (arr)=> `<ul class="stage-list">${arr.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+  const orderedList = (arr)=> `<ol class="road-map">${arr.map((x,i)=>`<li><span class="rm-num">${i+1}</span><div class="rm-body"><p>${x}</p></div></li>`).join('')}</ol>`;
+  panel.innerHTML = `
+    <h4>Job Work</h4>
+    ${list(g.jobWork)}
+    <h4>Complete Syllabus</h4>
+    ${list(g.syllabus)}
+    <h4>Exam Pattern & Marks</h4>
+    <p class="overview-text">${g.examPattern}</p>
+    <h4>Recruitment / Selection Process</h4>
+    <p class="overview-text">${g.selection}</p>
+    <h4>Physical Requirements</h4>
+    <p class="overview-text">${g.physical}</p>
+    <h4>Salary + Approx. In-Hand</h4>
+    <p class="overview-text">${g.salary}</p>
+    <h4>Promotions & Career Growth</h4>
+    <p class="overview-text">${g.promotions}</p>
+    <h4>Posting / Work Location</h4>
+    <p class="overview-text">${g.posting}</p>
+    <h4>Advantages</h4>
+    ${list(g.advantages)}
+    <h4>Disadvantages</h4>
+    ${list(g.disadvantages)}
+    <h4>Preparation Strategy</h4>
+    ${orderedList(g.prep)}
+    <h4>Document Checklist</h4>
+    ${list(g.documents)}
+    <div class="note-box">This is a structured reference built from a career-flowchart source. Eligibility, age, vacancies, syllabus, selection stages, pay and physical standards can change — the latest official recruitment notification is the final authority.</div>
+  `;
 }
 
 /* ---------- Quiz rendering (shared) ---------- */
@@ -856,15 +1114,10 @@ function openCategoryOverview(kind){
    you — or edit this array yourself, it's plain JavaScript.
    ============================================================ */
 const userPapers = [
-   { title: "SSC-CGL-T-I-Similar-Paper-12-Sep-2025-S1-English.pdf", url: "https://drive.google.com/file/d/1z6cl35kcrfTMso-FK4zSuYxVmHI3IFwZ/view?usp=drive_link" },
-   { title: "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English", url: "https://drive.google.com/file/d/1hV2ljDa0cQ3a2d3PXcrbAoELy3eVR3Hb/view?usp=sharing" },
-   { title: "SSC-CGL-Tier-1-Question-Paper-English_09_09_2024", url: "https://drive.google.com/file/d/1oQ0pve3M2Q7E3QplLPaQrVwQYVJXhlTM/view?usp=drive_link" },
-   { title: "SSC-CGL-Tier-1-Question-Paper_14_07_2023", url: "https://drive.google.com/file/d/1RTFsKH_e484xoSb4bzxLnIKmG3gML9ko/view?usp=drive_link" },
-   { title: "RRB-NTPC-CBT-I-Question-Paper_16-03-2026_S1-2", url: "https://drive.google.com/file/d/10CS_4iE9muDNDEI6308GKJWhaMdXtjsB/view?usp=drive_link" },
-   { title: "RRB-NTPC-2025-CBT-I-Question-Paper_16-03-2026_S1-2", url: "https://drive.google.com/file/d/1sepu-w6TBAh5Wa2FrWi-PbnibQDkqhfm/view?usp=drive_link" },
-   { title: "RRB-NTPC-2019-CBT-1-Question-Paper-1", url: "https://drive.google.com/file/d/1rz-8ZhN2V8kJtg2Dw2XElOxG96whdmCZ/view?usp=drive_link" },
-   { title: "RRB-NTPC-2019-CBT-1-Question-Paper-1", url: "https://drive.google.com/file/d/195FMkB-SgoNwae9NEnBjv9LSjH4YEVqa/view?usp=drive_link" },
-   { title: "RRB-NTPC-2019-01_04_2021_-10_30-am-to-12_00-Paper-1", url: "https://drive.google.com/file/d/1CrU4c_Tfm43DBGEeX7qlr-m08uEphWI7/view?usp=drive_link" },
+   { title: "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English", url: "https://1drv.ms/b/c/a286cf94575cb02f/IQArQV72PdOBQIxKaz6YjkvNAbW7dLPYGqJQbpUW8Y14Quw?e=y0qN0Z" },
+   { title: "SSC-CGL-Tier-1-Question-Paper_14_07_2023", url: "https://1drv.ms/b/c/a286cf94575cb02f/IQCxtjjR9CyzRqmEM3heSQRxAX1sKVCKt3LeYa7CaYHYa4Q?e=tYuNqN" },
+   { title: "SSC-CGL-Tier-1-Question-Paper-English_09_09_2024", url: "https://1drv.ms/b/c/a286cf94575cb02f/IQBUHpKGWre4QYMsns5toQrgASGFLJ81adNS2yNbblW8TEk?e=uyOr5n" },
+   { title: "SSC-CGL-Tier-1-Question-Paper_14_07_2023", url: "https://1drv.ms/b/c/a286cf94575cb02f/IQCxtjjR9CyzRqmEM3heSQRxAX1sKVCKt3LeYa7CaYHYa4Q?e=tYuNqN" },
 ];
 
 /* ============================================================
