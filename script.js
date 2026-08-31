@@ -500,6 +500,227 @@ jobs.forEach(j=>{
 });
 
 /* ============================================================
+   FULL GUIDE — After 10th tier (10-01 .. 10-15)
+   Same structure as the other tiers, sourced from the
+   After-10th flowchart reference docs.
+   ============================================================ */
+const fullGuides10 = {
+  "10-01": { // SSC MTS / Havaldar
+    jobWork: ["Office support duties — dispatch, filing, photocopying, peon-style errands and general assistance for MTS; watch-and-ward, patrolling and basic enforcement support for Havaldar in CBIC/CBN.","Follow departmental rules, safety procedures and supervisory instructions."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Numerical & Mathematical Ability — number system, percentages, ratio/proportion, averages, time-work, time-distance.","English/Language — grammar, vocabulary, comprehension.","Use the exact syllabus annexure in the current SSC MTS/Havaldar notice."],
+    examPattern: "A two-session Computer Based Exam: Session-I covers Numerical & Mathematical Ability and Reasoning; Session-II covers General Awareness and English. The current notice controls exact marks and negative marking.",
+    selection: "SSC application → Computer Based Examination → merit/selection → document verification → appointment.",
+    physical: "MTS: normally no PET/PST. Havaldar vacancies have prescribed PET/PST — build fitness early if applying for Havaldar.",
+    salary: "MTS is generally Pay Level-1; Havaldar is also Level-1. In-hand varies by city and deductions.",
+    promotions: "Promotion follows service rules, seniority, departmental exams and vacancies — MTS/Havaldar staff can progress to higher Group C grades over a career.",
+    posting: "Central Government ministries/departments/offices across locations specified in the vacancy.",
+    advantages: ["One of the most accessible central government entry points right after Class 10.","No advanced technical knowledge required for the written exam.","Structured Pay Level 1 with allowances and long-term job security."],
+    disadvantages: ["Very high applicant volume for a limited number of vacancies.","Havaldar posts require clearing PET/PST alongside the written exam.","Promotion pace at entry-level grades can be slow."],
+    prep: ["Read the latest official SSC MTS/Havaldar notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in Maths and Reasoning before timed practice.","Solve previous-year Session-I/Session-II papers and analyze mistakes.","If applying for Havaldar, start physical training early.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["Class 10 marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "10-02": { // SSC GD Constable
+    jobWork: ["General duty constable work — guarding, patrolling, checkpoint duty and internal-security or border-security tasks depending on the force allotted (BSF, CISF, CRPF, SSB, ITBP, Assam Rifles).","Follow force-specific rules, safety procedures and supervisory instructions; shift and field duty is standard."],
+    syllabus: ["General Knowledge/General Awareness — current affairs, polity, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Elementary Mathematics — number system, percentages, ratio/proportion, averages, time-work, time-distance.","English/Hindi — grammar, vocabulary, comprehension.","Use the exact syllabus annexure in the current SSC GD notice."],
+    examPattern: "Four objective sections in a single CBE: Reasoning, General Knowledge/GA, Elementary Mathematics and English/Hindi. Exact marks, duration and negative marking follow the current GD notice.",
+    selection: "SSC CBE → PST/PET → medical examination → document verification → force allocation/appointment.",
+    physical: "PST/PET are mandatory for shortlisted candidates; height/chest/weight/running standards vary by category, region and sex per the current notice.",
+    salary: "Generally Pay Level-3 for Constable GD, plus applicable allowances; actual in-hand depends on force and posting.",
+    promotions: "Promotion follows force-specific service rules, seniority, departmental exams and vacancies — constables can rise through Head Constable and senior ranks.",
+    posting: "BSF, CISF, CRPF, ITBP, SSB, SSF and Assam Rifles/Rifleman vacancies as notified — postings span all of India, including border areas.",
+    advantages: ["One common exam gives access to multiple central paramilitary forces.","Stable, structured uniformed government employment.","Clear promotion ladder through departmental exams."],
+    disadvantages: ["Physically demanding PST/PET is a hard hurdle after the written exam.","Frequent transfers and challenging postings, including border/remote areas.","High applicant volume makes cutoffs competitive."],
+    prep: ["Read the latest official SSC GD notification first.","Build a topic checklist from the official syllabus.","Start running and endurance training months in advance for PST/PET.","Solve previous-year GD papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10 marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile certificate if required"]
+  },
+  "10-03": { // Railway Group D
+    jobWork: ["Track maintainer, helper and similar entry-level duties supporting railway infrastructure and operations across zones and divisions.","Follow departmental rules, safety procedures and supervisory instructions; field and physically demanding work is common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance.","General Science — basic physics, chemistry and applied science.","Use the exact Level-1 CEN syllabus annexure."],
+    examPattern: "Common Level-1 subjects: Mathematics, General Intelligence & Reasoning, General Science and General Awareness/Current Affairs; exact pattern follows the current CEN.",
+    selection: "RRB CBT → PET → document verification → medical examination → appointment.",
+    physical: "PET normally includes running and weight-carrying standards with separate male/female criteria — build endurance well in advance.",
+    salary: "Level-1 basic pay is generally ₹18,000 under the 7th CPC framework, plus applicable railway allowances; in-hand varies.",
+    promotions: "Promotion follows railway service rules, seniority, departmental exams and vacancies — Group D roles can progress to Technician or supervisory grades over time.",
+    posting: "Railway zones/divisions, stations, yards, tracks, workshops and depots depending on the post.",
+    advantages: ["Large-scale, recurring recruitment with historically lakhs of vacancies.","Entry point into the broader railway system with long-term stability.","Structured pay level with railway allowances."],
+    disadvantages: ["Physically demanding track/field work.","PET is a hard qualifying hurdle after the written exam.","High applicant volume, making cutoffs competitive."],
+    prep: ["Read the latest official RRB Group D CEN notification first.","Build a topic checklist from the official syllabus.","Start running and endurance training months in advance for the PET.","Solve previous-year CBT papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10 marksheet and/or ITI/NAC certificate as applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile certificate if required by the zone"]
+  },
+  "10-04": { // India Post GDS
+    jobWork: ["Running rural post offices as Branch Postmaster, Assistant Branch Postmaster or Dak Sevak — mail delivery, savings transactions and basic postal services.","Follow Department of Posts rules and public-service procedures; often the sole postal presence in a rural area."],
+    syllabus: ["No conventional written competitive examination is normally used for GDS selection.","Selection is largely based on Class 10 marksheet percentage rather than a separate test.","Optional self-preparation: basic GK, arithmetic and reasoning can help if a state circle ever introduces a screening element.","Use the exact selection process described in the current GDS engagement notice for your circle."],
+    examPattern: "Normally no conventional written competitive examination — selection uses a system-generated merit list based mainly on the Class 10 marksheet.",
+    selection: "Online application → system-generated merit based mainly on Class X record → shortlisting → document verification → engagement.",
+    physical: "No SSC-GD-style PET; role conditions can include bicycle-riding ability, medical suitability and other declarations.",
+    salary: "GDS uses TRCA/remuneration rules rather than a standard regular Central Government pay-level structure; exact TRCA depends on BPM/ABPM/Dak Sevak role and hours.",
+    promotions: "Promotion follows Department of Posts service rules, seniority, departmental exams and vacancies — GDS roles can lead to regular departmental postal posts over time.",
+    posting: "Branch Post Offices and postal divisions/circles, often rural or semi-urban.",
+    advantages: ["No written exam — merit is based on your existing Class 10 marks.","Simple, low-cost application process compared to exam-based recruitment.","Meaningful role serving a local rural community."],
+    disadvantages: ["TRCA-based remuneration is lower than a standard regular government salary.","Merit depends entirely on Class 10 percentage, so there's no way to improve your chances through later preparation.","Vacancies and their location depend heavily on the specific postal circle."],
+    prep: ["Read the latest official GDS engagement notice for your state circle.","Confirm your Class 10 marksheet percentage and local-language eligibility.","Prepare all required documents (marksheet, ID, category certificate) well in advance.","Since there's no written exam, focus energy on submitting an accurate, error-free application.","Track the circle's official website for merit list and verification dates."],
+    documents: ["Class 10 marksheet showing the local language as a subject","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "10-05": { // Police Constable (State)
+    jobWork: ["Frontline law-and-order duties — patrolling, beat duty, traffic management and assistance in investigations under a state police force.","Follow departmental rules, safety procedures and supervisory instructions; shift duty and physically demanding work are standard."],
+    syllabus: ["General Knowledge/Current Affairs — national and state-level events, polity, history, geography.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Arithmetic/Maths — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension in the notified language.","Exact syllabus is state-specific — use the current state notification."],
+    examPattern: "Usually General Knowledge/Current Affairs, Reasoning, Arithmetic/Maths, language and state-specific topics in a written/CBT exam; exact question count and marks are state-specific.",
+    selection: "State written/CBT → PST/PET → document verification → medical/character verification → appointment, with variations by state.",
+    physical: "PST/PET usually include height, chest (where applicable), running and other events; exact standards are state-specific.",
+    salary: "State pay scale varies significantly (roughly ₹21,000–₹69,000); allowances and in-hand depend on state, posting and deductions.",
+    promotions: "Promotion follows state police service rules, seniority, departmental exams, vacancies and performance — constables can rise through Head Constable, Assistant Sub-Inspector and beyond.",
+    posting: "Districts, commissionerates, police stations, armed reserve, traffic, special units and other state-police formations.",
+    advantages: ["Stable uniformed government employment with defined service rules.","Structured allowances and retirement benefits.","Clear promotion ladder through departmental exams."],
+    disadvantages: ["Shift duty, field hardship and physically demanding work.","Strict physical standards to clear before the written stage matters.","Posting and transfer liability across the state."],
+    prep: ["Read the latest official state police constable notification first.","Build a topic checklist from the official syllabus.","Start running, push-ups and endurance training months in advance for PST/PET.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10 (or as specified) marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "10-06": { // Forest Guard
+    jobWork: ["Field-level protection and patrolling in forest ranges — anti-poaching duty, boundary checks, basic record-keeping and fire-watch responsibilities.","Follow forest department rules, safety procedures and supervisory instructions; extensive fieldwork in varied terrain is standard."],
+    syllabus: ["General Knowledge — current affairs, polity, history, geography.","Environment/Forestry basics — wildlife, conservation, basic ecology as prescribed.","Arithmetic/Reasoning — number system, percentages, series, coding-decoding.","Language — grammar, vocabulary, comprehension in the notified language.","State-specific GK — local geography and forest-department context per the current notice."],
+    examPattern: "Common areas: General Knowledge, environment/forestry basics, arithmetic, reasoning, language and state-specific GK; exact syllabus is state-specific.",
+    selection: "Written exam/CBT → physical measurement/endurance or walking test where prescribed → document/medical verification → appointment.",
+    physical: "Many Forest Guard recruitments have physical standards and endurance/walking tests; exact standards are state-specific — sustained fitness matters as much as speed.",
+    salary: "State Forest Department pay level varies by state; allowances and in-hand depend on posting.",
+    promotions: "Promotion follows state forest department service rules, seniority, departmental exams and vacancies — Forest Guards can progress to Forester and higher supervisory grades.",
+    posting: "Forest ranges, divisions, wildlife areas, protected forests and field stations — often remote and rural.",
+    advantages: ["Meaningful conservation-focused fieldwork.","Stable state government employment with defined service rules.","Clear promotion path within the forest department."],
+    disadvantages: ["Remote postings with limited access to amenities.","Walking/endurance tests demand sustained physical conditioning.","Fieldwork can involve exposure to wildlife and challenging terrain."],
+    prep: ["Read the latest official state Forest Guard notification first.","Build a topic checklist from the official syllabus, including basic forestry/environment topics.","Build endurance through regular long-distance walking/running practice.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10/12 marksheet as applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile certificate if required"]
+  },
+  "10-07": { // BSF/CISF/CRPF Constable (Tradesman)
+    jobWork: ["Trade-specific support duties (cook, washerman, barber, tailor and similar trades) supporting central paramilitary force units.","Follow force-specific rules, safety procedures and supervisory instructions; uniformed and shift-based duty is common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Elementary Mathematics — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension.","Trade-specific assessment for the tradesman category applied for."],
+    examPattern: "Typically Reasoning, GK/GA, Elementary Mathematics and language, plus a trade-specific assessment for tradesman posts.",
+    selection: "Written/CBT → PST/PET and/or trade test → medical → document verification → final selection.",
+    physical: "Uniformed CAPF recruitment commonly includes height/weight/chest (where applicable), running/PET and medical standards; exact figures vary by force and category.",
+    salary: "Constable-level CAPF tradesman posts are commonly Pay Level-3; specifics can differ by trade and organization.",
+    promotions: "Promotion follows force-specific service rules, seniority, departmental exams and vacancies — tradesmen can progress through Head Constable and senior grades.",
+    posting: "All-India postings including border, industrial, internal-security, training and field locations depending on the force.",
+    advantages: ["Stable uniformed government employment with defined service rules.","Structured allowances and retirement benefits.","A relevant trade skill can be a genuine advantage in selection."],
+    disadvantages: ["Uniformed duty involves shift work, transfers and field hardship.","Physical standards must be cleared alongside the written exam.","All-India posting liability, including remote/border locations."],
+    prep: ["Read the latest official CAPF Tradesman notification first.","Build a topic checklist from the official syllabus.","Start physical training (running, endurance) months in advance.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10/12 marksheet as applicable","Trade certificate if relevant to the post applied for","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "10-08": { // SSB Constable
+    jobWork: ["General duty constable work guarding India's Nepal and Bhutan borders — patrolling, checkpoint duty and border-security tasks.","Follow SSB rules, safety procedures and supervisory instructions; field/border duty is standard."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Elementary Mathematics — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension.","Use the exact syllabus annexure in the current SSC GD/SSB notice."],
+    examPattern: "Typically Reasoning, GK/GA, Elementary Mathematics and language in a single CBE, following the common SSC GD-style pattern.",
+    selection: "Written/CBT → PST/PET and/or trade test → medical → document verification → final selection.",
+    physical: "Uniformed CAPF recruitment commonly includes height/weight/chest (where applicable), running/PET and medical standards; exact figures vary by category.",
+    salary: "Constable-level CAPF posts are commonly Pay Level-3; allowances depend on posting.",
+    promotions: "Promotion follows force-specific service rules, seniority, departmental exams and vacancies — constables can rise through Head Constable and senior ranks.",
+    posting: "All-India postings including border, industrial, internal-security, training and field locations.",
+    advantages: ["Stable uniformed government employment with defined service rules.","Structured allowances and retirement benefits.","Clear promotion ladder through departmental exams."],
+    disadvantages: ["Border postings can mean remote, challenging living conditions.","Physical standards must be cleared alongside the written exam.","Frequent transfers across border regions."],
+    prep: ["Read the latest official SSB Constable notification first.","Build a topic checklist from the official syllabus.","Start physical training (running, endurance) months in advance.","Solve previous-year GD/SSB-style papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10/12 marksheet as applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile certificate if required"]
+  },
+  "10-09": { // Indian Army Agniveer (GD)
+    jobWork: ["General duty soldiering — combat readiness, field operations, guard duty and unit support tasks under the Agnipath scheme.","Follow Army rules, safety procedures and command instructions; involves field/uniformed duty and possible operational deployment."],
+    syllabus: ["General Knowledge — current affairs, polity, history, geography, science.","General Science — basic physics, chemistry, biology.","Mathematics — number system, percentages, ratio/proportion, algebra, geometry.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Use the exact syllabus annexure in the current Army CEE notice."],
+    examPattern: "CEE (Common Entrance Examination) for GD commonly tests General Knowledge, General Science, Maths and Reasoning; exact pattern follows the current Army notice.",
+    selection: "Online registration → Common Entrance Examination → recruitment rally/physical fitness and measurement → medical → final merit, subject to the current Army notice.",
+    physical: "Physical fitness tests and body measurements are central to selection; standards vary by category, region and current recruitment rules.",
+    salary: "Agniveer has a distinct four-year engagement pay/Seva Nidhi structure rather than a traditional permanent-service pay progression; starts around ₹30,000/month package including allowances.",
+    promotions: "Within the four-year Agniveer tenure, growth is limited to internal grading; top performers can be considered for permanent enrolment as per current Army policy.",
+    posting: "Military units/training establishments as assigned; service is under the Agnipath/Agniveer framework.",
+    advantages: ["Prestigious, disciplined service with strong training and allowances.","Meaningful national service with a defined four-year structure.","Possible pathway to permanent enrolment for top performers."],
+    disadvantages: ["Four-year tenure structure differs from traditional permanent service.","Physically demanding training and possible field/operational postings.","Selection is highly competitive with a rigorous physical rally stage."],
+    prep: ["Read the latest official Indian Army Agniveer GD notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in GK, General Science, Maths and Reasoning.","Solve previous-year CEE papers and analyze mistakes.","Start physical training (running, endurance) months in advance for the rally.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["Class 10 marksheet/certificate with minimum aggregate marks as specified","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "10-10": { // Navy SSR/MR
+    jobWork: ["Sailor duties aboard naval ships and establishments — Senior Secondary Recruit (technical) roles support machinery/systems; Matric Recruit (non-technical) roles cover cook/steward and similar support functions.","Follow Navy rules, safety procedures and command instructions; involves shipboard/uniformed duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, algebra, geometry.","Language — grammar, vocabulary, comprehension.","MR/SSR-specific content per the current Indian Navy notice."],
+    examPattern: "MR and SSR/technical entries have different subject mixes; the current Indian Navy notice controls the exact pattern, duration and marks.",
+    selection: "Online application → computer-based exam → physical fitness test → medical → merit/induction as prescribed.",
+    physical: "PFT and medical standards apply; height, run, squats/push-ups/sit-ups or other events depend on the entry and current notice.",
+    salary: "Agniveer Navy entries follow the applicable Agniveer pay/Seva Nidhi framework.",
+    promotions: "Within the Agniveer tenure, growth is limited to internal grading; top performers can be considered for permanent enrolment as per current Navy policy.",
+    posting: "Indian Navy ships, establishments, bases and training centers as allotted.",
+    advantages: ["Structured naval training with strong discipline and allowances.","Exposure to shipboard systems (SSR) or valuable support-role experience (MR).","Possible pathway to permanent enrolment for top performers."],
+    disadvantages: ["Shipboard duty involves long deployments away from home.","Physically demanding training and PFT standards.","Four-year Agniveer tenure structure differs from permanent service."],
+    prep: ["Read the latest official Indian Navy SSR/MR notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in Maths, Reasoning and GA before timed practice.","Solve previous-year papers and analyze mistakes.","Start physical training (running, strength) months in advance for the PFT.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["Class 10/12 marksheet with required subjects as applicable","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Domicile certificate if required"]
+  },
+  "10-11": { // Air Force Agniveer
+    jobWork: ["Technical and non-technical trade duties supporting Air Force stations under the Agnipath scheme — maintenance, ground support, administration or specialist roles depending on the trade.","Follow Air Force rules, safety procedures and command instructions; involves uniformed/technical station duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Mathematics — number system, percentages, ratio/proportion, algebra, geometry.","English/Language — grammar, vocabulary, comprehension.","Science/non-science papers as prescribed by the current Agniveervayu notice."],
+    examPattern: "Science and non-science papers differ; the current Agniveervayu notice controls exact subjects, duration and marks.",
+    selection: "Online test → physical fitness test → adaptability/medical stages as prescribed → final enrolment list.",
+    physical: "Physical fitness and medical standards apply; exact run times and other events are notification-specific.",
+    salary: "Agniveervayu uses the applicable Agnipath pay/Seva Nidhi framework, starting around ₹30,000/month package including allowances.",
+    promotions: "Within the Agniveer tenure, growth is limited to internal grading; top performers can be considered for permanent enrolment as per current Air Force policy.",
+    posting: "Air Force stations/training establishments as assigned.",
+    advantages: ["Access to both technical and non-technical trades within one force.","Structured training and discipline with strong allowances.","Possible pathway to permanent enrolment for top performers."],
+    disadvantages: ["Four-year Agniveer tenure structure differs from permanent service.","Selection is competitive with a rigorous physical/adaptability stage.","Postings depend on service need, not personal preference."],
+    prep: ["Read the latest official Agniveervayu notification first.","Build a topic checklist from the official syllabus (science or non-science, as applicable).","Build fundamentals in Maths, Reasoning and GA before timed practice.","Solve previous-year online test papers and analyze mistakes.","Start physical training months in advance for the fitness test.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["Class 10/12 marksheet with Maths/Science/English as applicable","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Domicile certificate if required"]
+  },
+  "10-12": { // ITBP/SSB Constable
+    jobWork: ["General duty and specialist constable work guarding India's high-altitude and border regions under ITBP, or the Nepal/Bhutan borders under SSB.","Follow force-specific rules, safety procedures and supervisory instructions; field/mountain duty is common for ITBP."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Elementary Mathematics — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension.","Use the exact syllabus annexure in the current SSC GD-style notice."],
+    examPattern: "Typically Reasoning, GK/GA, Elementary Mathematics and language, plus a trade-specific assessment for specialist tradesman posts.",
+    selection: "Written/CBT → PST/PET and/or trade test → medical → document verification → final selection.",
+    physical: "Uniformed CAPF recruitment commonly includes height/weight/chest (where applicable), running/PET and medical standards; exact figures vary by force and category.",
+    salary: "Constable-level CAPF posts are commonly Pay Level-3; trades and organizations can differ.",
+    promotions: "Promotion follows force-specific service rules, seniority, departmental exams and vacancies — constables can rise through Head Constable and senior ranks.",
+    posting: "All-India postings including border, high-altitude, industrial, internal-security, training and field locations depending on force.",
+    advantages: ["Stable uniformed government employment with defined service rules.","Structured allowances and retirement benefits, including high-altitude allowances for ITBP.","Clear promotion ladder through departmental exams."],
+    disadvantages: ["ITBP postings can include extreme high-altitude/cold conditions.","Physical standards must be cleared alongside the written exam.","All-India posting liability, including remote/border locations."],
+    prep: ["Read the latest official ITBP/SSB Constable notification first.","Build a topic checklist from the official syllabus.","Start physical training (running, endurance) months in advance.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10/12 marksheet as applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile certificate if required"]
+  },
+  "10-13": { // Apprentice in PSUs
+    jobWork: ["Structured on-the-job training in trades like fitter, electrician and welder inside large public-sector plants (BHEL, NTPC, ONGC, BEL, HAL and similar).","Follow the PSU's safety procedures and supervisory instructions during the training period."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension.","Trade-specific topics where a written test is used — check the exact PSU/trade notification."],
+    examPattern: "Often no common written exam; the organization/trade notice decides whether a test, interview or pure marks-based merit is used.",
+    selection: "Online application → merit/marks-based shortlisting or test/interview if prescribed → document verification → medical → apprenticeship contract.",
+    physical: "Usually no PET; medical fitness may be required depending on the trade and PSU.",
+    salary: "Apprentices receive a stipend rather than a regular employee salary; amount depends on apprenticeship rules and the specific organization (typically ₹7,000–₹12,000/month).",
+    promotions: "This is a fixed-term training engagement, not a regular promotion-track post; strong performers sometimes get preference in later regular recruitment by the same PSU, but this isn't guaranteed.",
+    posting: "Plant, refinery, workshop, project or office of the PSU/establishment offering the apprenticeship.",
+    advantages: ["Hands-on trade training inside major, well-resourced public-sector plants.","A stepping stone that builds practical skills and a strong resume for future technical roles.","Simpler selection process than many other government exams (often marks-based)."],
+    disadvantages: ["Stipend is lower than a regular employee's salary.","Apprenticeship is a fixed-term engagement with no automatic guarantee of a permanent job afterward.","Trade/eligibility criteria must match exactly what the PSU has notified."],
+    prep: ["Read the latest official apprenticeship notification for the exact PSU and trade first.","Confirm your ITI trade certificate matches the eligibility exactly.","If a written test is used, build fundamentals from the official syllabus.","Solve previous-year papers where available and analyze mistakes.","Keep all documents (marksheets, ITI certificate, ID) ready well in advance.","Track the PSU's official apprenticeship portal for application windows."],
+    documents: ["Class 10 marksheet plus ITI certificate in the relevant trade","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable"]
+  },
+  "10-14": { // State Govt Peon/Group D
+    jobWork: ["Peon, attendant and general support duties in state government offices — file movement, basic errands and office assistance.","Follow departmental rules and supervisory instructions."],
+    syllabus: ["General Knowledge/Current Affairs — national and state-level events, polity, history, geography.","Reasoning — analogy, classification, series, coding-decoding, directions.","Basic Maths — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension in the notified language.","Exact syllabus is state-specific — use the current state notification."],
+    examPattern: "Usually basic Maths, Reasoning, General Knowledge/Current Affairs and language; state-specific in exact question count and marks.",
+    selection: "State recruitment board/department process, commonly written exam → document verification → medical/appointment.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "State Level-1/Group-D pay varies by state and department (roughly ₹15,000–₹40,000).",
+    promotions: "Promotion follows state service rules, seniority, departmental exams and vacancies — Group D staff can progress to clerical/Group C grades over time.",
+    posting: "State government offices, local bodies, departments and field establishments.",
+    advantages: ["Accessible entry-level state government job with a straightforward syllabus.","Local/home-state postings are common.","Stable employment with defined service rules."],
+    disadvantages: ["Recruitment cycles and vacancies vary widely by state.","Entry-level pay and slower promotion pace compared to higher grades.","Competition can still be intense given the low qualification bar."],
+    prep: ["Read the latest official state Group D/Peon notification first.","Build a topic checklist from the official state syllabus.","Build fundamentals in basic Maths, Reasoning and language.","Solve previous-year state papers where available and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10 (some states accept Class 8) marksheet/certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "10-15": { // Others (State/Central Group D Posts)
+    jobWork: ["Cadre/posting-determined support, operational or basic technical duties depending on the exact Group D post advertised.","Follow departmental rules, safety procedures and supervisory instructions as applicable to the specific post."],
+    syllabus: ["General Knowledge/Current Affairs — national and state-level events, polity, history, geography.","Reasoning — analogy, classification, series, coding-decoding, directions.","Basic Maths — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension in the notified language.","Use the exact syllabus annexure in the specific recruitment notice — this is a catch-all category, so the syllabus varies widely."],
+    examPattern: "Usually basic Maths, Reasoning, General Knowledge/Current Affairs and language; exact pattern is state/department-specific.",
+    selection: "State recruitment board/department process, commonly written exam → document verification → medical/appointment.",
+    physical: "Not applicable unless the specific recruitment notice mentions PET/PST/medical standards.",
+    salary: "State Level-1/Group-D pay varies by state and department — always confirm exact figures from the applicable notification.",
+    promotions: "Promotion follows the recruiting department's service rules, seniority, departmental exams, vacancies and performance.",
+    posting: "Depends on the recruiting organisation, cadre, zone/circle and vacancy; transfers may apply.",
+    advantages: ["Wide net of additional Class-10-level Group D posts beyond the major named exams.","Government/statutory employment structure and defined service rules where applicable.","Structured allowances and retirement benefits."],
+    disadvantages: ["Because this spans many different posts, eligibility and pay vary widely — always verify the specific notice.","Competitive recruitment with uncertain notification cycles.","Promotion speed and posting quality depend heavily on the specific department."],
+    prep: ["Identify the exact post and download its official notification first.","Build a topic checklist from that post's official syllabus.","Build fundamentals in basic Maths, Reasoning and language.","Solve previous-year papers for that specific post/department where available.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Class 10 marksheet/certificate (minimum, varies by post)","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile/local-language certificate if required"]
+  }
+};
+jobs.forEach(j=>{
+  if (fullGuides10[j.code]) j.fullGuide = fullGuides10[j.code];
+});
+
+/* ============================================================
    FULL GUIDE — After 12th tier (12-01 .. 12-15)
    Deep-dive reference content: job work, full syllabus, exam
    pattern notes, physical standards, promotions, posting,
