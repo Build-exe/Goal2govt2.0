@@ -1124,6 +1124,185 @@ jobs.forEach(j=>{
 });
 
 /* ============================================================
+   FULL GUIDE — After Diploma tier (DIP-01 .. DIP-12)
+   Same structure as fullGuides12/fullGuidesITI/fullGuidesDEG,
+   sourced from the After-Diploma flowchart reference docs.
+   ============================================================ */
+const fullGuidesDIP = {
+  "DIP-01": { // SSC JE (Junior Engineer)
+    jobWork: ["Junior Engineer duties — site inspection, quality checks, estimation, supervision of works and technical documentation across Civil, Mechanical or Electrical disciplines.","Follow departmental rules, safety procedures and supervisory instructions; site visits and field inspection are common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","General Engineering (Paper-I) — basic engineering concepts across disciplines.","Detailed Civil/Electrical/Mechanical engineering syllabus (Paper-II) as per the branch applied for.","Use the exact SSC JE syllabus annexure — Paper-II content differs significantly by engineering branch."],
+    examPattern: "Paper-I: Reasoning, General Awareness and General Engineering (CBT). Paper-II: detailed Civil/Electrical/Mechanical engineering syllabus, also computer-based. Check the current notice for question count, marks, duration and negative marking.",
+    selection: "SSC Paper-I CBT → Paper-II objective technical exam → document verification; post-specific standards where applicable.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Typically Pay Level-6, basic pay around ₹35,400 under the 7th CPC framework, plus allowances.",
+    promotions: "Promotion follows service rules, seniority, departmental exams, vacancies and cadre structure — JEs can progress to Assistant Engineer and higher technical/supervisory grades.",
+    posting: "Central Government engineering departments such as CPWD, CWC, MES and other notified organizations.",
+    advantages: ["Respected technical entry into central government engineering departments.","Structured Pay Level 6 with allowances.","Clear promotion path toward Assistant Engineer roles."],
+    disadvantages: ["Two-stage technical exam demands strong branch-specific engineering knowledge.","Site/field inspection duties can involve travel.","Vacancies vary year to year by department and branch."],
+    prep: ["Read the latest official SSC JE notification first.","Build a topic checklist from the official syllabus for both papers.","Build fundamentals in General Engineering before deep-diving into your branch's Paper-II syllabus.","Solve previous-year Paper-I/Paper-II papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree certificate in the relevant engineering discipline","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "DIP-02": { // RRB JE (Junior Engineer)
+    jobWork: ["Junior Engineer duties across civil, mechanical, electrical and signal disciplines, covering inspection, maintenance oversight and technical documentation for railway infrastructure.","Follow railway operating and safety procedures; some posts involve field/site visits."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","General Science — basic physics, chemistry and applied science.","Technical — core subjects/trade theory and discipline-specific engineering concepts per the current CEN."],
+    examPattern: "CBT-1: Mathematics, Reasoning, General Awareness, General Science. CBT-2 includes technical abilities specific to the engineering discipline plus other common sections.",
+    selection: "CBT-1 → CBT-2 → document verification → medical.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Typically Pay Level-6 with basic pay around ₹35,400 under the relevant framework; railway allowances vary by posting.",
+    promotions: "Promotion follows railway service rules, seniority, departmental exams and vacancies — JEs can progress to Senior Section Engineer and higher technical/supervisory grades.",
+    posting: "Railway workshops, divisions, projects, maintenance and engineering offices.",
+    advantages: ["Recurring, large-scale railway technical recruitment.","Structured Pay Level 6 with railway-specific allowances.","Clear promotion path within the railway engineering cadre."],
+    disadvantages: ["Two-stage CBT exam demands both general aptitude and strong technical knowledge.","High applicant volume, making cutoffs competitive.","Posting location may not match home preference initially."],
+    prep: ["Read the latest official RRB JE CEN notification first.","Build a topic checklist from the official syllabus for both CBT stages.","Build fundamentals in Maths, Reasoning and General Science before technical practice.","Solve previous-year CBT-1/CBT-2 papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree certificate in the relevant engineering discipline","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "DIP-03": { // State JE (PWD/PHED/Electricity/Others)
+    jobWork: ["Junior Engineer duties overseeing local infrastructure projects — roads, water supply, irrigation or electricity distribution depending on the department.","Follow state departmental rules, safety procedures and supervisory instructions; site inspection is common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension in the notified state language.","Technical — core engineering subjects for the specific department (PWD/PHED/Electricity) per the current notification."],
+    examPattern: "Technical engineering content plus general aptitude/GK/language according to the state commission/board conducting the exam.",
+    selection: "State written exam/CBT → document verification → medical/appointment; interview only if prescribed.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "State JE pay varies by department and state — check the specific state's pay matrix.",
+    promotions: "Promotion follows state service rules, seniority, departmental exams and vacancies — JEs can progress to Assistant Engineer and higher grades within the department.",
+    posting: "PWD, PHED, irrigation, electricity, municipal and other engineering departments.",
+    advantages: ["Local/home-state postings are common.","Meaningful infrastructure work with visible community impact.","Structured state pay scale and allowances."],
+    disadvantages: ["Recruitment cycles and vacancies vary widely by state and department.","Field inspection duties can involve site visits in varied conditions.","Syllabus and pattern differ by state — requires state-specific preparation."],
+    prep: ["Read the latest official state JE notification for the exact department first.","Build a topic checklist from the official state syllabus.","Build fundamentals in your engineering branch alongside GK and Reasoning.","Solve previous-year state JE papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree certificate in the relevant engineering branch","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "DIP-04": { // BSNL/MTNL/IOCL/HPCL Engineer
+    jobWork: ["Junior/Technical Officer-level engineering duties in telecom or oil-and-gas PSUs — network maintenance, plant operations, technical support or project engineering depending on the organization.","Follow company rules, safety procedures and supervisory instructions in plant/field settings."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — core engineering subjects for the specific discipline/organization per the current notification."],
+    examPattern: "Technical discipline content plus aptitude/English/GK if the organization uses a written test; some PSUs also use GATE score or a merit route.",
+    selection: "Organization-specific exam/CBT, interview or GATE/merit route → document verification → medical.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Varies substantially between diploma technical roles, engineer roles, apprentices and regular officer cadres — check the specific PSU's pay structure.",
+    promotions: "Promotion follows the PSU's internal service rules, seniority, departmental exams and vacancies — engineers can progress to senior technical/managerial grades.",
+    posting: "Plants, telecom units, depots, refineries, projects and offices.",
+    advantages: ["Strong brand-name PSU employers with structured benefits.","Technical exposure to large-scale telecom/energy infrastructure.","Reasonably stable employment once regularized."],
+    disadvantages: ["Pay and job security differ significantly between apprentice/contract and regular posts.","Selection route (CBT vs GATE vs merit) varies by PSU and can change between cycles.","Plant/field postings can involve shift work or industrial hazards."],
+    prep: ["Read the latest official notification for the specific PSU and post first.","Build a topic checklist from the official syllabus.","Build fundamentals in your engineering discipline alongside aptitude subjects.","Solve previous-year papers for that specific PSU where available.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree certificate in the relevant engineering/technical branch","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "DIP-05": { // DRDO/ISRO Technician/Engineer
+    jobWork: ["Engineering/technical support for India's defence and space research programmes — testing, fabrication, instrumentation or project engineering depending on the exact post and qualification level.","Follow departmental rules, safety procedures and supervisory instructions in a research/lab environment."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — discipline-specific engineering syllabus (for Scientist/Engineer posts) or trade/technical content (for Technician posts) per the current notification."],
+    examPattern: "Technician-level posts: trade/technical content plus basic aptitude. Scientist/Engineer-level posts: discipline-specific engineering syllabus. Current notice controls exact weightage.",
+    selection: "Written test → skill test for technician posts, or interview for scientist/engineer posts, depending on the recruitment.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "DRDO/ISRO regular posts use Government pay levels and allowances; exact level depends on the post applied for.",
+    promotions: "Promotion follows the organisation's service rules, seniority, departmental exams and vacancies — engineers/technicians can progress to senior technical or scientific grades.",
+    posting: "DRDO laboratories or ISRO centres, launch facilities and project sites across India.",
+    advantages: ["Work in a prestigious national research environment.","Structured Central Government pay level and allowances.","Exposure to advanced engineering/research work."],
+    disadvantages: ["Vacancies are limited compared to railway/SSC-scale recruitment.","Eligibility and post level (Technician vs Engineer) must be matched exactly to your qualification.","Postings are spread across specific establishments, not all locations."],
+    prep: ["Read the latest official DRDO/ISRO notification for the exact post first.","Build a topic checklist from the official syllabus.","Build fundamentals in your engineering discipline alongside GA and Reasoning.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree certificate in the relevant engineering discipline","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "DIP-06": { // BHEL/BEL/HAL Engineer
+    jobWork: ["Diploma trainee/engineer duties in plant operations, equipment maintenance and technical support at major public-sector engineering and defence-manufacturing companies.","Follow company rules, safety procedures and supervisory instructions on the shop floor or field site."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — core engineering subjects for the discipline applied for, per the current PSU notification."],
+    examPattern: "Technical/trade subjects plus aptitude/reasoning/GK/English may be used, depending on the specific PSU's own recruitment notice.",
+    selection: "Organization-specific written test/merit → trade/skill test or interview where prescribed → medical/document verification.",
+    physical: "Not applicable unless the specific PSU notice mentions PET/PST/medical standards.",
+    salary: "PSU pay/stipend varies widely by organization and whether the role is apprentice, contract or regular employee — check the specific PSU's pay structure.",
+    promotions: "Promotion follows the PSU's internal service rules, seniority, departmental exams and vacancies — engineers can progress to senior technical/managerial grades.",
+    posting: "Plants, factories, refineries, projects, workshops and field locations of the recruiting PSU.",
+    advantages: ["Strong brand-name PSU employers with structured benefits.","Hands-on engineering exposure aligned with diploma training.","Reasonably stable employment once regularized."],
+    disadvantages: ["Pay and job security differ significantly between apprentice/contract and regular posts — read the notice carefully.","Discipline/branch eligibility varies by PSU and must be matched exactly.","Plant/field postings can involve shift work or industrial hazards."],
+    prep: ["Read the latest official PSU engineer trainee notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in your engineering discipline alongside aptitude and reasoning.","Solve previous-year papers for that specific PSU where available.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree certificate in the relevant engineering discipline","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "DIP-07": { // DMRC Junior Engineer
+    jobWork: ["Junior Engineer duties overseeing Delhi Metro's civil, electrical, signalling or mechanical systems — inspection, maintenance oversight and technical documentation.","Follow DMRC rules, safety procedures and supervisory instructions; shift duty in depots/stations is common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — core engineering subjects for the discipline applied for, per the current DMRC notification."],
+    examPattern: "Technical subject, Reasoning, Quantitative Aptitude and English/GK as prescribed by the current DMRC JE notice.",
+    selection: "DMRC recruitment may use CBT → trade/skill/medical or interview depending on the exact post.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "DMRC pay varies by cadre and whether the recruitment is regular or contract-based.",
+    promotions: "Promotion follows DMRC's internal service rules, seniority, departmental exams and vacancies — JEs can progress to senior engineer/supervisory grades.",
+    posting: "Metro depots, stations, workshops, Operations Control Centres (OCCs) and maintenance sections.",
+    advantages: ["Modern, well-organised metro-rail work environment.","Structured pay and benefits for regular DMRC employees.","Engineering exposure aligned with diploma training."],
+    disadvantages: ["Shift duty, including night shifts, is common for depot/station roles.","Contract vs regular recruitment terms can differ significantly — read the notice carefully.","Vacancies and recruitment cycles depend on network expansion."],
+    prep: ["Read the latest official DMRC JE notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in your engineering discipline alongside Reasoning and Quant.","Solve previous-year DMRC papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree certificate in the relevant engineering discipline","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable"]
+  },
+  "DIP-08": { // Railway Supervisor (RRB)
+    jobWork: ["Supervisory duties across railway operations and maintenance — overseeing staff, work quality and safety compliance depending on the exact post.","Follow railway operating and safety procedures; supervisory posts often carry responsibility for a team or section."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Post-specific technical/operational subjects per the current RRB notification — use the exact syllabus annexure since supervisor posts vary widely."],
+    examPattern: "Post-specific technical/operational subjects plus Maths, Reasoning, General Awareness and Science where prescribed; exact pattern depends on the CEN.",
+    selection: "RRB CBT(s) → document verification → medical; exact stages depend on the CEN.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Pay level varies by the specific supervisor post — check the current CEN for exact figures.",
+    promotions: "Promotion follows railway service rules, seniority, departmental exams and vacancies — supervisors can progress to senior operational/managerial grades.",
+    posting: "Railway divisions, stations, yards, depots, workshops and offices.",
+    advantages: ["Supervisory responsibility within a large, stable organisation.","Structured railway pay scale and allowances.","Clear promotion path within the railway hierarchy."],
+    disadvantages: ["Eligibility and syllabus vary significantly by the exact supervisor post — read the notice carefully.","Field/operational responsibility can mean irregular hours.","Posting/transfer liability depending on zone."],
+    prep: ["Read the latest official RRB Supervisor notification for the exact post first.","Build a topic checklist from the official syllabus.","Build fundamentals before attempting timed papers.","Solve previous-year papers for the specific post and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree and/or technical/operational credentials as specified","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "DIP-09": { // UPSSSC JE/UPPSC AE
+    jobWork: ["Junior Engineer or Assistant Engineer duties in Uttar Pradesh's technical departments — site inspection, estimation, supervision of works and technical documentation.","Follow departmental rules, safety procedures and supervisory instructions; field/site visits are common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","General Engineering (Paper-I) — basic engineering concepts across disciplines.","Detailed Civil/Electrical/Mechanical engineering syllabus (Paper-II) as per the branch applied for.","Use the exact syllabus annexure in the current UPSSSC/UPPSC notice — content differs by post (JE vs AE) and branch."],
+    examPattern: "Paper-I: Reasoning, General Awareness and General Engineering. Paper-II: detailed Civil/Electrical/Mechanical engineering syllabus. Check the current notice for question count, marks, duration and negative marking.",
+    selection: "SSC-style Paper-I CBT → Paper-II objective technical exam → document verification; post-specific standards where applicable.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Typically Pay Level-6, basic pay ₹35,400 under the 7th CPC framework, plus allowances.",
+    promotions: "Promotion follows service rules, seniority, departmental exams, vacancies and cadre structure — JEs/AEs can progress to higher engineering grades within UP state departments.",
+    posting: "Uttar Pradesh state technical departments (PWD, irrigation, electricity and similar).",
+    advantages: ["Strong state-level technical career with clear pay structure.","Local (UP-based) postings are common.","Two recruiting bodies (UPSSSC for JE, UPPSC for AE) widen opportunities."],
+    disadvantages: ["Two-stage technical exam demands strong branch-specific engineering knowledge.","JE (diploma) and AE (degree) eligibility differ — check which post you qualify for.","Site/field inspection duties can involve travel."],
+    prep: ["Read the latest official UPSSSC JE / UPPSC AE notification for the exact post first.","Build a topic checklist from the official syllabus for both papers.","Build fundamentals in General Engineering before deep-diving into your branch's Paper-II syllabus.","Solve previous-year Paper-I/Paper-II papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma certificate (for JE) or degree certificate (for AE) in the relevant engineering discipline","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile certificate if required"]
+  },
+  "DIP-10": { // State Technical Assistant
+    jobWork: ["Technical support duties assisting engineers in state infrastructure and utility departments — data collection, site assistance, documentation and basic technical checks.","Follow departmental rules, safety procedures and supervisory instructions."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension in the notified state language.","Technical — core subjects/trade theory for the specific discipline per the current state notification."],
+    examPattern: "Technical subject plus aptitude/GK/language according to the recruiting state body.",
+    selection: "Written/CBT/merit → technical or skill test where applicable → document/medical verification.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "State/organization-specific — check the exact department's pay matrix.",
+    promotions: "Promotion follows state service rules, seniority, departmental exams and vacancies — Technical Assistants can progress to Junior Engineer or higher technical grades.",
+    posting: "Technical departments, laboratories, field offices and projects.",
+    advantages: ["Entry point into state technical departments with a path to engineering roles.","Local/home-state postings are common.","Structured allowances and retirement benefits."],
+    disadvantages: ["Eligibility (diploma/degree/ITI) and pay vary widely by state and organization.","Recruitment cycles and vacancies depend on the specific department.","Assisting role may have slower promotion pace than direct JE entry."],
+    prep: ["Read the latest official state Technical Assistant notification first.","Build a topic checklist from the official syllabus.","Revise your technical discipline alongside GK and Reasoning.","Solve previous-year papers where available and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree/ITI certificate as applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile certificate if required"]
+  },
+  "DIP-11": { // Navy/Army Technical Entry (SSC)
+    jobWork: ["Technical training followed by command, engineering or administrative responsibilities in the Navy or Army, depending on the entry and branch.","Follow service-specific rules, operational protocols and command responsibilities; involves uniformed/field duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — core engineering subjects for the discipline/entry applied for, per the current notification."],
+    examPattern: "Some entries are merit/shortlisting based (using academic record); others use an entrance examination. Check the entry-specific notice for exact subjects and marks.",
+    selection: "Application → shortlisting → SSB/selection board → medical → merit/training, depending on the entry.",
+    physical: "Defence medical and physical standards apply; eyesight and anthropometric standards can be strict and entry-specific.",
+    salary: "Officer/technical trainee pay depends on the entry and commissioning terms; follows the defence service pay matrix once commissioned.",
+    promotions: "Promotion follows defence service rules, seniority, performance and vacancies — officers progress through rank over a structured career.",
+    posting: "Defence academies followed by service postings across India.",
+    advantages: ["Prestigious officer-entry route combining technical training with military service.","Comprehensive training, leadership development and allowances.","Clear rank-based promotion path after commissioning."],
+    disadvantages: ["Strict physical, medical and psychological screening (SSB).","Frequent transfers and demanding postings, including field/sea deployment.","Long, multi-stage selection process with strict eligibility windows."],
+    prep: ["Read the latest official Navy/Army Technical Entry notification for the exact entry first.","Build a topic checklist from the official syllabus if a written exam applies.","Build fundamentals in your engineering discipline alongside GK and Reasoning.","Prepare for the SSB stage (group tasks, interview, psychology tests) well in advance.","Build physical fitness consistently alongside academic prep.","Solve previous-year papers where available and analyze mistakes."],
+    documents: ["10+2/diploma/engineering certificates as applicable to the entry","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Medical fitness documents where required"]
+  },
+  "DIP-12": { // Others (PSUs/State Technical Posts)
+    jobWork: ["Cadre/posting-determined technical duties — equipment, systems, maintenance, inspection or testing — depending on the exact post advertised.","Follow departmental rules, safety procedures and supervisory instructions as applicable to the specific post."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — core subjects/trade theory and discipline-specific concepts; use the exact syllabus annexure in the specific recruitment notice since this is a catch-all category."],
+    examPattern: "The exact pattern, marks, duration and negative marking are recruitment-specific — always use the current official notification for the final pattern.",
+    selection: "Usually application → written/CBT or merit screening → applicable skill/physical/technical stage → document verification → medical/appointment as prescribed.",
+    physical: "Not applicable unless the specific recruitment notice mentions PET/PST/medical standards.",
+    salary: "Pay/remuneration varies by department, pay level, organisation and posting — always confirm exact figures from the applicable notification/pay rules.",
+    promotions: "Promotion follows the recruiting organisation's service rules, seniority, departmental exams, vacancies and performance.",
+    posting: "Depends on the recruiting organisation, cadre, zone/circle and vacancy; transfers may apply.",
+    advantages: ["Wide net of additional diploma-level technical posts beyond the major named exams.","Government/PSU/statutory employment structure and defined service rules where applicable.","Structured allowances and retirement benefits."],
+    disadvantages: ["Because this spans many different posts, eligibility and pay vary widely — always verify the specific notice.","Competitive recruitment with uncertain notification cycles.","Promotion speed and posting quality depend heavily on the specific department."],
+    prep: ["Identify the exact post and download its official notification first.","Build a topic checklist from that post's official syllabus.","Revise your technical discipline alongside general aptitude subjects.","Solve previous-year papers for that specific post/department where available.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["Diploma/degree/ITI certificate as applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile/local-language certificate if required"]
+  }
+};
+jobs.forEach(j=>{
+  if (fullGuidesDIP[j.code]) j.fullGuide = fullGuidesDIP[j.code];
+});
+
+/* ============================================================
    GENERIC MODAL ENGINE — one tabbed sheet reused for:
    government jobs, roadmap-card careers, category overviews,
    and the career tips panel.
