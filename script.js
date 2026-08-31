@@ -89,7 +89,27 @@ const quizPools = {
     ["The freezing point of water in Celsius is:","0","32","100","-1","0"],
     ["Who wrote the Indian National Anthem?","Bankim Chandra Chatterjee","Rabindranath Tagore","Sarojini Naidu","Subhas Chandra Bose","Rabindranath Tagore"],
     ["Find the missing number: 5, 10, 20, 40, __","60","70","80","45","80"],
-    ["Which is the smallest continent by area?","Asia","Africa","Australia","Europe","Australia"]
+    ["Which is the smallest continent by area?","Asia","Africa","Australia","Europe","Australia"],
+    ["The number of sides in a hexagon is:","5","6","7","8","6"],
+    ["Which organ pumps blood in the human body?","Lungs","Heart","Kidney","Liver","Heart"],
+    ["The largest ocean on Earth is the:","Atlantic","Indian","Pacific","Arctic","Pacific"],
+    ["If 3x = 15, then x is:","3","5","8","45","5"],
+    ["Which of these is a mammal?","Shark","Frog","Whale","Crocodile","Whale"],
+    ["The capital of India is:","Mumbai","Kolkata","New Delhi","Chennai","New Delhi"],
+    ["Complete the series: A, C, E, G, __","H","I","J","F","I"],
+    ["The sun rises in the:","North","South","East","West","East"],
+    ["Which festival is known as the festival of lights?","Holi","Diwali","Eid","Baisakhi","Diwali"],
+    ["1 kilometre equals:","100 metres","1000 metres","10 metres","10000 metres","1000 metres"],
+    ["Which of these is a source of Vitamin C?","Rice","Orange","Milk","Wheat","Orange"],
+    ["The study of plants is called:","Zoology","Botany","Geology","Biology","Botany"],
+    ["If Ravi is taller than Sam, and Sam is taller than Amit, who is the shortest?","Ravi","Sam","Amit","Cannot say","Amit"],
+    ["The national bird of India is the:","Peacock","Parrot","Sparrow","Eagle","Peacock"],
+    ["Find the odd one out:","Triangle","Square","Circle","Cube","Cube"],
+    ["Which season comes right after summer in India?","Winter","Monsoon","Spring","Autumn","Monsoon"],
+    ["The value of 15% of 200 is:","20","30","25","35","30"],
+    ["Which is the fastest land animal?","Lion","Cheetah","Horse","Tiger","Cheetah"],
+    ["Water boils at what temperature in Celsius?","90","100","110","120","100"],
+    ["Complete the analogy: Doctor is to Hospital as Teacher is to __","Shop","School","Farm","Bank","School"]
   ],
   p12: [
     ["Choose the correctly spelt word:","Recieve","Receive","Receeve","Receve","Receive"],
@@ -106,7 +126,27 @@ const quizPools = {
     ["The capital of Australia is:","Sydney","Melbourne","Canberra","Perth","Canberra"],
     ["If 20% of a number is 50, the number is:","200","250","300","100","250"],
     ["Antonym of 'Genuine' is:","Authentic","Real","Fake","True","Fake"],
-    ["Which Five-Year Plan is associated with the early push for the Green Revolution in India?","First","Third","Fourth","Second","Third"]
+    ["Which Five-Year Plan is associated with the early push for the Green Revolution in India?","First","Third","Fourth","Second","Third"],
+    ["The Indian Parliament's lower house is called the:","Rajya Sabha","Lok Sabha","Vidhan Sabha","Vidhan Parishad","Lok Sabha"],
+    ["If a train travels 300 km in 5 hours, its average speed is:","50 km/h","60 km/h","45 km/h","55 km/h","60 km/h"],
+    ["The currency of Japan is the:","Yuan","Won","Yen","Ringgit","Yen"],
+    ["Which vitamin deficiency causes night blindness?","Vitamin A","Vitamin B","Vitamin C","Vitamin D","Vitamin A"],
+    ["Choose the correct antonym of 'Ancient':","Old","Modern","Historic","Traditional","Modern"],
+    ["The first Prime Minister of India was:","Mahatma Gandhi","Jawaharlal Nehru","Sardar Patel","Rajendra Prasad","Jawaharlal Nehru"],
+    ["If the perimeter of a square is 40 cm, its area is:","100 sq cm","80 sq cm","64 sq cm","120 sq cm","100 sq cm"],
+    ["Which planet has the most known moons in our solar system?","Earth","Mars","Saturn","Mercury","Saturn"],
+    ["The RBI's monetary policy committee primarily targets:","Fiscal deficit","Inflation","Exchange rate alone","GDP growth alone","Inflation"],
+    ["Choose the correctly punctuated sentence:","Its a nice day","Its' a nice day","It is a nice day,","It's a nice day.","It's a nice day."],
+    ["A can do a piece of work in 10 days, B in 15 days. Together they finish it in:","5 days","6 days","8 days","12 days","6 days"],
+    ["Which Indian state has the longest coastline?","Kerala","Tamil Nadu","Gujarat","Andhra Pradesh","Gujarat"],
+    ["The 42nd Amendment to the Indian Constitution added which term to the Preamble?","Sovereign","Socialist","Republic","Democratic","Socialist"],
+    ["Which of these is a landlocked country?","Sri Lanka","Nepal","Bangladesh","Myanmar","Nepal"],
+    ["The chemical formula for common salt is:","NaCl","KCl","CaCl2","NaOH","NaCl"],
+    ["Simple interest on ₹5,000 at 8% per annum for 2 years is:","₹400","₹800","₹4,300","₹500","₹800"],
+    ["Which day is celebrated as World Environment Day?","June 5","April 22","March 21","October 2","June 5"],
+    ["The synonym of 'Diligent' is:","Lazy","Hardworking","Careless","Slow","Hardworking"],
+    ["Which committee's recommendations are associated with GST design in India?","Chelliah Committee","Kelkar Committee","Narasimham Committee","Rangarajan Committee","Kelkar Committee"],
+    ["Which of these is a fundamental right guaranteed to Indian citizens?","Right to Education","Right to Property","Right to Free Electricity","Right to Employment","Right to Education"]
   ],
   technical: [
     ["Which of these is the best conductor of electricity?","Rubber","Copper","Wood","Plastic","Copper"],
@@ -123,7 +163,27 @@ const quizPools = {
     ["A distinctive feature of a two-stroke engine compared to a four-stroke engine is:","Camshaft","Valve Train","Port Timing","Turbocharger","Port Timing"],
     ["1 kWh of energy equals:","1000 Joules","3.6 million Joules","1 Joule","36 Joules","3.6 million Joules"],
     ["Which welding process uses a consumable electrode with shielding gas?","MIG","TIG","Gas Welding","Brazing","MIG"],
-    ["Find the odd one out:","Voltmeter","Ammeter","Wattmeter","Barometer","Barometer"]
+    ["Find the odd one out:","Voltmeter","Ammeter","Wattmeter","Barometer","Barometer"],
+    ["A digital multimeter can measure:","Only voltage","Only current","Voltage, current and resistance","Only temperature","Voltage, current and resistance"],
+    ["The working principle of a generator is based on:","Electromagnetic Induction","Thermionic Emission","Photoelectric Effect","Nuclear Fission","Electromagnetic Induction"],
+    ["Which of these is a cutting tool in a lathe machine?","Chuck","Tailstock","Tool bit","Headstock","Tool bit"],
+    ["The unit of thermal conductivity is measured in:","W/m\u00b7K","J/s","N\u00b7m","Pa\u00b7s","W/m\u00b7K"],
+    ["In a 4-stroke engine, how many strokes make one complete cycle?","2","4","6","8","4"],
+    ["Which gas is commonly used as a shielding gas in arc welding?","Oxygen","Argon","Hydrogen","Chlorine","Argon"],
+    ["A fuse in an electrical circuit works on the principle of:","Magnetic effect","Heating effect of current","Chemical effect","Static electricity","Heating effect of current"],
+    ["The standard voltage of a single-phase household supply in India is:","110V","220V","440V","12V","220V"],
+    ["Which instrument is used to check the levelness of a surface?","Vernier caliper","Spirit level","Micrometer","Screw gauge","Spirit level"],
+    ["A micrometer screw gauge typically measures to an accuracy of:","1 mm","0.1 mm","0.01 mm","1 cm","0.01 mm"],
+    ["Which type of current does a household supply typically provide?","DC","AC","Both equally","Neither","AC"],
+    ["The primary function of a transformer's core is to:","Store charge","Provide a low-reluctance path for magnetic flux","Generate voltage","Convert AC to DC","Provide a low-reluctance path for magnetic flux"],
+    ["Which of the following is used to join two pipes permanently?","Welding","Bolting","Riveting temporarily","Clamping","Welding"],
+    ["The main function of a carburetor in a petrol engine is to:","Cool the engine","Mix air and fuel","Lubricate parts","Generate spark","Mix air and fuel"],
+    ["Ohm's Law states that voltage equals:","Current \u00d7 Resistance","Current \u00f7 Resistance","Current + Resistance","Current \u2212 Resistance","Current \u00d7 Resistance"],
+    ["Which trade primarily deals with pipefitting and plumbing systems?","Fitter","Plumber","Turner","Machinist","Plumber"],
+    ["A relay in an electrical circuit is mainly used as a:","Resistor","Switch operated by an electromagnet","Capacitor","Fuse","Switch operated by an electromagnet"],
+    ["The process of hardening the surface of steel while keeping the core soft is called:","Annealing","Case hardening","Tempering","Normalizing","Case hardening"],
+    ["A center punch is used in a workshop to:","Cut metal","Mark a point for drilling","Measure length","Weld joints","Mark a point for drilling"],
+    ["Which of these is a common ITI trade in the electrical stream?","Wireman","Turner","Fitter","Machinist","Wireman"]
   ],
   grad: [
     ["The 'Prelims' stage of most graduate-level competitive exams mainly tests:","Descriptive writing","Objective/MCQ ability","Physical fitness","Interview skills","Objective/MCQ ability"],
@@ -140,7 +200,27 @@ const quizPools = {
     ["A profit of 20% on cost price means the selling price is what multiple of the cost price?","1.1","1.2","1.25","1.5","1.2"],
     ["Which writ is issued to produce a detained person before a court?","Mandamus","Habeas Corpus","Certiorari","Quo Warranto","Habeas Corpus"],
     ["A country's national income measured at current prices is called:","Real GDP","Nominal GDP","Per Capita Income","Green GDP","Nominal GDP"],
-    ["Which of these is listed as a Fundamental Duty under the Indian Constitution?","Right to vote","Protect the environment","Right to property","Right to privacy","Protect the environment"]
+    ["Which of these is listed as a Fundamental Duty under the Indian Constitution?","Right to vote","Protect the environment","Right to property","Right to privacy","Protect the environment"],
+    ["Which Article of the Indian Constitution deals with the abolition of untouchability?","Article 15","Article 17","Article 21","Article 25","Article 17"],
+    ["The term 'Fiscal Deficit' refers to:","Total revenue minus total expenditure","Total expenditure minus total receipts excluding borrowings","Total imports minus exports","Total tax minus subsidies","Total expenditure minus total receipts excluding borrowings"],
+    ["If the marked price of an item is ₹1,200 and a discount of 15% is given, the selling price is:","₹1,020","₹1,050","₹1,080","₹1,000","₹1,020"],
+    ["Which international organisation publishes the Human Development Index?","WTO","UNDP","IMF","World Bank","UNDP"],
+    ["The Governor of a state in India is appointed by the:","Prime Minister","President","Chief Minister","Chief Justice","President"],
+    ["Which of these is classified as a direct tax in India?","GST","Income Tax","Excise Duty","Customs Duty","Income Tax"],
+    ["A sum of money doubles itself in 8 years at simple interest. In how many years will it become four times?","16 years","20 years","24 years","32 years","24 years"],
+    ["The 'Repo Rate' is the rate at which:","RBI lends to commercial banks","Commercial banks lend to RBI","RBI lends to the government only","Banks lend to each other","RBI lends to commercial banks"],
+    ["Which amendment of the Indian Constitution is known as the 'Mini Constitution'?","42nd Amendment","44th Amendment","52nd Amendment","73rd Amendment","42nd Amendment"],
+    ["GDP at factor cost differs from GDP at market price by the exclusion of:","Depreciation","Net indirect taxes","Net exports","Government spending","Net indirect taxes"],
+    ["Which authority appoints the Chief Election Commissioner of India?","Parliament","President","Supreme Court","Prime Minister alone","President"],
+    ["If a shopkeeper marks up goods by 40% and gives a discount of 20%, his net profit percentage is:","12%","16%","20%","8%","12%"],
+    ["Which of these organisations regulates the securities market in India?","RBI","SEBI","IRDAI","PFRDA","SEBI"],
+    ["A alone can complete a task in 20 days; B is 25% more efficient than A. B alone will take:","15 days","16 days","18 days","20 days","16 days"],
+    ["The 'Multidimensional Poverty Index' considers deprivation across:","Only income","Health, education and standard of living","Only education","Only health","Health, education and standard of living"],
+    ["NITI Aayog replaced which earlier body in India's planning framework?","The Finance Commission","The Planning Commission","The Election Commission","The Law Commission","The Planning Commission"],
+    ["The term 'Stagflation' refers to a situation of:","High growth and low inflation","Stagnant growth with high inflation","High growth and high employment","Low inflation and high employment","Stagnant growth with high inflation"],
+    ["Which of these is an example of a 'Merit Good'?","Cigarettes","Education","Alcohol","Luxury cars","Education"],
+    ["Which schedule of the Indian Constitution deals with anti-defection provisions?","Eighth Schedule","Ninth Schedule","Tenth Schedule","First Schedule","Tenth Schedule"],
+    ["Which of these best describes 'Disguised Unemployment'?","No job available at all","More workers than needed for a task, with no addition to output","High seasonal unemployment","Voluntary unemployment","More workers than needed for a task, with no addition to output"]
   ],
   engineering: [
     ["A GATE score can be used for admission to M.Tech and recruitment to:","Only private companies","PSUs","Only state jobs","None of these","PSUs"],
@@ -157,7 +237,27 @@ const quizPools = {
     ["Which protocol is used to securely transfer web pages?","HTTP","FTP","HTTPS","SMTP","HTTPS"],
     ["In GATE-based PSU recruitment, a candidate's shortlist rank is primarily based on:","Interview only","GATE score","College reputation","Work experience","GATE score"],
     ["Which of these is a compiled language?","Python","JavaScript","C++","PHP","C++"],
-    ["RAM stands for:","Random Access Memory","Read Access Memory","Run Access Memory","Rapid Access Memory","Random Access Memory"]
+    ["RAM stands for:","Random Access Memory","Read Access Memory","Run Access Memory","Rapid Access Memory","Random Access Memory"],
+    ["Which data structure uses LIFO (Last In First Out) order?","Queue","Stack","Linked List","Tree","Stack"],
+    ["The time complexity of Bubble Sort in the worst case is:","O(n)","O(n log n)","O(n^2)","O(log n)","O(n^2)"],
+    ["Which of these is a primary memory type?","Hard Disk","RAM","SSD","CD-ROM","RAM"],
+    ["In networking, DNS is primarily used to:","Encrypt data","Translate domain names to IP addresses","Compress files","Manage email","Translate domain names to IP addresses"],
+    ["The unit of inductance is the:","Henry","Farad","Ohm","Weber","Henry"],
+    ["Which normal form in database design removes transitive dependency?","1NF","2NF","3NF","BCNF","3NF"],
+    ["A full adder circuit in digital electronics has how many inputs?","2","3","4","1","3"],
+    ["Which of these is an example of a non-relational (NoSQL) database model?","Document store","Relational tables","SQL views","Foreign keys","Document store"],
+    ["The Big-O complexity of accessing an element in an array by index is:","O(n)","O(log n)","O(1)","O(n^2)","O(1)"],
+    ["Which of these is a layer of the OSI model?","Application","Compiler","Assembler","Kernel","Application"],
+    ["In control systems, a system is called stable if its output:","Grows unbounded","Remains bounded for a bounded input","Oscillates infinitely","Becomes zero always","Remains bounded for a bounded input"],
+    ["Which of these is used for version control in software development?","Git","Docker","Jenkins","Kubernetes","Git"],
+    ["The efficiency of a Carnot engine depends only on:","The working substance","The temperatures of source and sink","The pressure","The volume","The temperatures of source and sink"],
+    ["Which of these gates outputs 1 only when both inputs are 1?","OR","AND","NOR","XOR","AND"],
+    ["Which of these best describes 'recursion' in programming?","A loop that never ends","A function calling itself","A variable declaration","A type of array","A function calling itself"],
+    ["Which of these is a wireless communication standard?","Ethernet","Bluetooth","USB","SATA","Bluetooth"],
+    ["The process of converting source code into machine code is done by a:","Linker","Compiler","Debugger","Loader","Compiler"],
+    ["Which of these represents good practice in normalized relational database design?","Storing duplicate data everywhere","Reducing data redundancy","Ignoring primary keys","Avoiding foreign keys","Reducing data redundancy"],
+    ["In thermodynamics, the first law is essentially a statement of:","Conservation of momentum","Conservation of energy","Conservation of mass","Entropy increase","Conservation of energy"],
+    ["Which of these is an example of an object-oriented programming language?","C","Java","Assembly","Fortran","Java"]
   ]
 };
 function tierPool(tier){
@@ -180,6 +280,53 @@ const examPatterns = {
   technical: { questionCount: 15, durationMinutes: 18, label: "Technical Paper-1 Style Test" },
   elite:     { questionCount: 15, durationMinutes: 20, label: "Prelims/GATE Style Screening Test" }
 };
+
+/* ---------- Get the exam pattern for a job: prefer its own real
+   pattern (examQ/examMin/examLabel, matching the actual real exam's
+   question count and duration); fall back to a generic roadmap-type
+   pattern only if a job is somehow missing those fields. ---------- */
+function getExamPattern(job){
+  if (job.examQ && job.examMin){
+    return { questionCount: job.examQ, durationMinutes: job.examMin, label: job.examLabel || 'Exam Pattern' };
+  }
+  return examPatterns[job.roadmapType];
+}
+
+/* ---------- Seeded random (deterministic per job + set number, so
+   "Mock Test 2" always draws the same fixed set of questions in the
+   same order — a real, repeatable mock test rather than pure
+   randomness every time). ---------- */
+function xmur3(str){
+  let h = 1779033703 ^ str.length;
+  for (let i = 0; i < str.length; i++){
+    h = Math.imul(h ^ str.charCodeAt(i), 3432918353);
+    h = (h << 13) | (h >>> 19);
+  }
+  return function(){
+    h = Math.imul(h ^ (h >>> 16), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    h ^= h >>> 16;
+    return h >>> 0;
+  };
+}
+function mulberry32(a){
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function seededShuffle(arr, seedStr){
+  const seedFn = xmur3(seedStr);
+  const rand = mulberry32(seedFn());
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(rand() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 /* ---------- Official recruiting-body lookup (verified direct links) ---------- */
 const orgLookup = [
@@ -253,97 +400,97 @@ function getOrg(name){
 /* ---------- Government job dataset (built from the flow-chart image) ---------- */
 const jobs = [
   // ================= AFTER 10TH =================
-  {tier:"10th",code:"10-01",name:"SSC MTS / Havaldar",overview:"Multi Tasking Staff (non-technical office support) and Havaldar (CBIC/CBN) roles across central government offices — one of the most accessible entry points right after Class 10.",age:"18–25 years (relaxation for reserved categories)",edu:"Passed Class 10 (Matriculation) from a recognised board",salary:"Pay Level 1, roughly ₹18,000–₹56,900 + allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-02",name:"SSC GD Constable",overview:"General Duty constable posts across BSF, CISF, CRPF, SSB, ITBP, Assam Rifles and the Secretariat Security Force, recruited through one common SSC exam.",age:"18–23 years (relaxation for reserved categories)",edu:"Passed Class 10 (Matriculation) from a recognised board",salary:"Pay Level 3, roughly ₹21,700–₹69,100 + allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-03",name:"Railway Group D",overview:"Track maintainer, helper and similar posts across Indian Railways — large-scale recruitment that regularly opens lakhs of vacancies nationwide.",age:"18–33 years (relaxation for reserved categories)",edu:"Passed Class 10 or ITI from a recognised institute",salary:"Pay Level 1, roughly ₹18,000 + railway allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-04",name:"India Post GDS",overview:"Gramin Dak Sevak roles (Branch Postmaster, Assistant Branch Postmaster, Dak Sevak) that run rural post offices — selection is merit-based with no written exam.",age:"18–40 years (relaxation for reserved categories)",edu:"Passed Class 10 with local language as a subject",salary:"Time Related Continuity Allowance, roughly ₹10,000–₹14,500 + allowances",roadmapType:"clerical"},
-  {tier:"10th",code:"10-05",name:"Police Constable (State)",overview:"Entry-level constable posts in state police forces — one of the largest uniformed recruitment streams, run separately by each state.",age:"18–25 years (varies by state; relaxation for reserved categories)",edu:"Passed Class 10 or 12 depending on the state's notification",salary:"State pay scale, roughly ₹21,000–₹69,000 + allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-06",name:"Forest Guard",overview:"Field-level protection and patrolling duties in forest divisions — combines fieldwork with basic record-keeping.",age:"18–25/30 years depending on the state",edu:"Passed Class 10 or 12 depending on the state's notification",salary:"State pay scale, roughly ₹19,000–₹63,000 + allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-07",name:"BSF / CISF / CRPF Constable (Tradesman)",overview:"Tradesman posts (cook, washerman, barber, tailor and similar trades) supporting central paramilitary units.",age:"18–23 years (relaxation for reserved categories)",edu:"Passed Class 10; a relevant trade certificate helps for some trades",salary:"Pay Level 1, roughly ₹18,000–₹56,900 + allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-08",name:"SSB (Constable)",overview:"General Duty constable posts in the Sashastra Seema Bal, guarding India's Nepal and Bhutan borders.",age:"18–23 years (relaxation for reserved categories)",edu:"Passed Class 10 (Matriculation) from a recognised board",salary:"Pay Level 3, roughly ₹21,700–₹69,100 + allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-09",name:"Indian Army Agniveer (GD)",overview:"General Duty soldier under the Agnipath scheme — a four-year tenure with a defined path to permanent enrolment for top performers.",age:"17.5–21 years",edu:"Passed Class 10 with minimum aggregate marks as specified",salary:"Starts around ₹30,000/month package including allowances and Seva Nidhi corpus",roadmapType:"physical"},
-  {tier:"10th",code:"10-10",name:"Navy SSR / MR",overview:"Senior Secondary Recruit (technical) and Matric Recruit (non-technical, e.g. cook/steward) sailor entries into the Indian Navy.",age:"17–21 years (varies by entry)",edu:"Passed Class 10 or 12 with the specified subjects, depending on the entry",salary:"Sailor pay scale, roughly ₹21,700–₹69,100 + allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-11",name:"Air Force Agniveer",overview:"Agniveer Vayu entry into the Indian Air Force, covering technical and non-technical trades on a four-year engagement.",age:"17.5–21 years",edu:"Passed Class 10 or 12 with Maths/Science/English, depending on the trade",salary:"Starts around ₹30,000/month package including allowances and Seva Nidhi corpus",roadmapType:"physical"},
-  {tier:"10th",code:"10-12",name:"ITBP / SSB Constable",overview:"General Duty and specialist constable posts in the Indo-Tibetan Border Police and Sashastra Seema Bal.",age:"18–23 years (relaxation for reserved categories)",edu:"Passed Class 10 (Matriculation) from a recognised board",salary:"Pay Level 3, roughly ₹21,700–₹69,100 + allowances",roadmapType:"physical"},
-  {tier:"10th",code:"10-13",name:"Apprentice in PSUs (BHEL, NTPC, ONGC, BEL, HAL, etc.)",overview:"Structured apprenticeship training in trades like fitter, electrician and welder inside large public-sector plants — a strong stepping stone toward a permanent technical role.",age:"18–25 years (varies by PSU)",edu:"Passed ITI in the relevant trade (Class 10 as base qualification)",salary:"Fixed monthly stipend, roughly ₹7,000–₹12,000 during training",roadmapType:"trade"},
-  {tier:"10th",code:"10-14",name:"State Govt. Peon / Group D Jobs",overview:"Peon, attendant and other Group D support posts in state government offices — steady entry-level government employment.",age:"18–30 years (varies by state; relaxation for reserved categories)",edu:"Passed Class 10 (some states accept Class 8) from a recognised board",salary:"State pay scale, roughly ₹15,000–₹40,000 + allowances",roadmapType:"clerical"},
-  {tier:"10th",code:"10-15",name:"Others (State / Central Group D Posts)",overview:"A wide catch-all of additional Class-10-level Group D posts advertised directly by state and central departments outside the major exams above.",age:"Varies by post and department",edu:"Passed Class 10 from a recognised board (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"clerical"},
+  {tier:"10th",code:"10-01",name:"SSC MTS / Havaldar",overview:"Multi Tasking Staff (non-technical office support) and Havaldar (CBIC/CBN) roles across central government offices — one of the most accessible entry points right after Class 10.",age:"18–25 years (relaxation for reserved categories)",edu:"Passed Class 10 (Matriculation) from a recognised board",salary:"Pay Level 1, roughly ₹18,000–₹56,900 + allowances",roadmapType:"physical",examQ:90,examMin:90,examLabel:"SSC MTS Paper-1 Pattern"},
+  {tier:"10th",code:"10-02",name:"SSC GD Constable",overview:"General Duty constable posts across BSF, CISF, CRPF, SSB, ITBP, Assam Rifles and the Secretariat Security Force, recruited through one common SSC exam.",age:"18–23 years (relaxation for reserved categories)",edu:"Passed Class 10 (Matriculation) from a recognised board",salary:"Pay Level 3, roughly ₹21,700–₹69,100 + allowances",roadmapType:"physical",examQ:80,examMin:60,examLabel:"SSC GD Constable Pattern"},
+  {tier:"10th",code:"10-03",name:"Railway Group D",overview:"Track maintainer, helper and similar posts across Indian Railways — large-scale recruitment that regularly opens lakhs of vacancies nationwide.",age:"18–33 years (relaxation for reserved categories)",edu:"Passed Class 10 or ITI from a recognised institute",salary:"Pay Level 1, roughly ₹18,000 + railway allowances",roadmapType:"physical",examQ:100,examMin:90,examLabel:"RRB Group D CBT Pattern"},
+  {tier:"10th",code:"10-04",name:"India Post GDS",overview:"Gramin Dak Sevak roles (Branch Postmaster, Assistant Branch Postmaster, Dak Sevak) that run rural post offices — selection is merit-based with no written exam.",age:"18–40 years (relaxation for reserved categories)",edu:"Passed Class 10 with local language as a subject",salary:"Time Related Continuity Allowance, roughly ₹10,000–₹14,500 + allowances",roadmapType:"clerical",examQ:50,examMin:30,examLabel:"GDS has no written exam — optional GK/aptitude practice"},
+  {tier:"10th",code:"10-05",name:"Police Constable (State)",overview:"Entry-level constable posts in state police forces — one of the largest uniformed recruitment streams, run separately by each state.",age:"18–25 years (varies by state; relaxation for reserved categories)",edu:"Passed Class 10 or 12 depending on the state's notification",salary:"State pay scale, roughly ₹21,000–₹69,000 + allowances",roadmapType:"physical",examQ:100,examMin:90,examLabel:"State Police Constable Pattern (typical)"},
+  {tier:"10th",code:"10-06",name:"Forest Guard",overview:"Field-level protection and patrolling duties in forest divisions — combines fieldwork with basic record-keeping.",age:"18–25/30 years depending on the state",edu:"Passed Class 10 or 12 depending on the state's notification",salary:"State pay scale, roughly ₹19,000–₹63,000 + allowances",roadmapType:"physical",examQ:100,examMin:120,examLabel:"State Forest Guard Pattern (typical)"},
+  {tier:"10th",code:"10-07",name:"BSF / CISF / CRPF Constable (Tradesman)",overview:"Tradesman posts (cook, washerman, barber, tailor and similar trades) supporting central paramilitary units.",age:"18–23 years (relaxation for reserved categories)",edu:"Passed Class 10; a relevant trade certificate helps for some trades",salary:"Pay Level 1, roughly ₹18,000–₹56,900 + allowances",roadmapType:"physical",examQ:80,examMin:60,examLabel:"CAPF Tradesman Pattern (typical)"},
+  {tier:"10th",code:"10-08",name:"SSB (Constable)",overview:"General Duty constable posts in the Sashastra Seema Bal, guarding India's Nepal and Bhutan borders.",age:"18–23 years (relaxation for reserved categories)",edu:"Passed Class 10 (Matriculation) from a recognised board",salary:"Pay Level 3, roughly ₹21,700–₹69,100 + allowances",roadmapType:"physical",examQ:80,examMin:60,examLabel:"SSC GD / SSB Constable Pattern"},
+  {tier:"10th",code:"10-09",name:"Indian Army Agniveer (GD)",overview:"General Duty soldier under the Agnipath scheme — a four-year tenure with a defined path to permanent enrolment for top performers.",age:"17.5–21 years",edu:"Passed Class 10 with minimum aggregate marks as specified",salary:"Starts around ₹30,000/month package including allowances and Seva Nidhi corpus",roadmapType:"physical",examQ:50,examMin:60,examLabel:"Agnipath Common Entrance Exam (CEE) Pattern"},
+  {tier:"10th",code:"10-10",name:"Navy SSR / MR",overview:"Senior Secondary Recruit (technical) and Matric Recruit (non-technical, e.g. cook/steward) sailor entries into the Indian Navy.",age:"17–21 years (varies by entry)",edu:"Passed Class 10 or 12 with the specified subjects, depending on the entry",salary:"Sailor pay scale, roughly ₹21,700–₹69,100 + allowances",roadmapType:"physical",examQ:50,examMin:60,examLabel:"Agnipath Navy Entrance Exam Pattern"},
+  {tier:"10th",code:"10-11",name:"Air Force Agniveer",overview:"Agniveer Vayu entry into the Indian Air Force, covering technical and non-technical trades on a four-year engagement.",age:"17.5–21 years",edu:"Passed Class 10 or 12 with Maths/Science/English, depending on the trade",salary:"Starts around ₹30,000/month package including allowances and Seva Nidhi corpus",roadmapType:"physical",examQ:100,examMin:60,examLabel:"Agniveer Vayu Online Test Pattern (typical)"},
+  {tier:"10th",code:"10-12",name:"ITBP / SSB Constable",overview:"General Duty and specialist constable posts in the Indo-Tibetan Border Police and Sashastra Seema Bal.",age:"18–23 years (relaxation for reserved categories)",edu:"Passed Class 10 (Matriculation) from a recognised board",salary:"Pay Level 3, roughly ₹21,700–₹69,100 + allowances",roadmapType:"physical",examQ:80,examMin:60,examLabel:"SSC GD-style Constable Pattern"},
+  {tier:"10th",code:"10-13",name:"Apprentice in PSUs (BHEL, NTPC, ONGC, BEL, HAL, etc.)",overview:"Structured apprenticeship training in trades like fitter, electrician and welder inside large public-sector plants — a strong stepping stone toward a permanent technical role.",age:"18–25 years (varies by PSU)",edu:"Passed ITI in the relevant trade (Class 10 as base qualification)",salary:"Fixed monthly stipend, roughly ₹7,000–₹12,000 during training",roadmapType:"trade",examQ:100,examMin:90,examLabel:"PSU Apprentice Written Test Pattern (typical)"},
+  {tier:"10th",code:"10-14",name:"State Govt. Peon / Group D Jobs",overview:"Peon, attendant and other Group D support posts in state government offices — steady entry-level government employment.",age:"18–30 years (varies by state; relaxation for reserved categories)",edu:"Passed Class 10 (some states accept Class 8) from a recognised board",salary:"State pay scale, roughly ₹15,000–₹40,000 + allowances",roadmapType:"clerical",examQ:50,examMin:60,examLabel:"State Group D Pattern (typical)"},
+  {tier:"10th",code:"10-15",name:"Others (State / Central Group D Posts)",overview:"A wide catch-all of additional Class-10-level Group D posts advertised directly by state and central departments outside the major exams above.",age:"Varies by post and department",edu:"Passed Class 10 from a recognised board (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"clerical",examQ:80,examMin:60,examLabel:"Typical Group D Pattern"},
 
   // ================= AFTER 12TH =================
-  {tier:"12th",code:"12-01",name:"SSC CHSL (LDC, DEO, PA, SA)",overview:"Combined Higher Secondary Level exam for Lower Divisional Clerk, Data Entry Operator, Postal Assistant and Sorting Assistant posts in central ministries and departments.",age:"18–27 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"Pay Level 2–4, roughly ₹19,900–₹63,200 + allowances",roadmapType:"exam"},
-  {tier:"12th",code:"12-02",name:"SSC CGL (Group B & C)",overview:"Combined Graduate Level exam for posts like Inspector, Auditor and Assistant across dozens of central departments — despite sitting on the \"12th\" route here, this exam actually requires a bachelor's degree to apply.",age:"18–32 years (varies by post; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (this is a degree-level exam, not a 12th-pass one)",salary:"Pay Level 4–7, roughly ₹25,500–₹1,51,100 depending on the post",roadmapType:"exam"},
-  {tier:"12th",code:"12-03",name:"SSC Stenographer",overview:"Stenographer Grade C & D posts in central ministries and departments, testing shorthand speed alongside general aptitude.",age:"18–30 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"Pay Level 4–6, roughly ₹25,500–₹1,12,400 + allowances",roadmapType:"clerical"},
-  {tier:"12th",code:"12-04",name:"Railway NTPC (Undergraduate)",overview:"Non-Technical Popular Categories posts such as Commercial-cum-Ticket Clerk and Accounts Clerk, open to Class 12 pass candidates.",age:"18–33 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"Pay Level 2–3, roughly ₹19,900–₹63,200 + railway allowances",roadmapType:"exam"},
-  {tier:"12th",code:"12-05",name:"Railway Group C (Various Posts)",overview:"Undergraduate-eligible technical and supervisory posts across Indian Railways zones, filled through RRB's various Group C notifications.",age:"18–33 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board (some posts also need an ITI/diploma)",salary:"Pay Level 2–5, roughly ₹19,900–₹1,12,400 + railway allowances",roadmapType:"exam"},
-  {tier:"12th",code:"12-06",name:"India Post Postal Assistant / Sorting Assistant",overview:"Postal Assistant and Sorting Assistant posts handling counter services, mail sorting and record-keeping at post offices.",age:"18–27 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"Pay Level 4, roughly ₹25,500–₹81,100 + allowances",roadmapType:"clerical"},
-  {tier:"12th",code:"12-07",name:"Bank PO (IBPS / SBI / RBI / Others)",overview:"Probationary Officer posts in public sector and central banks — a fast track into banking management. Note: this role actually requires a bachelor's degree, not just Class 12.",age:"20–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (degree-level post, despite appearing on the 12th route)",salary:"Roughly ₹48,000–₹55,000 gross per month for POs, plus allowances",roadmapType:"exam"},
-  {tier:"12th",code:"12-08",name:"Bank Clerk (IBPS / SBI / RRB / Others)",overview:"Clerical cadre posts handling day-to-day banking transactions and customer service at branch level.",age:"20–28 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (most banks require a degree for clerk posts too)",salary:"Roughly ₹29,000–₹32,000 gross per month, plus allowances",roadmapType:"exam"},
-  {tier:"12th",code:"12-09",name:"State Police Constable",overview:"State-level police constable recruitment for candidates who've completed Class 12, run independently by each state police board.",age:"18–25 years (varies by state; relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"State pay scale, roughly ₹21,000–₹69,000 + allowances",roadmapType:"physical"},
-  {tier:"12th",code:"12-10",name:"CAPF (Assistant Commandant)",overview:"Group A gazetted officer entry into BSF, CRPF, CISF, ITBP and SSB through the UPSC CAPF exam — a degree-level post despite its placement here.",age:"20–25 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite"},
-  {tier:"12th",code:"12-11",name:"UPSC CDS / AFCAT",overview:"Combined Defence Services and Air Force Common Admission Test — officer-entry routes into the Army, Navy and Air Force for graduates.",age:"19–24 years (varies by academy/entry)",edu:"Bachelor's degree (engineering degree required for some technical entries)",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"elite"},
-  {tier:"12th",code:"12-12",name:"Income Tax Inspector",overview:"Inspector-level posts in the Income Tax Department, recruited through the SSC CGL exam — a degree-level post.",age:"18–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 7, roughly ₹44,900–₹1,42,400 + allowances",roadmapType:"exam"},
-  {tier:"12th",code:"12-13",name:"EPFO EO / AO",overview:"Enforcement Officer-cum-Accounts Officer posts managing India's retirement savings scheme for organised-sector workers — a degree-level post.",age:"18–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (law/accounts background helps)",salary:"Pay Level 7, roughly ₹44,900–₹1,42,400 + allowances",roadmapType:"exam"},
-  {tier:"12th",code:"12-14",name:"State Govt. LDC / Junior Assistant",overview:"Lower Divisional Clerk and Junior Assistant posts in state secretariats and departments, handling routine office and file work.",age:"18–30 years (varies by state; relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"State pay scale, roughly ₹19,000–₹60,000 + allowances",roadmapType:"clerical"},
-  {tier:"12th",code:"12-15",name:"Others (Group B & C Posts)",overview:"A wide catch-all of additional Class-12-level Group B and C posts advertised by central and state departments outside the major exams above.",age:"Varies by post and department",edu:"Passed Class 12 from a recognised board (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"exam"},
+  {tier:"12th",code:"12-01",name:"SSC CHSL (LDC, DEO, PA, SA)",overview:"Combined Higher Secondary Level exam for Lower Divisional Clerk, Data Entry Operator, Postal Assistant and Sorting Assistant posts in central ministries and departments.",age:"18–27 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"Pay Level 2–4, roughly ₹19,900–₹63,200 + allowances",roadmapType:"exam",examQ:100,examMin:60,examLabel:"SSC CHSL Tier-1 Pattern"},
+  {tier:"12th",code:"12-02",name:"SSC CGL (Group B & C)",overview:"Combined Graduate Level exam for posts like Inspector, Auditor and Assistant across dozens of central departments — despite sitting on the \"12th\" route here, this exam actually requires a bachelor's degree to apply.",age:"18–32 years (varies by post; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (this is a degree-level exam, not a 12th-pass one)",salary:"Pay Level 4–7, roughly ₹25,500–₹1,51,100 depending on the post",roadmapType:"exam",examQ:100,examMin:60,examLabel:"SSC CGL Tier-1 Pattern"},
+  {tier:"12th",code:"12-03",name:"SSC Stenographer",overview:"Stenographer Grade C & D posts in central ministries and departments, testing shorthand speed alongside general aptitude.",age:"18–30 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"Pay Level 4–6, roughly ₹25,500–₹1,12,400 + allowances",roadmapType:"clerical",examQ:200,examMin:120,examLabel:"SSC Stenographer Pattern"},
+  {tier:"12th",code:"12-04",name:"Railway NTPC (Undergraduate)",overview:"Non-Technical Popular Categories posts such as Commercial-cum-Ticket Clerk and Accounts Clerk, open to Class 12 pass candidates.",age:"18–33 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"Pay Level 2–3, roughly ₹19,900–₹63,200 + railway allowances",roadmapType:"exam",examQ:100,examMin:90,examLabel:"RRB NTPC CBT-1 Pattern"},
+  {tier:"12th",code:"12-05",name:"Railway Group C (Various Posts)",overview:"Undergraduate-eligible technical and supervisory posts across Indian Railways zones, filled through RRB's various Group C notifications.",age:"18–33 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board (some posts also need an ITI/diploma)",salary:"Pay Level 2–5, roughly ₹19,900–₹1,12,400 + railway allowances",roadmapType:"exam",examQ:100,examMin:90,examLabel:"RRB Group C Pattern (typical)"},
+  {tier:"12th",code:"12-06",name:"India Post Postal Assistant / Sorting Assistant",overview:"Postal Assistant and Sorting Assistant posts handling counter services, mail sorting and record-keeping at post offices.",age:"18–27 years (relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"Pay Level 4, roughly ₹25,500–₹81,100 + allowances",roadmapType:"clerical",examQ:100,examMin:60,examLabel:"India Post PA/SA Exam Pattern (typical)"},
+  {tier:"12th",code:"12-07",name:"Bank PO (IBPS / SBI / RBI / Others)",overview:"Probationary Officer posts in public sector and central banks — a fast track into banking management. Note: this role actually requires a bachelor's degree, not just Class 12.",age:"20–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (degree-level post, despite appearing on the 12th route)",salary:"Roughly ₹48,000–₹55,000 gross per month for POs, plus allowances",roadmapType:"exam",examQ:100,examMin:60,examLabel:"Bank PO Prelims Pattern"},
+  {tier:"12th",code:"12-08",name:"Bank Clerk (IBPS / SBI / RRB / Others)",overview:"Clerical cadre posts handling day-to-day banking transactions and customer service at branch level.",age:"20–28 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (most banks require a degree for clerk posts too)",salary:"Roughly ₹29,000–₹32,000 gross per month, plus allowances",roadmapType:"exam",examQ:100,examMin:60,examLabel:"Bank Clerk Prelims Pattern"},
+  {tier:"12th",code:"12-09",name:"State Police Constable",overview:"State-level police constable recruitment for candidates who've completed Class 12, run independently by each state police board.",age:"18–25 years (varies by state; relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"State pay scale, roughly ₹21,000–₹69,000 + allowances",roadmapType:"physical",examQ:100,examMin:90,examLabel:"State Police Constable Pattern (typical)"},
+  {tier:"12th",code:"12-10",name:"CAPF (Assistant Commandant)",overview:"Group A gazetted officer entry into BSF, CRPF, CISF, ITBP and SSB through the UPSC CAPF exam — a degree-level post despite its placement here.",age:"20–25 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite",examQ:125,examMin:120,examLabel:"UPSC CAPF Paper-2 Pattern"},
+  {tier:"12th",code:"12-11",name:"UPSC CDS / AFCAT",overview:"Combined Defence Services and Air Force Common Admission Test — officer-entry routes into the Army, Navy and Air Force for graduates.",age:"19–24 years (varies by academy/entry)",edu:"Bachelor's degree (engineering degree required for some technical entries)",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"elite",examQ:120,examMin:120,examLabel:"UPSC CDS General Knowledge Paper Pattern"},
+  {tier:"12th",code:"12-12",name:"Income Tax Inspector",overview:"Inspector-level posts in the Income Tax Department, recruited through the SSC CGL exam — a degree-level post.",age:"18–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 7, roughly ₹44,900–₹1,42,400 + allowances",roadmapType:"exam",examQ:100,examMin:60,examLabel:"SSC CGL Tier-1 Pattern"},
+  {tier:"12th",code:"12-13",name:"EPFO EO / AO",overview:"Enforcement Officer-cum-Accounts Officer posts managing India's retirement savings scheme for organised-sector workers — a degree-level post.",age:"18–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (law/accounts background helps)",salary:"Pay Level 7, roughly ₹44,900–₹1,42,400 + allowances",roadmapType:"exam",examQ:120,examMin:120,examLabel:"UPSC EPFO Paper-1 Pattern (typical)"},
+  {tier:"12th",code:"12-14",name:"State Govt. LDC / Junior Assistant",overview:"Lower Divisional Clerk and Junior Assistant posts in state secretariats and departments, handling routine office and file work.",age:"18–30 years (varies by state; relaxation for reserved categories)",edu:"Passed Class 12 from a recognised board",salary:"State pay scale, roughly ₹19,000–₹60,000 + allowances",roadmapType:"clerical",examQ:100,examMin:90,examLabel:"State LDC Pattern (typical)"},
+  {tier:"12th",code:"12-15",name:"Others (Group B & C Posts)",overview:"A wide catch-all of additional Class-12-level Group B and C posts advertised by central and state departments outside the major exams above.",age:"Varies by post and department",edu:"Passed Class 12 from a recognised board (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"exam",examQ:100,examMin:60,examLabel:"Typical SSC-style Pattern"},
 
   // ================= AFTER ITI =================
-  {tier:"iti",code:"ITI-01",name:"RRB ALP (Assistant Loco Pilot)",overview:"Assistant Loco Pilot posts operating and assisting with train engines — one of the most sought-after ITI-level railway roles.",age:"18–30 years (relaxation for reserved categories)",edu:"ITI certificate in a relevant trade (or equivalent diploma) from a recognised institute",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + railway allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-02",name:"RRB Technician (Grade III)",overview:"Technician Grade III posts maintaining rolling stock and railway infrastructure across various railway workshops and depots.",age:"18–30 years (relaxation for reserved categories)",edu:"ITI certificate in the relevant trade from a recognised institute",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + railway allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-03",name:"Railway Group D (ITI Quota)",overview:"Group D track maintainer and helper posts, with ITI-trade candidates given preference in some recruitment cycles.",age:"18–33 years (relaxation for reserved categories)",edu:"ITI certificate in the relevant trade (or Class 10 pass) from a recognised institute",salary:"Pay Level 1, roughly ₹18,000 + railway allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-04",name:"DRDO Technician 'A'",overview:"Technician-grade posts supporting DRDO's defence research laboratories in trades like electronics, mechanical and instrumentation.",age:"18–28 years (relaxation for reserved categories)",edu:"ITI certificate (NCVT/SCVT) in the relevant trade",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-05",name:"BHEL / HAL / BEL / ONGC Technician",overview:"Technician-grade posts in major public-sector engineering and energy companies, working directly on plant and equipment maintenance.",age:"18–28 years (varies by PSU)",edu:"ITI certificate in the relevant trade from a recognised institute",salary:"PSU technician grade, roughly ₹20,000–₹45,000 + allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-06",name:"BSF / CRPF / CISF (Tradesman)",overview:"Skilled tradesman posts (electrician, mechanic, plumber and similar trades) supporting central armed police force units.",age:"18–25 years (relaxation for reserved categories)",edu:"ITI certificate in the relevant trade from a recognised institute",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-07",name:"Indian Army Agniveer (Tech) (Trades)",overview:"Technical trade entries under the Agnipath scheme for candidates with an ITI background, covering trades like electrician and mechanic.",age:"17.5–21 years",edu:"ITI certificate in the relevant trade, alongside Class 10/12 as specified",salary:"Starts around ₹30,000/month package including allowances and Seva Nidhi corpus",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-08",name:"Indian Navy MR (Artificer Apprentice)",overview:"Artificer Apprentice entry training sailors in marine engineering trades aboard naval ships.",age:"17–20 years",edu:"Class 10/12 with Maths/Science, plus relevant ITI trade knowledge for MR",salary:"Sailor pay scale, roughly ₹21,700–₹69,100 + allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-09",name:"Air Force Agniveer (Tech)",overview:"Technical trade Agniveer entry into the Indian Air Force for candidates with an ITI qualification in relevant trades.",age:"17.5–21 years",edu:"ITI certificate in the relevant trade, alongside Class 10/12 as specified",salary:"Starts around ₹30,000/month package including allowances and Seva Nidhi corpus",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-10",name:"State Electricity Board (Technician)",overview:"Lineman, wireman and technician posts maintaining power distribution infrastructure for state electricity boards.",age:"18–28 years (varies by state; relaxation for reserved categories)",edu:"ITI certificate in Electrician/Wireman trade from a recognised institute",salary:"State pay scale, roughly ₹20,000–₹45,000 + allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-11",name:"DMRC Maintainer",overview:"Maintainer posts keeping Delhi Metro's rolling stock, signalling and electrical systems running smoothly.",age:"18–28 years (relaxation for reserved categories)",edu:"ITI certificate in the relevant trade from a recognised institute",salary:"Roughly ₹20,000–₹40,000 + allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-12",name:"ISRO / DRDO Technician",overview:"Technician-grade posts supporting India's space and defence research organisations in fabrication, electronics and instrumentation work.",age:"18–28 years (relaxation for reserved categories)",edu:"ITI certificate (NCVT/SCVT) in the relevant trade",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-13",name:"Navy Ship/Vehicle Mechanic",overview:"Mechanic trade posts maintaining naval vessels and support vehicles, recruited through Navy civilian and MR entries.",age:"18–25 years (varies by entry)",edu:"ITI certificate in Mechanic (Motor Vehicle/Diesel) trade",salary:"Roughly ₹20,000–₹45,000 + allowances",roadmapType:"trade"},
-  {tier:"iti",code:"ITI-14",name:"Others (PSUs / State Technician Posts)",overview:"A wide catch-all of additional ITI-level technician posts advertised directly by PSUs and state technical departments.",age:"Varies by post and department",edu:"ITI certificate in the relevant trade (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"trade"},
+  {tier:"iti",code:"ITI-01",name:"RRB ALP (Assistant Loco Pilot)",overview:"Assistant Loco Pilot posts operating and assisting with train engines — one of the most sought-after ITI-level railway roles.",age:"18–30 years (relaxation for reserved categories)",edu:"ITI certificate in a relevant trade (or equivalent diploma) from a recognised institute",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + railway allowances",roadmapType:"trade",examQ:75,examMin:60,examLabel:"RRB ALP CBT-1 Pattern"},
+  {tier:"iti",code:"ITI-02",name:"RRB Technician (Grade III)",overview:"Technician Grade III posts maintaining rolling stock and railway infrastructure across various railway workshops and depots.",age:"18–30 years (relaxation for reserved categories)",edu:"ITI certificate in the relevant trade from a recognised institute",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + railway allowances",roadmapType:"trade",examQ:100,examMin:90,examLabel:"RRB Technician CBT Pattern (typical)"},
+  {tier:"iti",code:"ITI-03",name:"Railway Group D (ITI Quota)",overview:"Group D track maintainer and helper posts, with ITI-trade candidates given preference in some recruitment cycles.",age:"18–33 years (relaxation for reserved categories)",edu:"ITI certificate in the relevant trade (or Class 10 pass) from a recognised institute",salary:"Pay Level 1, roughly ₹18,000 + railway allowances",roadmapType:"trade",examQ:100,examMin:90,examLabel:"RRB Group D CBT Pattern"},
+  {tier:"iti",code:"ITI-04",name:"DRDO Technician 'A'",overview:"Technician-grade posts supporting DRDO's defence research laboratories in trades like electronics, mechanical and instrumentation.",age:"18–28 years (relaxation for reserved categories)",edu:"ITI certificate (NCVT/SCVT) in the relevant trade",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + allowances",roadmapType:"trade",examQ:150,examMin:120,examLabel:"DRDO CEPTAM Tier-1 Pattern"},
+  {tier:"iti",code:"ITI-05",name:"BHEL / HAL / BEL / ONGC Technician",overview:"Technician-grade posts in major public-sector engineering and energy companies, working directly on plant and equipment maintenance.",age:"18–28 years (varies by PSU)",edu:"ITI certificate in the relevant trade from a recognised institute",salary:"PSU technician grade, roughly ₹20,000–₹45,000 + allowances",roadmapType:"trade",examQ:100,examMin:90,examLabel:"PSU Technician Written Test Pattern (typical)"},
+  {tier:"iti",code:"ITI-06",name:"BSF / CRPF / CISF (Tradesman)",overview:"Skilled tradesman posts (electrician, mechanic, plumber and similar trades) supporting central armed police force units.",age:"18–25 years (relaxation for reserved categories)",edu:"ITI certificate in the relevant trade from a recognised institute",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + allowances",roadmapType:"trade",examQ:80,examMin:60,examLabel:"CAPF Tradesman Pattern (typical)"},
+  {tier:"iti",code:"ITI-07",name:"Indian Army Agniveer (Tech) (Trades)",overview:"Technical trade entries under the Agnipath scheme for candidates with an ITI background, covering trades like electrician and mechanic.",age:"17.5–21 years",edu:"ITI certificate in the relevant trade, alongside Class 10/12 as specified",salary:"Starts around ₹30,000/month package including allowances and Seva Nidhi corpus",roadmapType:"trade",examQ:50,examMin:60,examLabel:"Agnipath Technical CEE Pattern"},
+  {tier:"iti",code:"ITI-08",name:"Indian Navy MR (Artificer Apprentice)",overview:"Artificer Apprentice entry training sailors in marine engineering trades aboard naval ships.",age:"17–20 years",edu:"Class 10/12 with Maths/Science, plus relevant ITI trade knowledge for MR",salary:"Sailor pay scale, roughly ₹21,700–₹69,100 + allowances",roadmapType:"trade",examQ:50,examMin:60,examLabel:"Agnipath Navy Entrance Exam Pattern"},
+  {tier:"iti",code:"ITI-09",name:"Air Force Agniveer (Tech)",overview:"Technical trade Agniveer entry into the Indian Air Force for candidates with an ITI qualification in relevant trades.",age:"17.5–21 years",edu:"ITI certificate in the relevant trade, alongside Class 10/12 as specified",salary:"Starts around ₹30,000/month package including allowances and Seva Nidhi corpus",roadmapType:"trade",examQ:100,examMin:60,examLabel:"Agniveer Vayu Online Test Pattern (typical)"},
+  {tier:"iti",code:"ITI-10",name:"State Electricity Board (Technician)",overview:"Lineman, wireman and technician posts maintaining power distribution infrastructure for state electricity boards.",age:"18–28 years (varies by state; relaxation for reserved categories)",edu:"ITI certificate in Electrician/Wireman trade from a recognised institute",salary:"State pay scale, roughly ₹20,000–₹45,000 + allowances",roadmapType:"trade",examQ:100,examMin:90,examLabel:"State Technician Pattern (typical)"},
+  {tier:"iti",code:"ITI-11",name:"DMRC Maintainer",overview:"Maintainer posts keeping Delhi Metro's rolling stock, signalling and electrical systems running smoothly.",age:"18–28 years (relaxation for reserved categories)",edu:"ITI certificate in the relevant trade from a recognised institute",salary:"Roughly ₹20,000–₹40,000 + allowances",roadmapType:"trade",examQ:100,examMin:90,examLabel:"DMRC Maintainer Written Test Pattern (typical)"},
+  {tier:"iti",code:"ITI-12",name:"ISRO / DRDO Technician",overview:"Technician-grade posts supporting India's space and defence research organisations in fabrication, electronics and instrumentation work.",age:"18–28 years (relaxation for reserved categories)",edu:"ITI certificate (NCVT/SCVT) in the relevant trade",salary:"Pay Level 2, roughly ₹19,900–₹63,200 + allowances",roadmapType:"trade",examQ:100,examMin:90,examLabel:"ISRO/DRDO Technician Written Test Pattern (typical)"},
+  {tier:"iti",code:"ITI-13",name:"Navy Ship/Vehicle Mechanic",overview:"Mechanic trade posts maintaining naval vessels and support vehicles, recruited through Navy civilian and MR entries.",age:"18–25 years (varies by entry)",edu:"ITI certificate in Mechanic (Motor Vehicle/Diesel) trade",salary:"Roughly ₹20,000–₹45,000 + allowances",roadmapType:"trade",examQ:100,examMin:90,examLabel:"Technical Trade Test Pattern (typical)"},
+  {tier:"iti",code:"ITI-14",name:"Others (PSUs / State Technician Posts)",overview:"A wide catch-all of additional ITI-level technician posts advertised directly by PSUs and state technical departments.",age:"Varies by post and department",edu:"ITI certificate in the relevant trade (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"trade",examQ:100,examMin:90,examLabel:"Typical Technician Test Pattern"},
 
   // ================= AFTER DIPLOMA =================
-  {tier:"diploma",code:"DIP-01",name:"SSC JE (Junior Engineer)",overview:"Junior Engineer posts (Civil, Mechanical, Electrical) across central departments like CPWD, MES and CWC, recruited through SSC's dedicated JE exam.",age:"18–32 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Pay Level 6, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-02",name:"RRB JE (Junior Engineer)",overview:"Junior Engineer posts across Indian Railways zones, covering civil, mechanical, electrical and signal disciplines.",age:"18–33 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Pay Level 6, roughly ₹35,400–₹1,12,400 + railway allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-03",name:"State JE (PWD / PHED / Electricity / Others)",overview:"Junior Engineer posts in state Public Works, water supply (PHED) and electricity departments, overseeing local infrastructure projects.",age:"18–35 years (varies by state; relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"State pay scale, roughly ₹35,000–₹80,000 + allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-04",name:"BSNL / MTNL / IOCL / HPCL Engineer",overview:"Junior/Technical Officer-level engineering posts in major public-sector telecom and oil companies.",age:"18–28 years (varies by PSU)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"PSU pay scale, roughly ₹35,000–₹90,000 + allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-05",name:"DRDO / ISRO Technician / Engineer",overview:"Diploma-level engineering and technician posts supporting India's defence and space research programmes.",age:"18–28 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Pay Level 6, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-06",name:"BHEL / BEL / HAL Engineer",overview:"Diploma trainee/engineer posts in major public-sector engineering and defence-manufacturing companies.",age:"18–28 years (varies by PSU)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"PSU pay scale, roughly ₹35,000–₹90,000 + allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-07",name:"DMRC Junior Engineer",overview:"Junior Engineer posts overseeing Delhi Metro's civil, electrical, signalling and mechanical systems.",age:"18–28 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Roughly ₹35,000–₹90,000 + allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-08",name:"Railway Supervisor (RRB)",overview:"Supervisory posts across railway operations and maintenance, filled through RRB's diploma-level notifications.",age:"18–33 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Pay Level 5–6, roughly ₹29,200–₹1,12,400 + railway allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-09",name:"UPSSSC JE / UPPSC AE",overview:"Junior Engineer and Assistant Engineer posts in Uttar Pradesh's technical departments, recruited through UPSSSC and UPPSC respectively.",age:"18–40 years (varies by post; relaxation for reserved categories)",edu:"Diploma (for JE) or degree (for AE) in the relevant engineering discipline",salary:"State pay scale, roughly ₹35,000–₹1,00,000 + allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-10",name:"State Technical Assistant",overview:"Technical Assistant posts supporting engineers in state infrastructure and utility departments.",age:"18–35 years (varies by state; relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"State pay scale, roughly ₹29,000–₹70,000 + allowances",roadmapType:"technical"},
-  {tier:"diploma",code:"DIP-11",name:"Navy / Army Technical Entry (Short Service Commission)",overview:"Short Service Commission technical entry for diploma holders into the Navy and Army, leading to an officer rank after training.",age:"19–25 years (varies by entry)",edu:"Diploma in the relevant engineering discipline (degree preferred for some entries)",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"elite"},
-  {tier:"diploma",code:"DIP-12",name:"Others (PSUs / State Technical Posts)",overview:"A wide catch-all of additional diploma-level technical posts advertised directly by PSUs and state departments.",age:"Varies by post and department",edu:"Diploma (Polytechnic) in the relevant engineering discipline (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"technical"},
+  {tier:"diploma",code:"DIP-01",name:"SSC JE (Junior Engineer)",overview:"Junior Engineer posts (Civil, Mechanical, Electrical) across central departments like CPWD, MES and CWC, recruited through SSC's dedicated JE exam.",age:"18–32 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Pay Level 6, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"technical",examQ:200,examMin:120,examLabel:"SSC JE Paper-1 Pattern"},
+  {tier:"diploma",code:"DIP-02",name:"RRB JE (Junior Engineer)",overview:"Junior Engineer posts across Indian Railways zones, covering civil, mechanical, electrical and signal disciplines.",age:"18–33 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Pay Level 6, roughly ₹35,400–₹1,12,400 + railway allowances",roadmapType:"technical",examQ:100,examMin:90,examLabel:"RRB JE CBT-1 Pattern"},
+  {tier:"diploma",code:"DIP-03",name:"State JE (PWD / PHED / Electricity / Others)",overview:"Junior Engineer posts in state Public Works, water supply (PHED) and electricity departments, overseeing local infrastructure projects.",age:"18–35 years (varies by state; relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"State pay scale, roughly ₹35,000–₹80,000 + allowances",roadmapType:"technical",examQ:100,examMin:120,examLabel:"State JE Pattern (typical)"},
+  {tier:"diploma",code:"DIP-04",name:"BSNL / MTNL / IOCL / HPCL Engineer",overview:"Junior/Technical Officer-level engineering posts in major public-sector telecom and oil companies.",age:"18–28 years (varies by PSU)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"PSU pay scale, roughly ₹35,000–₹90,000 + allowances",roadmapType:"technical",examQ:150,examMin:150,examLabel:"PSU Junior Engineer Written Test Pattern (typical)"},
+  {tier:"diploma",code:"DIP-05",name:"DRDO / ISRO Technician / Engineer",overview:"Diploma-level engineering and technician posts supporting India's defence and space research programmes.",age:"18–28 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Pay Level 6, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"technical",examQ:150,examMin:120,examLabel:"DRDO CEPTAM / ISRO Technical Pattern (typical)"},
+  {tier:"diploma",code:"DIP-06",name:"BHEL / BEL / HAL Engineer",overview:"Diploma trainee/engineer posts in major public-sector engineering and defence-manufacturing companies.",age:"18–28 years (varies by PSU)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"PSU pay scale, roughly ₹35,000–₹90,000 + allowances",roadmapType:"technical",examQ:150,examMin:150,examLabel:"PSU Engineer Trainee Written Test Pattern (typical)"},
+  {tier:"diploma",code:"DIP-07",name:"DMRC Junior Engineer",overview:"Junior Engineer posts overseeing Delhi Metro's civil, electrical, signalling and mechanical systems.",age:"18–28 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Roughly ₹35,000–₹90,000 + allowances",roadmapType:"technical",examQ:100,examMin:90,examLabel:"DMRC JE Written Test Pattern (typical)"},
+  {tier:"diploma",code:"DIP-08",name:"Railway Supervisor (RRB)",overview:"Supervisory posts across railway operations and maintenance, filled through RRB's diploma-level notifications.",age:"18–33 years (relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"Pay Level 5–6, roughly ₹29,200–₹1,12,400 + railway allowances",roadmapType:"technical",examQ:100,examMin:90,examLabel:"RRB Supervisor CBT Pattern (typical)"},
+  {tier:"diploma",code:"DIP-09",name:"UPSSSC JE / UPPSC AE",overview:"Junior Engineer and Assistant Engineer posts in Uttar Pradesh's technical departments, recruited through UPSSSC and UPPSC respectively.",age:"18–40 years (varies by post; relaxation for reserved categories)",edu:"Diploma (for JE) or degree (for AE) in the relevant engineering discipline",salary:"State pay scale, roughly ₹35,000–₹1,00,000 + allowances",roadmapType:"technical",examQ:100,examMin:120,examLabel:"State JE/AE Pattern (typical)"},
+  {tier:"diploma",code:"DIP-10",name:"State Technical Assistant",overview:"Technical Assistant posts supporting engineers in state infrastructure and utility departments.",age:"18–35 years (varies by state; relaxation for reserved categories)",edu:"Diploma (Polytechnic) in the relevant engineering discipline",salary:"State pay scale, roughly ₹29,000–₹70,000 + allowances",roadmapType:"technical",examQ:100,examMin:90,examLabel:"State Technical Assistant Pattern (typical)"},
+  {tier:"diploma",code:"DIP-11",name:"Navy / Army Technical Entry (Short Service Commission)",overview:"Short Service Commission technical entry for diploma holders into the Navy and Army, leading to an officer rank after training.",age:"19–25 years (varies by entry)",edu:"Diploma in the relevant engineering discipline (degree preferred for some entries)",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"elite",examQ:100,examMin:120,examLabel:"Technical SSC Entry Written Test Pattern (typical)"},
+  {tier:"diploma",code:"DIP-12",name:"Others (PSUs / State Technical Posts)",overview:"A wide catch-all of additional diploma-level technical posts advertised directly by PSUs and state departments.",age:"Varies by post and department",edu:"Diploma (Polytechnic) in the relevant engineering discipline (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"technical",examQ:100,examMin:90,examLabel:"Typical Technical Pattern"},
 
   // ================= AFTER DEGREE =================
-  {tier:"degree",code:"DEG-01",name:"SSC CGL (Group B & C)",overview:"Combined Graduate Level exam for posts like Inspector, Auditor, Assistant and Sub-Inspector across dozens of central departments.",age:"18–32 years (varies by post; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 4–7, roughly ₹25,500–₹1,51,100 depending on the post",roadmapType:"exam"},
-  {tier:"degree",code:"DEG-02",name:"UPSC Civil Services (IAS / IPS / IFS)",overview:"India's premier civil services exam leading to the IAS, IPS, IFS and other Group A/B central services — widely regarded as the toughest and most prestigious government exam in the country.",age:"21–32 years (general category; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 10 and above, starting around ₹56,100 + allowances, rising through the career",roadmapType:"elite"},
-  {tier:"degree",code:"DEG-03",name:"UPSC CAPF (Assistant Commandant)",overview:"Group A gazetted officer entry into BSF, CRPF, CISF, ITBP and SSB through the UPSC CAPF exam.",age:"20–25 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite"},
-  {tier:"degree",code:"DEG-04",name:"UPSC EPFO / ESIC / Other",overview:"UPSC-conducted recruitment for senior posts in EPFO, ESIC and other central bodies, such as Enforcement Officer and Assistant Provident Fund Commissioner.",age:"21–30 years (varies by post; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (relevant specialisation preferred for some posts)",salary:"Pay Level 7–8, roughly ₹44,900–₹1,42,400+ depending on the post",roadmapType:"exam"},
-  {tier:"degree",code:"DEG-05",name:"State PSC (Group 1 / 2 / 3 / 4)",overview:"State-level equivalent of the UPSC civil services exam, recruiting Deputy Collectors, DSPs and other senior state administrative and police officers.",age:"21–40 years (varies widely by state; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"State pay scale, roughly ₹56,100 and above depending on the post and state",roadmapType:"elite"},
-  {tier:"degree",code:"DEG-06",name:"Bank PO / Clerk",overview:"Probationary Officer and Clerk cadre posts in public sector and central banks, filled through IBPS, SBI and RBI recruitment exams.",age:"20–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Roughly ₹29,000–₹55,000 gross per month depending on the post, plus allowances",roadmapType:"exam"},
-  {tier:"degree",code:"DEG-07",name:"Insurance AO / LIC AAO",overview:"Administrative Officer and Assistant Administrative Officer posts in public-sector insurance companies like LIC, NIACL and GIC.",age:"21–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Roughly ₹45,000–₹55,000 gross per month, plus allowances",roadmapType:"exam"},
-  {tier:"degree",code:"DEG-08",name:"Railway Group B (Various)",overview:"Graduate-level supervisory and gazetted-track posts across Indian Railways, filled through RRB's Group B notifications and promotions.",age:"18–36 years (varies by post; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 7–8, roughly ₹44,900–₹1,42,400 + railway allowances",roadmapType:"exam"},
-  {tier:"degree",code:"DEG-09",name:"NABARD Grade A / B",overview:"Officer-grade posts in India's apex rural development bank, covering agriculture finance, rural development and banking supervision.",age:"21–32 years (varies by grade; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (specific disciplines required for some specialist posts)",salary:"Roughly ₹58,000–₹85,000 gross per month, plus allowances",roadmapType:"exam"},
-  {tier:"degree",code:"DEG-10",name:"CDS / AFCAT (For Graduates)",overview:"Combined Defence Services and Air Force Common Admission Test — officer-entry routes into the Army, Navy and Air Force for graduates.",age:"19–24 years (varies by academy/entry)",edu:"Bachelor's degree in any discipline (engineering degree required for some technical entries)",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"elite"},
-  {tier:"degree",code:"DEG-11",name:"Teaching (TET / CTET / KVS / NVS / DSSSB)",overview:"Teaching posts in central and state schools, requiring a bachelor's degree plus a B.Ed and a qualifying TET/CTET score.",age:"21–35 years (varies by state/board; relaxation for reserved categories)",edu:"Bachelor's degree plus B.Ed, with a qualifying TET/CTET score",salary:"Pay Level 6–7, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"exam"},
-  {tier:"degree",code:"DEG-12",name:"Police SI / Inspector (State)",overview:"Sub-Inspector and Inspector-level posts in state police forces, combining supervisory duties with active field responsibility.",age:"20–28 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"State pay scale, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"physical"},
-  {tier:"degree",code:"DEG-13",name:"Others (State / Central Jobs)",overview:"A wide catch-all of additional graduate-level Group A and B posts advertised directly by ministries, PSUs and regulatory bodies.",age:"Varies by post and department",edu:"Bachelor's degree in any discipline (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"exam"},
+  {tier:"degree",code:"DEG-01",name:"SSC CGL (Group B & C)",overview:"Combined Graduate Level exam for posts like Inspector, Auditor, Assistant and Sub-Inspector across dozens of central departments.",age:"18–32 years (varies by post; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 4–7, roughly ₹25,500–₹1,51,100 depending on the post",roadmapType:"exam",examQ:100,examMin:60,examLabel:"SSC CGL Tier-1 Pattern"},
+  {tier:"degree",code:"DEG-02",name:"UPSC Civil Services (IAS / IPS / IFS)",overview:"India's premier civil services exam leading to the IAS, IPS, IFS and other Group A/B central services — widely regarded as the toughest and most prestigious government exam in the country.",age:"21–32 years (general category; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 10 and above, starting around ₹56,100 + allowances, rising through the career",roadmapType:"elite",examQ:100,examMin:120,examLabel:"UPSC Prelims GS Paper-1 Pattern"},
+  {tier:"degree",code:"DEG-03",name:"UPSC CAPF (Assistant Commandant)",overview:"Group A gazetted officer entry into BSF, CRPF, CISF, ITBP and SSB through the UPSC CAPF exam.",age:"20–25 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite",examQ:125,examMin:120,examLabel:"UPSC CAPF Paper-2 Pattern"},
+  {tier:"degree",code:"DEG-04",name:"UPSC EPFO / ESIC / Other",overview:"UPSC-conducted recruitment for senior posts in EPFO, ESIC and other central bodies, such as Enforcement Officer and Assistant Provident Fund Commissioner.",age:"21–30 years (varies by post; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (relevant specialisation preferred for some posts)",salary:"Pay Level 7–8, roughly ₹44,900–₹1,42,400+ depending on the post",roadmapType:"exam",examQ:120,examMin:120,examLabel:"UPSC EPFO Paper-1 Pattern (typical)"},
+  {tier:"degree",code:"DEG-05",name:"State PSC (Group 1 / 2 / 3 / 4)",overview:"State-level equivalent of the UPSC civil services exam, recruiting Deputy Collectors, DSPs and other senior state administrative and police officers.",age:"21–40 years (varies widely by state; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"State pay scale, roughly ₹56,100 and above depending on the post and state",roadmapType:"elite",examQ:100,examMin:120,examLabel:"State PSC Prelims Pattern (typical)"},
+  {tier:"degree",code:"DEG-06",name:"Bank PO / Clerk",overview:"Probationary Officer and Clerk cadre posts in public sector and central banks, filled through IBPS, SBI and RBI recruitment exams.",age:"20–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Roughly ₹29,000–₹55,000 gross per month depending on the post, plus allowances",roadmapType:"exam",examQ:100,examMin:60,examLabel:"Bank Prelims Pattern"},
+  {tier:"degree",code:"DEG-07",name:"Insurance AO / LIC AAO",overview:"Administrative Officer and Assistant Administrative Officer posts in public-sector insurance companies like LIC, NIACL and GIC.",age:"21–30 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Roughly ₹45,000–₹55,000 gross per month, plus allowances",roadmapType:"exam",examQ:100,examMin:60,examLabel:"Insurance/LIC Prelims Pattern (typical)"},
+  {tier:"degree",code:"DEG-08",name:"Railway Group B (Various)",overview:"Graduate-level supervisory and gazetted-track posts across Indian Railways, filled through RRB's Group B notifications and promotions.",age:"18–36 years (varies by post; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"Pay Level 7–8, roughly ₹44,900–₹1,42,400 + railway allowances",roadmapType:"exam",examQ:100,examMin:90,examLabel:"RRB Group B Pattern (typical)"},
+  {tier:"degree",code:"DEG-09",name:"NABARD Grade A / B",overview:"Officer-grade posts in India's apex rural development bank, covering agriculture finance, rural development and banking supervision.",age:"21–32 years (varies by grade; relaxation for reserved categories)",edu:"Bachelor's degree in any discipline (specific disciplines required for some specialist posts)",salary:"Roughly ₹58,000–₹85,000 gross per month, plus allowances",roadmapType:"exam",examQ:200,examMin:120,examLabel:"NABARD Grade A/B Prelims Pattern"},
+  {tier:"degree",code:"DEG-10",name:"CDS / AFCAT (For Graduates)",overview:"Combined Defence Services and Air Force Common Admission Test — officer-entry routes into the Army, Navy and Air Force for graduates.",age:"19–24 years (varies by academy/entry)",edu:"Bachelor's degree in any discipline (engineering degree required for some technical entries)",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"elite",examQ:120,examMin:120,examLabel:"UPSC CDS General Knowledge Paper Pattern"},
+  {tier:"degree",code:"DEG-11",name:"Teaching (TET / CTET / KVS / NVS / DSSSB)",overview:"Teaching posts in central and state schools, requiring a bachelor's degree plus a B.Ed and a qualifying TET/CTET score.",age:"21–35 years (varies by state/board; relaxation for reserved categories)",edu:"Bachelor's degree plus B.Ed, with a qualifying TET/CTET score",salary:"Pay Level 6–7, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"exam",examQ:150,examMin:150,examLabel:"CTET Paper-1 Pattern"},
+  {tier:"degree",code:"DEG-12",name:"Police SI / Inspector (State)",overview:"Sub-Inspector and Inspector-level posts in state police forces, combining supervisory duties with active field responsibility.",age:"20–28 years (relaxation for reserved categories)",edu:"Bachelor's degree in any discipline from a recognised university",salary:"State pay scale, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"physical",examQ:100,examMin:120,examLabel:"State Police SI Pattern (typical)"},
+  {tier:"degree",code:"DEG-13",name:"Others (State / Central Jobs)",overview:"A wide catch-all of additional graduate-level Group A and B posts advertised directly by ministries, PSUs and regulatory bodies.",age:"Varies by post and department",edu:"Bachelor's degree in any discipline (minimum, varies by post)",salary:"Varies by pay level and department",roadmapType:"exam",examQ:100,examMin:90,examLabel:"Typical Group A/B Pattern"},
 
   // ================= AFTER BTECH/BE =================
-  {tier:"btech",code:"BT-01",name:"GATE → PSU Jobs (ONGC, BHEL, IOCL, NTPC, BEL, HAL, etc.)",overview:"A strong GATE score lets PSUs shortlist engineering graduates directly for Management/Engineer Trainee roles, skipping a separate PSU-specific written exam.",age:"Up to 26–30 years depending on the PSU (relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"Pay Level 10, roughly ₹60,000–₹1,80,000 (CTC) + allowances",roadmapType:"elite"},
-  {tier:"btech",code:"BT-02",name:"PSUs via Direct Recruitment (TATA Power, SAIL, BPCL, etc.)",overview:"Some PSUs run their own campus placement or direct-recruitment drives for engineering graduates, separate from the GATE route.",age:"Up to 27–30 years depending on the PSU",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"PSU management trainee scale, roughly ₹50,000–₹1,50,000 (CTC) + allowances",roadmapType:"technical"},
-  {tier:"btech",code:"BT-03",name:"SSC JE (Through GATE)",overview:"Some SSC Junior Engineer posts also accept a valid GATE score as an alternative screening route for B.Tech graduates.",age:"18–32 years (relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"Pay Level 6, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"technical"},
-  {tier:"btech",code:"BT-04",name:"DRDO Scientist 'B'",overview:"Entry-level scientist posts at DRDO's defence research labs, working on projects across missiles, electronics, materials and more.",age:"Up to 28 years (relaxation for reserved categories)",edu:"B.Tech / B.E. (or equivalent) with a strong academic record; GATE score often used for shortlisting",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite"},
-  {tier:"btech",code:"BT-05",name:"ISRO Scientist / Engineer 'SC'",overview:"Entry-level scientist/engineer posts at ISRO, working on India's space research, satellite and launch vehicle programmes.",age:"Up to 35 years (relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline with a strong academic record",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite"},
-  {tier:"btech",code:"BT-06",name:"BARC / NPCIL Engineer",overview:"Scientific Officer and engineer posts in India's atomic energy establishments, working on nuclear power and research programmes.",age:"Up to 26 years (relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline (through BARC Training School or direct recruitment)",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite"},
-  {tier:"btech",code:"BT-07",name:"Indian Army (TES Entry)",overview:"Technical Entry Scheme lets Class 12 PCM students join as officer cadets and complete their engineering degree during training — B.Tech holders can also apply through direct technical entries.",age:"16.5–19.5 years for TES after Class 12 (separate norms apply for direct B.Tech entries)",edu:"Class 12 with PCM for TES; B.Tech/B.E. for direct technical graduate entries",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"physical"},
-  {tier:"btech",code:"BT-08",name:"Indian Navy (SSC Technical)",overview:"Short Service Commission technical entry for engineering graduates into the Indian Navy's Executive, Engineering or Electrical branches.",age:"19–25 years (varies by branch)",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"physical"},
-  {tier:"btech",code:"BT-09",name:"Air Force (SSC Tech)",overview:"Short Service Commission technical entry for engineering graduates into the Indian Air Force's Aeronautical and other technical branches.",age:"20–26 years",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"physical"},
-  {tier:"btech",code:"BT-10",name:"UPSC Engineering Services (IES / ESE)",overview:"One of India's top engineering exams, recruiting Class I/II engineering officers into central departments like Railways, Roads, Telecom and Power.",age:"21–30 years (relaxation for reserved categories)",edu:"B.Tech / B.E. in Civil, Mechanical, Electrical or Electronics & Telecom engineering",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite"},
-  {tier:"btech",code:"BT-11",name:"State Engineering Services",overview:"State-level equivalent of the UPSC Engineering Services exam, recruiting Assistant Engineers into state technical departments.",age:"21–35 years (varies by state; relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"State pay scale, roughly ₹44,900–₹1,42,400 + allowances",roadmapType:"technical"},
-  {tier:"btech",code:"BT-12",name:"Others (PSUs / Research Organizations)",overview:"A wide catch-all of additional B.Tech-level posts advertised directly by PSUs, research organisations and technical departments.",age:"Varies by post and organisation",edu:"B.Tech / B.E. in the relevant engineering discipline (minimum, varies by post)",salary:"Varies by pay level and organisation",roadmapType:"technical"}
+  {tier:"btech",code:"BT-01",name:"GATE → PSU Jobs (ONGC, BHEL, IOCL, NTPC, BEL, HAL, etc.)",overview:"A strong GATE score lets PSUs shortlist engineering graduates directly for Management/Engineer Trainee roles, skipping a separate PSU-specific written exam.",age:"Up to 26–30 years depending on the PSU (relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"Pay Level 10, roughly ₹60,000–₹1,80,000 (CTC) + allowances",roadmapType:"elite",examQ:65,examMin:180,examLabel:"GATE Exam Pattern"},
+  {tier:"btech",code:"BT-02",name:"PSUs via Direct Recruitment (TATA Power, SAIL, BPCL, etc.)",overview:"Some PSUs run their own campus placement or direct-recruitment drives for engineering graduates, separate from the GATE route.",age:"Up to 27–30 years depending on the PSU",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"PSU management trainee scale, roughly ₹50,000–₹1,50,000 (CTC) + allowances",roadmapType:"technical",examQ:150,examMin:150,examLabel:"PSU Direct Recruitment Written Test Pattern (typical)"},
+  {tier:"btech",code:"BT-03",name:"SSC JE (Through GATE)",overview:"Some SSC Junior Engineer posts also accept a valid GATE score as an alternative screening route for B.Tech graduates.",age:"18–32 years (relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"Pay Level 6, roughly ₹35,400–₹1,12,400 + allowances",roadmapType:"technical",examQ:200,examMin:120,examLabel:"SSC JE Paper-1 Pattern"},
+  {tier:"btech",code:"BT-04",name:"DRDO Scientist 'B'",overview:"Entry-level scientist posts at DRDO's defence research labs, working on projects across missiles, electronics, materials and more.",age:"Up to 28 years (relaxation for reserved categories)",edu:"B.Tech / B.E. (or equivalent) with a strong academic record; GATE score often used for shortlisting",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite",examQ:150,examMin:120,examLabel:"DRDO Scientist-B Written Test Pattern (typical)"},
+  {tier:"btech",code:"BT-05",name:"ISRO Scientist / Engineer 'SC'",overview:"Entry-level scientist/engineer posts at ISRO, working on India's space research, satellite and launch vehicle programmes.",age:"Up to 35 years (relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline with a strong academic record",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite",examQ:80,examMin:90,examLabel:"ISRO Scientist/Engineer Written Test Pattern (typical)"},
+  {tier:"btech",code:"BT-06",name:"BARC / NPCIL Engineer",overview:"Scientific Officer and engineer posts in India's atomic energy establishments, working on nuclear power and research programmes.",age:"Up to 26 years (relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline (through BARC Training School or direct recruitment)",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite",examQ:100,examMin:150,examLabel:"BARC OGET-style Written Test Pattern (typical)"},
+  {tier:"btech",code:"BT-07",name:"Indian Army (TES Entry)",overview:"Technical Entry Scheme lets Class 12 PCM students join as officer cadets and complete their engineering degree during training — B.Tech holders can also apply through direct technical entries.",age:"16.5–19.5 years for TES after Class 12 (separate norms apply for direct B.Tech entries)",edu:"Class 12 with PCM for TES; B.Tech/B.E. for direct technical graduate entries",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"physical",examQ:100,examMin:120,examLabel:"Army TES Written Test Pattern (typical)"},
+  {tier:"btech",code:"BT-08",name:"Indian Navy (SSC Technical)",overview:"Short Service Commission technical entry for engineering graduates into the Indian Navy's Executive, Engineering or Electrical branches.",age:"19–25 years (varies by branch)",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"physical",examQ:100,examMin:120,examLabel:"Navy SSC Technical Written Test Pattern (typical)"},
+  {tier:"btech",code:"BT-09",name:"Air Force (SSC Tech)",overview:"Short Service Commission technical entry for engineering graduates into the Indian Air Force's Aeronautical and other technical branches.",age:"20–26 years",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"Officer pay scale with rank allowances after commissioning",roadmapType:"physical",examQ:100,examMin:120,examLabel:"Air Force SSC Tech Written Test Pattern (typical)"},
+  {tier:"btech",code:"BT-10",name:"UPSC Engineering Services (IES / ESE)",overview:"One of India's top engineering exams, recruiting Class I/II engineering officers into central departments like Railways, Roads, Telecom and Power.",age:"21–30 years (relaxation for reserved categories)",edu:"B.Tech / B.E. in Civil, Mechanical, Electrical or Electronics & Telecom engineering",salary:"Pay Level 10, roughly ₹56,100–₹1,77,500 + allowances",roadmapType:"elite",examQ:100,examMin:120,examLabel:"UPSC ESE Prelims Paper-1 Pattern"},
+  {tier:"btech",code:"BT-11",name:"State Engineering Services",overview:"State-level equivalent of the UPSC Engineering Services exam, recruiting Assistant Engineers into state technical departments.",age:"21–35 years (varies by state; relaxation for reserved categories)",edu:"B.Tech / B.E. in the relevant engineering discipline",salary:"State pay scale, roughly ₹44,900–₹1,42,400 + allowances",roadmapType:"technical",examQ:100,examMin:120,examLabel:"State Engineering Services Pattern (typical)"},
+  {tier:"btech",code:"BT-12",name:"Others (PSUs / Research Organizations)",overview:"A wide catch-all of additional B.Tech-level posts advertised directly by PSUs, research organisations and technical departments.",age:"Varies by post and organisation",edu:"B.Tech / B.E. in the relevant engineering discipline (minimum, varies by post)",salary:"Varies by pay level and organisation",roadmapType:"technical",examQ:100,examMin:120,examLabel:"Typical PSU Written Test Pattern"}
 ];
 
 jobs.forEach(j=>{
@@ -709,16 +856,10 @@ function openCategoryOverview(kind){
    you — or edit this array yourself, it's plain JavaScript.
    ============================================================ */
 const userPapers = [
-   { title: "SSC-CGL-T-I-Similar-Paper-12-Sep-2025-S1-English.pdf", url: "https://drive.google.com/file/d/1z6cl35kcrfTMso-FK4zSuYxVmHI3IFwZ/view?usp=drive_link" },
-   { title: "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English", url: "https://drive.google.com/file/d/1hV2ljDa0cQ3a2d3PXcrbAoELy3eVR3Hb/view?usp=sharing" },
-   { title: "SSC-CGL-Tier-1-Question-Paper-English_09_09_2024", url: "https://drive.google.com/file/d/1oQ0pve3M2Q7E3QplLPaQrVwQYVJXhlTM/view?usp=drive_link" },
-   { title: "SSC-CGL-Tier-1-Question-Paper_14_07_2023", url: "https://drive.google.com/file/d/1RTFsKH_e484xoSb4bzxLnIKmG3gML9ko/view?usp=drive_link" },
-   { title: "RRB-NTPC-CBT-I-Question-Paper_16-03-2026_S1-2", url: "https://drive.google.com/file/d/10CS_4iE9muDNDEI6308GKJWhaMdXtjsB/view?usp=drive_link" },
-   { title: "RRB-NTPC-2025-CBT-I-Question-Paper_16-03-2026_S1-2", url: "https://drive.google.com/file/d/1sepu-w6TBAh5Wa2FrWi-PbnibQDkqhfm/view?usp=drive_link" },
-   { title: "RRB-NTPC-2019-CBT-1-Question-Paper-1", url: "https://drive.google.com/file/d/1rz-8ZhN2V8kJtg2Dw2XElOxG96whdmCZ/view?usp=drive_link" },
-   { title: "RRB-NTPC-2019-CBT-1-Question-Paper-1", url: "https://drive.google.com/file/d/195FMkB-SgoNwae9NEnBjv9LSjH4YEVqa/view?usp=drive_link" },
-   { title: "RRB-NTPC-2019-01_04_2021_-10_30-am-to-12_00-Paper-1", url: "https://drive.google.com/file/d/1CrU4c_Tfm43DBGEeX7qlr-m08uEphWI7/view?usp=drive_link" },
-
+   { title: "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English", url: "https://1drv.ms/b/c/a286cf94575cb02f/IQArQV72PdOBQIxKaz6YjkvNAbW7dLPYGqJQbpUW8Y14Quw?e=y0qN0Z" },
+   { title: "SSC-CGL-Tier-1-Question-Paper_14_07_2023", url: "https://1drv.ms/b/c/a286cf94575cb02f/IQCxtjjR9CyzRqmEM3heSQRxAX1sKVCKt3LeYa7CaYHYa4Q?e=tYuNqN" },
+   { title: "SSC-CGL-Tier-1-Question-Paper-English_09_09_2024", url: "https://1drv.ms/b/c/a286cf94575cb02f/IQBUHpKGWre4QYMsns5toQrgASGFLJ81adNS2yNbblW8TEk?e=uyOr5n" },
+   { title: "SSC-CGL-Tier-1-Question-Paper_14_07_2023", url: "https://1drv.ms/b/c/a286cf94575cb02f/IQCxtjjR9CyzRqmEM3heSQRxAX1sKVCKt3LeYa7CaYHYa4Q?e=tYuNqN" },
 ];
 
 /* ============================================================
@@ -1088,7 +1229,7 @@ if (mockSignupCta) mockSignupCta.addEventListener('click', ()=> openAuthModal('s
 const mockTierSelect = document.getElementById('mockTierSelect');
 const mockJobSelect = document.getElementById('mockJobSelect');
 const mockPatternBox = document.getElementById('mockPatternBox');
-const mockStartBtn = document.getElementById('mockStartBtn');
+const mockSetRow = document.getElementById('mockSetRow');
 
 if (mockTierSelect){
   Object.keys(tierMeta).forEach(tier=>{
@@ -1112,17 +1253,27 @@ if (mockTierSelect){
   function updateMockPatternBox(){
     const job = jobs.find(j=>j.id===mockJobSelect.value);
     if (!job) return;
-    const pattern = examPatterns[job.roadmapType];
-    mockPatternBox.innerHTML = `<b>${pattern.label}</b> &middot; ${pattern.questionCount} questions &middot; ${pattern.durationMinutes} minutes &middot; recruiting body: ${job.body}`;
+    const pattern = getExamPattern(job);
+    const poolSize = tierPool(job.tier).length;
+    const repeatNote = pattern.questionCount > poolSize
+      ? ` Our original question bank has ${poolSize} per category, so on longer papers some questions repeat within a single attempt — each Mock Test set is shuffled differently.`
+      : '';
+    mockPatternBox.innerHTML = `<b>${pattern.label}</b> &middot; ${pattern.questionCount} questions &middot; ${pattern.durationMinutes} minutes &middot; recruiting body: ${job.body}<br>${repeatNote}`;
   }
   mockTierSelect.addEventListener('change', populateMockJobs);
   mockJobSelect.addEventListener('change', updateMockPatternBox);
   populateMockJobs();
 
-  mockStartBtn.addEventListener('click', ()=>{
-    if (!getCurrentUser()){ openAuthModal('login'); return; }
-    const job = jobs.find(j=>j.id===mockJobSelect.value);
-    if (job) startTimedExam(job);
+  [1,2,3].forEach(setNum=>{
+    const btn = document.createElement('button');
+    btn.className = 'mock-cta mock-set-btn';
+    btn.textContent = `Mock Test ${setNum}`;
+    btn.addEventListener('click', ()=>{
+      if (!getCurrentUser()){ openAuthModal('login'); return; }
+      const job = jobs.find(j=>j.id===mockJobSelect.value);
+      if (job) startTimedExam(job, setNum);
+    });
+    mockSetRow.appendChild(btn);
   });
 }
 
@@ -1134,31 +1285,41 @@ const examProgress = document.getElementById('examProgress');
 const examTimerEl = document.getElementById('examTimer');
 const examBody = document.getElementById('examBody');
 
-let examState = null; // { job, pattern, questions:[{text,choices,correct}], answers:[], current, secondsLeft, timerId }
+let examState = null; // { job, pattern, setNum, questions:[{text,choices,correct}], answers:[], current, secondsLeft, timerId }
 
-function buildExamQuestions(tier, count){
+function buildExamQuestions(tier, count, seedStr){
   const pool = tierPool(tier);
-  const picked = shuffle(pool).slice(0, Math.min(count, pool.length));
-  return picked.map(q=>{
+  const rounds = [];
+  let remaining = count;
+  let pass = 0;
+  while (remaining > 0){
+    const shuffled = seededShuffle(pool, seedStr + '-pass' + pass);
+    const take = Math.min(remaining, shuffled.length);
+    rounds.push(...shuffled.slice(0, take));
+    remaining -= take;
+    pass++;
+  }
+  return rounds.map((q, idx)=>{
     const [text, ...opts] = q;
     const correct = opts[opts.length-1];
-    const choices = shuffle(opts.slice(0,4));
+    const choices = seededShuffle(opts.slice(0,4), seedStr + '-opts' + idx);
     return { text, choices, correct };
   });
 }
 
-function startTimedExam(job){
-  const pattern = examPatterns[job.roadmapType];
-  const questions = buildExamQuestions(job.tier, pattern.questionCount);
+function startTimedExam(job, setNum){
+  const pattern = getExamPattern(job);
+  const seedStr = job.id + '-set' + setNum;
+  const questions = buildExamQuestions(job.tier, pattern.questionCount, seedStr);
   examState = {
-    job, pattern, questions,
+    job, pattern, setNum, questions,
     answers: new Array(questions.length).fill(null),
     current: 0,
     secondsLeft: pattern.durationMinutes * 60,
     timerId: null,
     submitted: false
   };
-  examJobTitle.textContent = job.name + ' — Timed Mock Exam';
+  examJobTitle.textContent = job.name + ` — Mock Test ${setNum}`;
   examOverlay.classList.add('open');
   lockBackgroundScroll();
   renderExamQuestion();
@@ -1274,7 +1435,7 @@ function submitExam(timeUp){
 
   document.getElementById('examCloseResultBtn').addEventListener('click', closeExamOverlay);
   document.getElementById('examRetryBtn').addEventListener('click', ()=>{
-    startTimedExam(examState.job);
+    startTimedExam(examState.job, examState.setNum);
   });
 }
 
