@@ -724,6 +724,213 @@ jobs.forEach(j=>{
 });
 
 /* ============================================================
+   FULL GUIDE — After ITI tier (ITI-01 .. ITI-14)
+   Same structure as fullGuides12, sourced from the ITI-tier
+   flowchart reference docs.
+   ============================================================ */
+const fullGuidesITI = {
+  "ITI-01": { // RRB ALP (Assistant Loco Pilot)
+    jobWork: ["Operating and assisting with train engines, monitoring engine performance and following railway safety/signalling procedures.","Follow departmental rules, safety procedures and supervisory instructions; shift and roster duty is common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism, data interpretation.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, time-work, time-distance, algebra, geometry.","Language — grammar, vocabulary, comprehension, sentence correction.","Use the exact syllabus annexure in the current RRB ALP CEN for CBT-2 technical/trade content."],
+    examPattern: "CBT-1 covers Mathematics, Mental Ability/Reasoning, General Science and General Awareness. CBT-2 adds Basic Science & Engineering plus trade/technical topics as prescribed. Check the current notice for exact question count, marks and negative marking.",
+    selection: "CBT-1 → CBT-2 → Computer Based Aptitude Test for ALP → document verification → medical.",
+    physical: "ALP has stringent railway medical/vision standards — the exact medical category assigned is critical to final selection.",
+    salary: "Typically Pay Level-2 (basic pay around ₹19,900) plus railway allowances; in-hand varies by posting.",
+    promotions: "Promotion follows railway service rules, seniority, departmental exams and vacancies — ALPs can progress toward Loco Pilot and senior operating grades over a career.",
+    posting: "Railway divisions, loco sheds, yards and operating sections; shift/roster duty is common.",
+    advantages: ["Respected, in-demand railway technical role.","Structured pay level with railway-specific allowances.","Clear progression path toward Loco Pilot grades."],
+    disadvantages: ["Very high applicant volume and multi-stage selection.","Strict medical/vision standards can disqualify otherwise strong candidates.","Shift duty and irregular hours are part of the job."],
+    prep: ["Read the latest official RRB ALP CEN notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in Maths, Reasoning and Basic Science before timed practice.","Solve previous-year CBT-1/CBT-2 papers and analyze mistakes.","Get an early medical/vision check to confirm you meet railway standards.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["Educational certificates/marksheets (10th + ITI/diploma as applicable)","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","ITI/trade certificate"]
+  },
+  "ITI-02": { // RRB Technician Grade III
+    jobWork: ["Maintaining rolling stock and railway infrastructure across workshops, sheds and depots.","Follow departmental rules, safety procedures and supervisory instructions for maintenance and inspection work."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism, data interpretation.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — trade theory, safety, tools/equipment and discipline-specific concepts from the current notification."],
+    examPattern: "Mathematics, Reasoning, General Science, General Awareness and trade/technical subjects as applicable; exact pattern follows the current RRB Technician CEN.",
+    selection: "RRB CBT → document verification → medical examination → appointment.",
+    physical: "Railway medical standards apply; technical posts can have specific medical categories depending on the trade.",
+    salary: "Pay level varies by Technician Grade; allowances depend on railway posting.",
+    promotions: "Promotion follows railway service rules, seniority, departmental exams and vacancies — Technicians can progress to higher technical/supervisory grades.",
+    posting: "Workshops, depots, sheds, stations and technical maintenance units.",
+    advantages: ["Steady, recurring railway technical recruitment.","Structured pay levels with railway allowances.","Skill-based work aligned with ITI training."],
+    disadvantages: ["Competitive selection with a large applicant pool.","Workshop/field conditions can be physically demanding.","Posting location may not match home preference initially."],
+    prep: ["Read the latest official RRB Technician CEN notification first.","Build a topic checklist from the official syllabus.","Revise trade theory alongside Maths and Reasoning.","Solve previous-year CBT papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet plus ITI/diploma certificate as applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Trade certificate"]
+  },
+  "ITI-03": { // Railway Group D (ITI Quota)
+    jobWork: ["Track maintainer and helper-level duties supporting railway infrastructure, with ITI-trade candidates given preference in some cycles.","Follow departmental rules, safety procedures and supervisory instructions; field and physically demanding work is common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension.","Use the exact Level-1 CEN syllabus annexure — don't assume it matches another RRB exam."],
+    examPattern: "Common Level-1 subjects: Mathematics, General Intelligence & Reasoning, General Science and General Awareness/Current Affairs; exact pattern follows the current CEN.",
+    selection: "RRB CBT → PET → document verification → medical examination → appointment.",
+    physical: "PET normally includes running and weight-carrying standards with separate male/female criteria — build endurance well in advance.",
+    salary: "Level-1 basic pay is generally ₹18,000 under the applicable framework, plus railway allowances.",
+    promotions: "Promotion follows railway service rules, seniority, departmental exams and vacancies — Group D roles can progress to Technician or supervisory grades over time.",
+    posting: "Railway zones/divisions, stations, yards, tracks, workshops and depots depending on the post.",
+    advantages: ["Large-scale, recurring recruitment with lakhs of vacancies historically.","Entry point into the broader railway system.","Structured pay level with railway allowances."],
+    disadvantages: ["Physically demanding track/field work.","PET is a hard qualifying hurdle after the written exam.","High applicant volume, making cutoffs competitive."],
+    prep: ["Read the latest official RRB Group D CEN notification first.","Build a topic checklist from the official syllabus.","Start running and endurance training months in advance for the PET.","Solve previous-year CBT papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet and/or ITI/NAC certificate as applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile certificate if required by the zone"]
+  },
+  "ITI-04": { // DRDO Technician A
+    jobWork: ["Supporting DRDO's defence research laboratories through equipment handling, fabrication, testing or maintenance in the relevant trade.","Follow departmental rules, safety procedures and supervisory instructions in a research/lab environment."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — trade theory, safety, tools/equipment and discipline-specific concepts from the current CEPTAM notification."],
+    examPattern: "General Awareness, Quantitative Aptitude, Reasoning, General Science and trade-specific questions are common areas; the current DRDO CEPTAM notice controls exact weightage.",
+    selection: "DRDO recruitment process can include CBT → trade test → document verification → medical/appointment.",
+    physical: "Not applicable unless the specific DRDO notice mentions PET/PST/medical standards.",
+    salary: "Technician-A is generally a Level-2 technical post in recent frameworks, plus allowances.",
+    promotions: "Promotion follows DRDO service rules, seniority, departmental exams and vacancies — Technicians can progress to senior technical grades over a career.",
+    posting: "DRDO laboratories/establishments across India.",
+    advantages: ["Work in a prestigious defence research environment.","Structured Central Government pay level and allowances.","Exposure to advanced technical/lab work beyond typical trade postings."],
+    disadvantages: ["Vacancies are limited compared to railway/SSC-scale recruitment.","Trade eligibility must match the exact lab's requirement.","Postings are spread across specific DRDO establishments, not all locations."],
+    prep: ["Read the latest official DRDO CEPTAM notification first.","Build a topic checklist from the official syllabus.","Revise trade theory alongside GA, Quant and Reasoning.","Solve previous-year CEPTAM papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet plus relevant ITI trade certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "ITI-05": { // BHEL/HAL/BEL/ONGC Technician
+    jobWork: ["Plant and equipment maintenance, inspection and technical support in major public-sector engineering/energy companies.","Follow departmental rules, safety procedures and supervisory instructions on the shop floor or field site."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — trade theory, safety, tools/equipment and discipline-specific concepts from the current PSU notification."],
+    examPattern: "Technical/trade subjects plus aptitude/reasoning/GK/English may be used, depending on the specific PSU's own recruitment notice.",
+    selection: "Organization-specific written test/merit → trade/skill test or interview where prescribed → medical/document verification.",
+    physical: "Not applicable unless the specific PSU notice mentions PET/PST/medical standards.",
+    salary: "PSU technician pay/stipend varies widely by organization and whether the role is apprentice, contract or regular employee — check the specific PSU's pay structure.",
+    promotions: "Promotion follows the PSU's internal service rules, seniority, departmental exams and vacancies — Technicians can progress to senior technician/supervisory grades.",
+    posting: "Plants, factories, refineries, projects, workshops and field locations of the recruiting PSU.",
+    advantages: ["Strong brand-name PSU employers with structured benefits.","Hands-on technical exposure aligned with ITI training.","Reasonably stable employment once regularized."],
+    disadvantages: ["Pay and job security differ significantly between apprentice/contract and regular posts — read the notice carefully.","Trade/branch eligibility varies by PSU and must be matched exactly.","Plant/field postings can involve shift work or industrial hazards."],
+    prep: ["Read the latest official PSU technician notification first.","Build a topic checklist from the official syllabus.","Revise trade theory alongside aptitude and reasoning.","Solve previous-year papers for that specific PSU where available.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet plus relevant ITI trade certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "ITI-06": { // BSF/CRPF/CISF Tradesman
+    jobWork: ["Skilled tradesman duties (electrician, mechanic, plumber and similar trades) supporting central armed police force units.","Follow force-specific rules, safety procedures and supervisory instructions; uniformed and shift-based duty is common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Elementary Mathematics — number system, percentages, ratio/proportion, averages, time-work, time-distance.","Language — grammar, vocabulary, comprehension.","Trade-specific assessment for the tradesman category applied for."],
+    examPattern: "Typically Reasoning, GK/GA, Elementary Mathematics and language, plus a trade-specific assessment for tradesman posts.",
+    selection: "Written/CBT → PST/PET and/or trade test → medical → document verification → final selection.",
+    physical: "Uniformed CAPF recruitment commonly includes height/weight/chest (where applicable), running/PET and medical standards; exact figures vary by force and category.",
+    salary: "Constable-level CAPF tradesman posts are commonly Pay Level-3; specifics can differ by trade and organization.",
+    promotions: "Promotion follows force-specific service rules, seniority, departmental exams and vacancies — tradesmen can progress through Head Constable and senior technical grades.",
+    posting: "All-India postings including border, industrial, internal-security, training and field locations depending on the force.",
+    advantages: ["Stable uniformed government employment with defined service rules.","Structured allowances and retirement benefits.","Skill-based work aligned with ITI trade training."],
+    disadvantages: ["Uniformed duty involves shift work, transfers and field hardship.","Physical standards must be cleared alongside the written exam.","All-India posting liability, including remote/border locations."],
+    prep: ["Read the latest official CAPF Tradesman notification first.","Build a topic checklist from the official syllabus.","Start physical training (running, endurance) months in advance.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly alongside physical training.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th/12th marksheet as applicable plus relevant ITI trade certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile certificate if required"]
+  },
+  "ITI-07": { // Indian Army Agniveer (Tech) Trades
+    jobWork: ["Technical trade duties (electrician, mechanic and similar) supporting Army units under the Agnipath scheme.","Follow Army rules, safety procedures and command instructions; involves field/uniformed duty and possible operational deployment."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical subjects specific to the trade applied for, per the current Army CEE notice."],
+    examPattern: "CEE subjects vary by category; Technical trade entries include technical subjects alongside General Knowledge, General Science, Maths and Reasoning.",
+    selection: "Online registration → Common Entrance Examination (CEE) → recruitment rally/physical fitness and measurement → medical → final merit, per the current Army notice.",
+    physical: "Physical fitness tests and body measurements are central to selection; standards vary by category, region and current recruitment rules.",
+    salary: "Agniveer has a distinct four-year engagement pay/Seva Nidhi structure rather than a traditional permanent-service pay progression; current Army rules control the exact figures.",
+    promotions: "Within the four-year Agniveer tenure, growth is limited to internal grading; top performers can be considered for permanent enrolment as per current Army policy.",
+    posting: "Military units/training establishments as assigned, under the Agnipath/Agniveer framework.",
+    advantages: ["Prestigious, disciplined service with strong training and allowances.","Trade-specific technical exposure alongside military training.","Possible pathway to permanent enrolment for top performers."],
+    disadvantages: ["Four-year tenure structure differs from traditional permanent service.","Physically demanding training and possible field/operational postings.","Selection is highly competitive with a rigorous physical stage."],
+    prep: ["Read the latest official Indian Army Agniveer Technical notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in the relevant technical trade alongside GK/Maths/Reasoning.","Solve previous-year CEE papers and analyze mistakes.","Start physical training (running, endurance) months in advance for the rally.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["10th/12th marksheet plus relevant ITI trade certificate as applicable","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Domicile/local-language certificate if required"]
+  },
+  "ITI-08": { // Indian Navy MR (Artificer Apprentice)
+    jobWork: ["Training in marine engineering trades aboard naval ships and establishments, supporting shipboard machinery and systems.","Follow Navy rules, safety procedures and command instructions; involves shipboard/uniformed duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance, algebra, geometry.","Language — grammar, vocabulary, comprehension.","MR/SSR-specific technical/trade content per the current Indian Navy notice."],
+    examPattern: "MR and SSR/technical entries have different subject mixes; the current Indian Navy notice controls the exact pattern, duration and marks.",
+    selection: "Online application → computer-based exam → physical fitness test (PFT) → medical → merit/induction as prescribed.",
+    physical: "PFT and medical standards apply; height, running, squats/push-ups/sit-ups or other events depend on the entry and current notice.",
+    salary: "Agniveer Navy entries follow the applicable Agniveer pay/Seva Nidhi framework.",
+    promotions: "Within the Agniveer tenure, growth is limited to internal grading; top performers can be considered for permanent enrolment as per current Navy policy.",
+    posting: "Indian Navy ships, establishments, bases and training centers as allotted.",
+    advantages: ["Structured marine engineering training with strong discipline and allowances.","Exposure to shipboard technical systems.","Possible pathway to permanent enrolment for top performers."],
+    disadvantages: ["Shipboard duty involves long deployments away from home.","Physically demanding training and PFT standards.","Four-year Agniveer tenure structure differs from permanent service."],
+    prep: ["Read the latest official Indian Navy MR/Artificer Apprentice notification first.","Build a topic checklist from the official syllabus.","Build fundamentals in Maths, Reasoning and GA before timed practice.","Solve previous-year papers and analyze mistakes.","Start physical training (running, strength) months in advance for the PFT.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["10th/12th marksheet with required subjects as applicable","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Domicile certificate if required"]
+  },
+  "ITI-09": { // Air Force Agniveer (Tech)
+    jobWork: ["Technical trade duties maintaining aircraft, ground equipment and support systems under the Agnipath scheme.","Follow Air Force rules, safety procedures and command instructions; involves uniformed/technical station duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Science/non-science technical papers as prescribed by the current Agniveervayu notice."],
+    examPattern: "Science and non-science papers differ; the current Agniveervayu notice controls exact subjects, duration and marks.",
+    selection: "Online test → physical fitness test → adaptability/medical stages as prescribed → final enrolment list.",
+    physical: "Physical fitness and medical standards apply; exact run times and other events are notification-specific.",
+    salary: "Agniveervayu uses the applicable Agnipath pay/Seva Nidhi framework.",
+    promotions: "Within the Agniveer tenure, growth is limited to internal grading; top performers can be considered for permanent enrolment as per current Air Force policy.",
+    posting: "Air Force stations/training establishments as assigned.",
+    advantages: ["Technical exposure to advanced aircraft and ground systems.","Structured training and discipline with strong allowances.","Possible pathway to permanent enrolment for top performers."],
+    disadvantages: ["Four-year Agniveer tenure structure differs from permanent service.","Selection is competitive with a rigorous physical/adaptability stage.","Postings depend on service need, not personal preference."],
+    prep: ["Read the latest official Agniveervayu Technical notification first.","Build a topic checklist from the official syllabus (science or non-science, as applicable).","Build fundamentals in Maths, Reasoning and GA before timed practice.","Solve previous-year online test papers and analyze mistakes.","Start physical training months in advance for the fitness test.","Take full mocks regularly and maintain an error notebook."],
+    documents: ["10th/12th marksheet with required subjects as applicable","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Domicile certificate if required"]
+  },
+  "ITI-10": { // State Electricity Board Technician
+    jobWork: ["Maintaining and repairing electrical distribution infrastructure — substations, lines and connections — for the state electricity board.","Follow board rules, safety procedures and supervisory instructions; fieldwork on live/high-voltage systems requires strict safety discipline."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — electrical fundamentals, trade theory, safety, tools/equipment per the current board notification."],
+    examPattern: "Electrical fundamentals, trade theory, safety, Maths/Reasoning and GK as specified by the current state board notice.",
+    selection: "Board recruitment exam/merit → technical/skill test where prescribed → document/medical verification.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "State electricity board pay/stipend varies by post and state — check the specific board's pay structure.",
+    promotions: "Promotion follows the board's service rules, seniority, departmental exams and vacancies — Technicians can progress to Lineman-in-charge, Junior Engineer or supervisory grades.",
+    posting: "Substations, lines, distribution divisions, workshops and offices.",
+    advantages: ["Stable state-level employment with local/home-state postings common.","Skill-based work aligned with ITI electrical training.","Structured allowances and retirement benefits."],
+    disadvantages: ["Fieldwork with high-voltage systems carries inherent safety risk.","Recruitment cycles and vacancies vary by state and board.","Emergency/fault-repair duty can mean irregular hours."],
+    prep: ["Read the latest official state electricity board notification first.","Build a topic checklist from the official syllabus.","Revise electrical trade theory and safety rules thoroughly.","Solve previous-year board papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet plus ITI certificate in the relevant electrical trade","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile certificate if required"]
+  },
+  "ITI-11": { // DMRC Maintainer
+    jobWork: ["Keeping Delhi Metro's rolling stock, signalling and electrical systems running smoothly through inspection and maintenance.","Follow DMRC rules, safety procedures and supervisory instructions; shift duty in depots/stations is common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — core trade subjects, safety, tools/equipment per the current DMRC notification."],
+    examPattern: "Technical subject, Reasoning, Quantitative Aptitude and English/GK as prescribed by the current DMRC Maintainer notice.",
+    selection: "DMRC recruitment may use CBT → trade/skill/medical or interview depending on the exact post.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "DMRC pay varies by cadre and whether the recruitment is regular or contract-based.",
+    promotions: "Promotion follows DMRC's internal service rules, seniority, departmental exams and vacancies — Maintainers can progress to senior technician/supervisory grades.",
+    posting: "Metro depots, stations, workshops, Operations Control Centres (OCCs) and maintenance sections.",
+    advantages: ["Modern, well-organised metro-rail work environment.","Structured pay and benefits for regular DMRC employees.","Skill-based work aligned with ITI/technical training."],
+    disadvantages: ["Shift duty, including night shifts, is common for depot/station roles.","Contract vs regular recruitment terms can differ significantly — read the notice carefully.","Vacancies and recruitment cycles depend on network expansion."],
+    prep: ["Read the latest official DMRC Maintainer notification first.","Build a topic checklist from the official syllabus.","Revise trade theory alongside Reasoning and Quant.","Solve previous-year DMRC papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet plus relevant ITI trade certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable"]
+  },
+  "ITI-12": { // ISRO/DRDO Technician
+    jobWork: ["Supporting India's space and defence research programmes through fabrication, electronics or instrumentation work in the relevant trade.","Follow departmental rules, safety procedures and supervisory instructions in a research/lab environment."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — trade theory, safety, tools/equipment and discipline-specific concepts per the current notification."],
+    examPattern: "General Awareness, Quantitative Aptitude, Reasoning, General Science and trade-specific questions are common areas; the current ISRO/DRDO notice controls exact weightage.",
+    selection: "Recruitment process can include CBT → trade test → document verification → medical/appointment.",
+    physical: "Not applicable unless the specific notice mentions PET/PST/medical standards.",
+    salary: "Technician-A/equivalent is generally a Level-2 technical post in recent frameworks, plus allowances.",
+    promotions: "Promotion follows the organisation's service rules, seniority, departmental exams and vacancies — Technicians can progress to senior technical grades over a career.",
+    posting: "ISRO/DRDO laboratories and establishments across India.",
+    advantages: ["Work in a prestigious national research environment.","Structured Central Government pay level and allowances.","Exposure to advanced technical/lab work."],
+    disadvantages: ["Vacancies are limited compared to railway/SSC-scale recruitment.","Trade eligibility must match the exact establishment's requirement.","Postings are spread across specific centres, not all locations."],
+    prep: ["Read the latest official ISRO/DRDO technician notification first.","Build a topic checklist from the official syllabus.","Revise trade theory alongside GA, Quant and Reasoning.","Solve previous-year papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet plus relevant ITI trade certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "ITI-13": { // Navy Ship/Vehicle Mechanic
+    jobWork: ["Maintaining naval vessels and support vehicles through mechanical inspection, repair and servicing work.","Follow departmental rules, safety procedures and supervisory instructions; dockyard/field conditions are common."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, time-work, time-distance, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — trade theory, safety, tools/equipment and discipline-specific concepts per the current notification."],
+    examPattern: "Trade theory, basic Maths, Reasoning and English/GK as prescribed by the specific recruitment notice.",
+    selection: "Recruitment-specific written/CBT and/or trade test → physical/medical → document verification.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Pay varies by entry type — civilian/defence trade, apprentice or Agniveer rules may apply differently.",
+    promotions: "Promotion follows the recruiting organisation's service rules, seniority, departmental exams and vacancies.",
+    posting: "Naval dockyards, bases, workshops and ship-support facilities.",
+    advantages: ["Skill-based mechanical work aligned with ITI training.","Stable employment structure with defined service rules where applicable.","Exposure to naval/defence maintenance systems."],
+    disadvantages: ["Pay and terms differ significantly between civilian, apprentice and Agniveer-style entries — read the notice carefully.","Dockyard/field conditions can involve physically demanding work.","Trade eligibility must match the exact entry's requirement."],
+    prep: ["Read the latest official notification for the exact entry (civilian/defence/Agniveer) first.","Build a topic checklist from the official syllabus.","Revise trade theory alongside Maths and Reasoning.","Solve previous-year papers where available and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet plus relevant ITI trade certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "ITI-14": { // Others (PSUs/State Technician Posts)
+    jobWork: ["Cadre/posting-determined technical duties — equipment, systems, maintenance, inspection or testing — depending on the exact post advertised.","Follow departmental rules, safety procedures and supervisory instructions as applicable to the specific post."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, profit/loss, interest, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Technical — trade theory, safety, tools/equipment and discipline-specific concepts; use the exact syllabus annexure in the specific recruitment notice since this is a catch-all category."],
+    examPattern: "The exact pattern, marks, duration and negative marking are recruitment-specific — always use the current official notification for the final pattern.",
+    selection: "Usually application → written/CBT or merit screening → applicable skill/physical/technical stage → document verification → medical/appointment as prescribed.",
+    physical: "Not applicable unless the specific recruitment notice mentions PET/PST/medical standards.",
+    salary: "Pay/remuneration varies by department, pay level, organisation and posting — always confirm exact figures from the applicable notification/pay rules.",
+    promotions: "Promotion follows the recruiting organisation's service rules, seniority, departmental exams, vacancies and performance.",
+    posting: "Depends on the recruiting organisation, cadre, zone/circle and vacancy; transfers may apply.",
+    advantages: ["Wide net of additional ITI-level technician posts beyond the major named exams.","Government/PSU/statutory employment structure and defined service rules where applicable.","Structured allowances and retirement benefits."],
+    disadvantages: ["Because this spans many different posts, eligibility and pay vary widely — always verify the specific notice.","Competitive recruitment with uncertain notification cycles.","Promotion speed and posting quality depend heavily on the specific department."],
+    prep: ["Identify the exact post and download its official notification first.","Build a topic checklist from that post's official syllabus.","Revise trade theory alongside general aptitude subjects.","Solve previous-year papers for that specific post/department where available.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["10th marksheet plus relevant ITI trade certificate","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable","Domicile/local-language certificate if required"]
+  }
+};
+jobs.forEach(j=>{
+  if (fullGuidesITI[j.code]) j.fullGuide = fullGuidesITI[j.code];
+});
+
+/* ============================================================
    GENERIC MODAL ENGINE — one tabbed sheet reused for:
    government jobs, roadmap-card careers, category overviews,
    and the career tips panel.
