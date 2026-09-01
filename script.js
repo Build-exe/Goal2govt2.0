@@ -1524,6 +1524,185 @@ jobs.forEach(j=>{
 });
 
 /* ============================================================
+   FULL GUIDE — After B.Tech tier (BT-01 .. BT-12)
+   Same structure as the other tiers, sourced from the
+   After-BTech flowchart reference docs.
+   ============================================================ */
+const fullGuidesBT = {
+  "BT-01": { // GATE → PSU Jobs
+    jobWork: ["Management/Engineer Trainee duties in major PSUs (ONGC, BHEL, IOCL, NTPC, BEL, HAL and similar) — plant operations, project engineering, maintenance and technical leadership after structured training.","Follow the PSU's safety procedures and supervisory instructions; postings can involve plant/field responsibility."],
+    syllabus: ["The GATE syllabus for your engineering discipline is the core preparation — this route uses your GATE score directly for PSU shortlisting.","General Awareness — current affairs relevant to the PSU sector (energy, power, oil & gas) can help at the interview stage.","Discipline fundamentals — thermodynamics, strength of materials, electrical machines or equivalent core subjects depending on branch.","Use the exact PSU-specific interview/GD syllabus notes where the organisation publishes them alongside the GATE cutoff notice."],
+    examPattern: "No separate PSU written exam in most cases — a valid GATE score in the notified discipline is used directly for shortlisting, followed by a PSU-specific interview/GD stage.",
+    selection: "GATE score-based shortlisting → PSU interview/GD → document verification → medical → appointment as Management/Engineer Trainee.",
+    physical: "Not applicable unless the specific PSU notice mentions PET/PST/medical standards for a particular post.",
+    salary: "Pay Level 10 equivalent, roughly ₹60,000–₹1,80,000 CTC depending on the PSU, plus allowances.",
+    promotions: "Promotion follows the PSU's internal service rules, seniority, performance appraisals and vacancies — trainees progress through executive grades (E1, E2...) over a career.",
+    posting: "PSU plants, refineries, power stations, offices and project sites across India.",
+    advantages: ["One GATE exam opens shortlisting at multiple major PSUs simultaneously.","Strong starting CTC and structured executive-grade career progression.","No separate PSU-specific written exam to prepare for in most cases."],
+    disadvantages: ["Requires a strong GATE rank/score, which demands months of dedicated preparation.","PSU-wise cutoffs and vacancy numbers vary significantly year to year.","Postings can involve remote plant/field locations, especially early in the career."],
+    prep: ["Build a full GATE-level foundation in your engineering discipline over 6–12 months.","Solve previous-year GATE papers by topic and analyze every mistake.","Track each target PSU's previous-year GATE cutoffs to gauge your required score.","Prepare for the PSU interview/GD stage separately — technical fundamentals plus current sector awareness.","Take full-length GATE mocks regularly under timed conditions.","Reserve time closer to results for PSU-specific application and interview prep."],
+    documents: ["B.Tech/B.E. degree certificate and marksheets","GATE scorecard","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "BT-02": { // PSUs via Direct Recruitment
+    jobWork: ["Management/Engineer Trainee duties at PSUs running their own direct-recruitment or campus drives (TATA Power, SAIL, BPCL and similar) — plant operations, project engineering and technical leadership.","Follow the PSU's safety procedures and supervisory instructions; postings can involve plant/field responsibility."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science, government schemes.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","English/Language — grammar, vocabulary, comprehension.","Technical — core engineering subjects for the discipline applied for, per the specific PSU's own notification."],
+    examPattern: "Technical discipline content plus aptitude/English/GK if a written exam is used; some PSUs also run campus placement drives with their own test/GD/interview format.",
+    selection: "Direct PSU recruitment may use a written test, GATE, interview, group discussion, skill test or pure campus-placement merit — the exact route is PSU-specific.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Varies by PSU and grade; regular executive/non-executive pay (roughly ₹50,000–₹1,50,000 CTC) differs from apprentice/contract pay.",
+    promotions: "Promotion follows the PSU's internal service rules, seniority, performance appraisals and vacancies — trainees progress through executive grades over a career.",
+    posting: "Plants, projects, offices and field locations of the recruiting PSU.",
+    advantages: ["Access to PSUs that don't use the GATE route, widening your options.","Some PSUs recruit via campus placement, which can be less competitive than GATE-based shortlisting.","Strong brand-name employers with structured executive-grade progression."],
+    disadvantages: ["Selection route (written test vs GATE vs campus placement) varies by PSU and can change between recruitment cycles.","Vacancies are often smaller and less predictable than the major GATE-route PSUs.","Plant/field postings can involve shift work or industrial hazards."],
+    prep: ["Identify each target PSU's exact recruitment route (test/GATE/campus) from its latest notification.","Build fundamentals in your engineering discipline alongside aptitude and reasoning.","Solve previous-year papers for that specific PSU where available.","Practice group discussion and interview skills, since many PSUs weigh these heavily.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["B.Tech/B.E. degree certificate and marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "BT-03": { // SSC JE (Through GATE)
+    jobWork: ["Junior Engineer duties — site inspection, quality checks, estimation, supervision of works and technical documentation across Civil, Mechanical or Electrical disciplines in central departments (CPWD, CWC, MES and similar).","Follow departmental rules, safety procedures and supervisory instructions; site visits and field inspection are common."],
+    syllabus: ["The GATE syllabus for your engineering discipline can substitute for Paper-II in some SSC JE cycles that accept a valid GATE score.","General Awareness — current affairs, polity, economy, history, geography, science, government schemes (for the common Paper-I).","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism (for Paper-I).","General Engineering (Paper-I) — basic engineering concepts across disciplines.","Use the exact SSC JE notice each cycle, since GATE-based screening availability can change year to year."],
+    examPattern: "Paper-I: Reasoning, General Awareness and General Engineering (CBT). Where the GATE route applies, a valid GATE score can be used in place of the detailed Paper-II technical exam — check the current notice.",
+    selection: "SSC Paper-I CBT → Paper-II objective technical exam (or GATE score where applicable) → document verification; post-specific standards where applicable.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Typically Pay Level-6, basic pay around ₹35,400 under the 7th CPC framework, plus allowances.",
+    promotions: "Promotion follows service rules, seniority, departmental exams, vacancies and cadre structure — JEs can progress to Assistant Engineer and higher technical/supervisory grades.",
+    posting: "Central Government engineering departments such as CPWD, CWC, MES and other notified organizations.",
+    advantages: ["A strong GATE score can simplify or substitute for the technical Paper-II in eligible cycles.","Respected technical entry into central government engineering departments.","Clear promotion path toward Assistant Engineer roles."],
+    disadvantages: ["Whether GATE-based screening is available depends on the specific year's notice — always verify before relying on it.","Site/field inspection duties can involve travel.","Vacancies vary year to year by department and branch."],
+    prep: ["Read the latest official SSC JE notification first to confirm whether the GATE route applies this cycle.","Build a topic checklist from the official syllabus for Paper-I (and Paper-II if GATE isn't accepted).","Build fundamentals in General Engineering and your GATE discipline.","Solve previous-year Paper-I papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["B.Tech/B.E. degree certificate in the relevant engineering discipline","GATE scorecard if applying through the GATE route","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "BT-04": { // DRDO Scientist B
+    jobWork: ["Scientist-level research and development work at DRDO's defence research laboratories — projects spanning missiles, electronics, materials, aeronautics and more depending on the lab and discipline.","Follow departmental rules, safety procedures and supervisory instructions in a research/lab environment."],
+    syllabus: ["The GATE syllabus for your engineering discipline is the core technical preparation, since GATE score is often used for shortlisting.","General Awareness — current affairs relevant to defence and technology can help at the interview stage.","Discipline fundamentals — core subjects matching your B.Tech branch and the DRDO lab's focus area.","Use the exact RAC (Recruitment & Assessment Centre) notice for the current cycle's exact process."],
+    examPattern: "GATE score is typically used for shortlisting; the discipline syllabus tested is the standard GATE syllabus for that branch.",
+    selection: "GATE-based shortlisting → personal interview → final merit/medical as prescribed by RAC (DRDO's Recruitment & Assessment Centre).",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Scientist 'B' is an officer-level Central Government scientific post; pay level around ₹56,100–₹1,77,500 (Level 10) plus allowances.",
+    promotions: "Promotion follows DRDO service rules, seniority, departmental exams, vacancies and performance — Scientists progress through Scientist 'C', 'D' and higher grades over a research career.",
+    posting: "DRDO laboratories and establishments across India.",
+    advantages: ["Prestigious defence research career with meaningful, cutting-edge project work.","Strong officer-level pay and Central Government benefits.","Clear scientist-grade promotion path over a long-term research career."],
+    disadvantages: ["Requires a very strong GATE score/rank in a competitive process.","Vacancies are limited compared to larger PSU or SSC-scale recruitment.","Lab/project posting is assigned, not always matching personal location preference."],
+    prep: ["Build a full GATE-level foundation in your engineering discipline over 6–12 months.","Solve previous-year GATE papers by topic and analyze every mistake.","Track DRDO's previous-year GATE cutoffs for Scientist 'B' in your discipline.","Prepare for the personal interview stage — technical depth plus awareness of DRDO's work areas.","Take full-length GATE mocks regularly under timed conditions.","Reserve time closer to results for interview-specific preparation."],
+    documents: ["B.Tech/B.E. degree certificate (first class) and marksheets","GATE scorecard","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "BT-05": { // ISRO Scientist/Engineer SC
+    jobWork: ["Scientist/Engineer-level work on India's space research, satellite and launch vehicle programmes at ISRO centres.","Follow departmental rules, safety procedures and supervisory instructions in a research/lab/launch-facility environment."],
+    syllabus: ["ISRO's own discipline-specific written test syllabus — closely aligned to core engineering subjects but with ISRO-specific weightage, not identical to the standard GATE pattern.","Discipline fundamentals — core subjects matching your B.Tech branch (mechanical, electronics, computer science and similar).","General aptitude/reasoning components where included in the specific year's notice.","Use the exact ISRO Centralised Recruitment Board (ICRB) notice for the current cycle's syllabus."],
+    examPattern: "ISRO written test (discipline-specific engineering syllabus) → interview for scientist/engineer posts; exact pattern and marks follow the current ICRB notice.",
+    selection: "ISRO written test → interview for scientist/engineer posts (technician posts use a written test plus skill test instead).",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "ISRO regular Scientist/Engineer 'SC' posts use Government pay levels (roughly Level 10, ₹56,100–₹1,77,500) plus allowances.",
+    promotions: "Promotion follows ISRO service rules, seniority, departmental exams, vacancies and performance — Engineers/Scientists progress through 'SD', 'SE' and higher grades over a career.",
+    posting: "ISRO centres, launch facilities, laboratories and project sites across India.",
+    advantages: ["Work on India's flagship space programmes with strong national significance.","Structured Central Government pay level and allowances.","Clear scientist/engineer-grade promotion path over a long-term career."],
+    disadvantages: ["ISRO's own written test is a separate, discipline-specific exam requiring dedicated preparation beyond just GATE.","Vacancies are limited compared to larger PSU or SSC-scale recruitment.","Posting is spread across specific ISRO centres, not all locations."],
+    prep: ["Read the latest official ISRO ICRB notification first.","Build a topic checklist from ISRO's discipline-specific syllabus, not just the GATE syllabus.","Build fundamentals in your engineering discipline thoroughly.","Solve previous-year ISRO written test papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Prepare for the interview stage with a strong grasp of your discipline's fundamentals."],
+    documents: ["B.Tech/B.E. degree certificate (strong academic record) and marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "BT-06": { // BARC/NPCIL Engineer
+    jobWork: ["Scientific Officer and engineer work in India's atomic energy establishments — nuclear power plant engineering, reactor operations, research and safety systems.","Follow departmental rules, strict safety procedures and supervisory instructions in a nuclear research/plant environment."],
+    syllabus: ["Engineering discipline fundamentals matching your B.Tech branch — core subjects tested via written exam, GATE or institute-specific selection depending on the route.","General Awareness and aptitude components where included in the specific route's notice.","BARC Training School route — a structured one-year training programme with its own selection/orientation content.","Use the exact BARC/NPCIL notice for the current cycle's exact process (OGET, GATE-based, or institute-specific)."],
+    examPattern: "Engineering discipline fundamentals and aptitude/technical content according to the recruitment route used (BARC OGET-style written exam, GATE shortlisting, or institute-specific selection).",
+    selection: "Written/online exam and/or GATE shortlisting → interview → medical/document verification; BARC Training School route adds a one-year training period before final placement.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "Scientific/engineering officer pay (roughly Level 10, ₹56,100–₹1,77,500) varies by organization and training/appointment scheme, plus allowances.",
+    promotions: "Promotion follows BARC/NPCIL service rules, seniority, departmental exams, vacancies and performance — Scientific Officers progress through senior grades over a long-term career.",
+    posting: "Nuclear research, power plant, reactor, engineering and project sites across India.",
+    advantages: ["Work in India's strategic nuclear energy and research programmes.","Strong officer-level pay and Central Government benefits.","BARC Training School route includes comprehensive structured training."],
+    disadvantages: ["Selection route (OGET vs GATE vs institute-specific) varies and demands checking the exact current notice.","Nuclear facility postings carry strict safety and security protocols.","Vacancies are limited compared to larger PSU or SSC-scale recruitment."],
+    prep: ["Read the latest official BARC/NPCIL notification to confirm the exact selection route this cycle.","Build a topic checklist from the official syllabus for your route.","Build fundamentals in your engineering discipline thoroughly.","Solve previous-year OGET or route-specific papers where available and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Prepare for the interview stage with strong discipline fundamentals."],
+    documents: ["B.Tech/B.E. degree certificate in the notified branch and marksheets","GATE scorecard if applying through the GATE route","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "BT-07": { // Indian Army TES Entry
+    jobWork: ["Officer training combined with completing an engineering degree during service (for Class 12 PCM entrants) or direct technical officer duties (for B.Tech graduates through separate technical entries) in Army engineering/technical branches.","Follow Army rules, safety procedures and command instructions; involves uniformed/field duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, algebra, geometry.","Language — grammar, vocabulary, comprehension.","TES route may use JEE Main-based shortlisting instead of a separate written syllabus; SSB assesses officer potential rather than academic content."],
+    examPattern: "The current TES route may use JEE Main-based shortlisting for Class 12 entrants; SSB assesses officer potential (group tasks, interview, psychology tests) rather than a conventional written syllabus.",
+    selection: "Application/shortlisting (JEE Main-based for TES) → SSB → medical → merit → training (engineering degree completed during service for TES).",
+    physical: "Army medical and physical standards apply; eyesight and anthropometric standards can be strict and entry-specific.",
+    salary: "Officer cadet/training pay applies during training; commissioned officer pay follows Army rules once commissioned.",
+    promotions: "Promotion follows Army service rules, seniority, performance and vacancies — officers progress through rank over a structured career.",
+    posting: "Training academies followed by Army engineering/technical postings.",
+    advantages: ["TES lets you earn a fully-funded engineering degree while training as an officer.","Prestigious officer-entry route with strong career structure and leadership development.","Clear rank-based promotion path after commissioning."],
+    disadvantages: ["Strict physical, medical and psychological screening (SSB).","TES entry age window is narrow (16.5–19.5 years) — B.Tech holders typically use separate technical-graduate entries instead.","Frequent transfers and demanding postings, including field areas."],
+    prep: ["Read the latest official Indian Army TES/technical-entry notification for the exact scheme first.","If applying via TES, prepare for JEE Main-based shortlisting alongside Class 12 studies.","If applying as a B.Tech graduate, check the specific technical-entry scheme's eligibility and process.","Prepare for the SSB stage (group tasks, interview, psychology tests) well in advance.","Build physical fitness consistently alongside academic prep.","Solve previous-year papers where available and analyze mistakes."],
+    documents: ["Class 12 marksheet with PCM (for TES) or B.Tech/B.E. degree certificate (for graduate technical entries)","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Medical fitness documents where required"]
+  },
+  "BT-08": { // Indian Navy SSC Technical
+    jobWork: ["Short Service Commission officer duties in the Navy's Executive, Engineering or Electrical branches — technical management of ships, systems and equipment.","Follow Navy rules, safety procedures and command instructions; involves shipboard/uniformed duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Usually no separate written exam; shortlisting is largely based on your B.Tech academic record, with SSB central to selection."],
+    examPattern: "Usually no separate written exam; shortlisting and SSB are central to selection rather than a conventional written syllabus.",
+    selection: "Application → shortlisting (based on academic record) → SSB → medical → merit → training/commission.",
+    physical: "Navy medical and physical standards are strict and branch-specific; eyesight and anthropometric standards matter.",
+    salary: "Officer entry uses defence officer pay and allowances after commissioning; training-stage terms depend on entry.",
+    promotions: "Promotion follows Navy service rules, seniority, performance and vacancies — SSC officers can extend service or move toward permanent commission depending on policy and performance.",
+    posting: "Defence training establishments, ships/bases/stations and technical units.",
+    advantages: ["Prestigious short-service officer entry using your existing B.Tech qualification directly.","No lengthy separate written exam — shortlisting is largely academic-record based.","Strong technical leadership exposure aboard naval vessels and systems."],
+    disadvantages: ["Strict physical, medical and psychological screening (SSB).","Short Service Commission has a defined tenure, not automatic permanent service.","Frequent transfers and demanding postings, including long sea deployments."],
+    prep: ["Read the latest official Indian Navy SSC Technical notification for the exact branch first.","Ensure your B.Tech academic record meets the shortlisting criteria.","Prepare thoroughly for the SSB stage (group tasks, interview, psychology tests).","Build physical fitness consistently ahead of the SSB and subsequent training.","Research the specific branch (Executive/Engineering/Electrical) to align your application.","Reach out to previous candidates or coaching resources for SSB-specific preparation if needed."],
+    documents: ["B.Tech/B.E. degree certificate in the notified discipline and marksheets","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Medical fitness documents where required"]
+  },
+  "BT-09": { // Air Force SSC Tech
+    jobWork: ["Short Service Commission officer duties in the Air Force's Aeronautical Engineering (Mechanical/Electronics) or other technical branches — maintenance oversight, technical management of aircraft and systems.","Follow Air Force rules, safety procedures and command instructions; involves uniformed/technical station duty."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Usually no separate written exam; shortlisting is largely based on your B.Tech academic record, with SSB central to selection."],
+    examPattern: "Usually no separate written exam; shortlisting and SSB are central to selection rather than a conventional written syllabus.",
+    selection: "Application → shortlisting (based on academic record) → SSB → medical → merit → training/commission.",
+    physical: "Air Force medical and physical standards are strict and branch-specific; eyesight and anthropometric standards matter.",
+    salary: "Officer entry uses defence officer pay and allowances after commissioning; training-stage terms depend on entry.",
+    promotions: "Promotion follows Air Force service rules, seniority, performance and vacancies — SSC officers can extend service or move toward permanent commission depending on policy and performance.",
+    posting: "Defence training establishments, air force stations and technical units.",
+    advantages: ["Prestigious short-service officer entry using your existing B.Tech qualification directly.","No lengthy separate written exam — shortlisting is largely academic-record based.","Strong technical leadership exposure managing advanced aircraft and ground systems."],
+    disadvantages: ["Strict physical, medical and psychological screening (SSB).","Short Service Commission has a defined tenure, not automatic permanent service.","Frequent transfers and demanding technical-station postings."],
+    prep: ["Read the latest official Air Force SSC Tech notification for the exact branch first.","Ensure your B.Tech academic record meets the shortlisting criteria.","Prepare thoroughly for the SSB stage (group tasks, interview, psychology tests).","Build physical fitness consistently ahead of the SSB and subsequent training.","Research the specific technical branch to align your application.","Reach out to previous candidates or coaching resources for SSB-specific preparation if needed."],
+    documents: ["B.Tech/B.E. degree certificate in the notified discipline and marksheets","Photo and signature in prescribed format","Government ID","Category/EWS certificate if applicable","Medical fitness documents where required"]
+  },
+  "BT-10": { // UPSC Engineering Services (IES/ESE)
+    jobWork: ["Class I/II engineering officer duties across central departments like Railways, Roads, Telecom and Power — technical planning, execution and supervision of major infrastructure projects.","Follow departmental rules, safety procedures and supervisory instructions; postings carry significant technical and administrative responsibility."],
+    syllabus: ["General Studies & Engineering Aptitude — current affairs, ethics, general engineering principles for Prelims Paper-I.","Engineering discipline paper — Civil, Mechanical, Electrical or Electronics & Telecom, for Prelims Paper-II.","Two conventional (descriptive) papers in the chosen engineering discipline for Mains.","Use the exact UPSC ESE syllabus annexure for your discipline — content is extensive and discipline-specific."],
+    examPattern: "Prelims: General Studies & Engineering Aptitude (Paper-I) plus an Engineering discipline paper (Paper-II). Mains: two conventional/descriptive papers in the chosen discipline. Followed by a Personality Test.",
+    selection: "UPSC Preliminary → Main engineering papers (descriptive) → Personality Test → final merit.",
+    physical: "Not applicable unless a specific allied service requires PET/PST/medical standards.",
+    salary: "Group A engineering officer pay (roughly Level 10, ₹56,100–₹1,77,500) with central allowances; service/cadre determines further progression.",
+    promotions: "Promotion follows service rules, seniority, departmental exams, vacancies and performance — ESE officers progress through the engineering service hierarchy, potentially reaching senior policy/leadership positions.",
+    posting: "Railways, CPWD, defence, telecom, roads, water and other engineering services depending on cadre allocated.",
+    advantages: ["One of India's most prestigious engineering-officer entry exams.","Strong Group A pay and structured career progression.","Wide range of central engineering services/cadres to be allocated to."],
+    disadvantages: ["Extremely competitive with a long, multi-stage exam and low success rate.","Mains uses descriptive/conventional papers demanding strong writing and depth of knowledge.","Preparation typically takes 8–12+ months of sustained, focused effort."],
+    prep: ["Build strong fundamentals in your engineering discipline from standard textbooks before attempting the ESE-specific syllabus.","Practice conventional/descriptive answer-writing regularly for Mains, not just objective practice.","Solve previous-year Prelims and Mains papers and analyze mistakes carefully.","Take Prelims mock tests seriously under timed, negative-marking conditions.","Stay updated on current affairs relevant to engineering and infrastructure policy.","Reserve dedicated time for Personality Test preparation closer to the interview stage."],
+    documents: ["B.Tech/B.E. degree certificate in the eligible branch and marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  },
+  "BT-11": { // State Engineering Services
+    jobWork: ["Assistant Engineer duties in state technical departments — planning, supervision and execution of state infrastructure projects (roads, water, irrigation, electricity and similar).","Follow state departmental rules, safety procedures and supervisory instructions; site inspection and project oversight are common."],
+    syllabus: ["General Studies & Engineering Aptitude — current affairs, ethics, general engineering principles for Prelims-style papers.","Engineering discipline paper — Civil, Mechanical, Electrical or the relevant branch, per the state's own scheme.","Conventional/descriptive engineering papers for the Mains-equivalent stage where the state follows a UPSC-style structure.","Use the exact state PSC/board syllabus annexure — structure and weightage vary significantly by state."],
+    examPattern: "Prelims: General Studies & Engineering Aptitude plus an Engineering discipline paper. Mains: two conventional papers in the chosen engineering discipline, where the state follows a UPSC-style structure; exact pattern is state-specific.",
+    selection: "State written exam (Prelims → Mains where applicable) → Personality Test/interview where prescribed → document verification → final merit.",
+    physical: "Not applicable unless the recruitment notice specifies PET/PST/medical standards.",
+    salary: "State pay scale (roughly ₹44,900–₹1,42,400) with allowances; varies by state and cadre.",
+    promotions: "Promotion follows state service rules, seniority, departmental exams, vacancies and performance — Assistant Engineers progress to Executive Engineer and higher grades within the state cadre.",
+    posting: "State PWD, irrigation, electricity, water and other engineering departments across the state.",
+    advantages: ["State-level equivalent of UPSC ESE with strong local relevance and standing.","Structured career progression within the state engineering cadre.","Local/home-state postings are common."],
+    disadvantages: ["Highly competitive, particularly for well-known states with strong candidate pools.","Syllabus, pattern and exam structure vary significantly by state, demanding state-specific preparation.","Posting and transfer liability across the state."],
+    prep: ["Read the latest official state engineering services notification for the exact state and discipline first.","Build strong fundamentals in your engineering discipline from standard textbooks.","Practice conventional/descriptive answer-writing if the state follows a Mains-style structure.","Solve previous-year state papers and analyze mistakes.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for state and national current affairs."],
+    documents: ["B.Tech/B.E. degree certificate in the eligible branch and marksheets","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD certificate if applicable","Domicile certificate if required"]
+  },
+  "BT-12": { // Others (PSUs/Research Organizations)
+    jobWork: ["Cadre/posting-determined engineering, research or technical duties depending on the exact post advertised by the PSU or research organisation.","Follow departmental rules, safety procedures and supervisory instructions as applicable to the specific post."],
+    syllabus: ["General Awareness — current affairs, polity, economy, history, geography, science.","Reasoning — analogy, classification, series, coding-decoding, directions, syllogism.","Quantitative Aptitude — number system, percentages, ratio/proportion, averages, algebra, geometry.","Language — grammar, vocabulary, comprehension.","Discipline-specific technical syllabus — use the exact syllabus annexure in the specific recruitment notice since this is a catch-all category."],
+    examPattern: "Discipline-specific technical syllabus plus aptitude where prescribed; exact pattern, marks and duration are recruitment-specific — always use the current official notification.",
+    selection: "Organization-specific written test, GATE score, NET, interview or skill test — the exact route varies by organisation and post.",
+    physical: "Not applicable unless the specific recruitment notice mentions PET/PST/medical standards.",
+    salary: "Organization-specific scientific/engineering pay and allowances — always confirm exact figures from the applicable notification.",
+    promotions: "Promotion follows the recruiting organisation's service rules, seniority, departmental exams, vacancies and performance.",
+    posting: "Laboratories, research centres, project sites and technical establishments.",
+    advantages: ["Wide net of additional B.Tech-level scientist/engineer posts beyond the major named exams.","Government/PSU/statutory employment structure and defined service rules where applicable.","Structured allowances and retirement benefits."],
+    disadvantages: ["Because this spans many different posts, eligibility and selection route vary widely — always verify the specific notice.","Competitive recruitment with uncertain notification cycles.","Promotion speed and posting quality depend heavily on the specific organisation."],
+    prep: ["Identify the exact post and download its official notification first.","Confirm whether the route uses GATE, NET, a written test or direct interview.","Build fundamentals in your engineering discipline alongside general aptitude subjects.","Solve previous-year papers for that specific post/organisation where available.","Take full mocks regularly and maintain an error notebook.","Reserve weekly time for current affairs and revision."],
+    documents: ["B.Tech/B.E. degree certificate (or PG/professional qualification as required) and marksheets","GATE/NET scorecard if applicable","Photo and signature in prescribed format","Government ID","Category/EWS/PwBD/Ex-serviceman certificate if applicable"]
+  }
+};
+jobs.forEach(j=>{
+  if (fullGuidesBT[j.code]) j.fullGuide = fullGuidesBT[j.code];
+});
+
+/* ============================================================
    GENERIC MODAL ENGINE — one tabbed sheet reused for:
    government jobs, roadmap-card careers, category overviews,
    and the career tips panel.
