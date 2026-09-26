@@ -1,4 +1,4 @@
--- Goal2Govt schema
+'''-- Goal2Govt schema
 -- Run automatically by src/seed.js, or manually with:
 --   psql "$DATABASE_URL" -f src/schema.sql
 
@@ -47,7 +47,7 @@ CREATE INDEX IF NOT EXISTS idx_quiz_pool ON quiz_questions(pool_key);
 -- Static reference/config content that doesn't need its own relational shape:
 -- tierMeta, roadmaps (5-step journeys), stagesByType, examPatterns, orgLookup.
 -- Stored as JSONB blobs keyed by name so the API can serve them as-is.
-CREATE TABLE IF NOT EXISTS content_blocks (
+'''CREATE TABLE IF NOT EXISTS content_blocks (
   key   TEXT PRIMARY KEY,
   data  JSONB NOT NULL
 );
@@ -70,4 +70,4 @@ CREATE TABLE IF NOT EXISTS mock_attempts (
   started_at        TIMESTAMPTZ NOT NULL DEFAULT now(),
   submitted_at      TIMESTAMPTZ
 );
-CREATE INDEX IF NOT EXISTS idx_attempts_user ON mock_attempts(user_id);
+CREATE INDEX IF NOT EXISTS idx_attempts_user ON mock_attempts(user_id);'''
