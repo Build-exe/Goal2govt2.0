@@ -2128,6 +2128,33 @@ if (tabsEl && listEl){
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
+  // Mobile nav toggle (hamburger) — present on every page's header
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  if (navToggle && mainNav){
+    navToggle.addEventListener('click', ()=>{
+      const isOpen = mainNav.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    // Close the menu after picking a link
+    mainNav.querySelectorAll('a').forEach(link=>{
+      link.addEventListener('click', ()=>{
+        mainNav.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+      });
+    });
+    // Close when tapping outside the open menu
+    document.addEventListener('click', (e)=>{
+      if (!mainNav.classList.contains('open')) return;
+      if (mainNav.contains(e.target) || navToggle.contains(e.target)) return;
+      mainNav.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded','false');
+    });
+  }
+
   // Explore Your Career Options cards
   const govCard = document.getElementById('card-government-jobs');
   if (govCard) govCard.addEventListener('click', ()=>{

@@ -11,7 +11,7 @@
   <div class="logo">
     <img src="logo.png" alt="Goal2Govt" class="logo-img">
   </div>
-  <nav>
+  <nav id="mainNav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="jobsdetails.html">Jobs & Details</a></li>
@@ -27,6 +27,9 @@
       <button class="user-menu-item" id="logoutBtn">Log Out</button>
     </div>
   </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
 <!-- ============================================================
@@ -216,27 +219,27 @@
   <p class="ap-sub">Everything you need for your government job preparation, in one place.</p>
   <div class="ap-why-grid">
     <div class="ap-why-card">
-      <div class="ap-why-icon" style="background:#dff3e6;color:#2F7D4F;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M20 6L9 17l-5-5"/></svg></div>
+      <div class="ap-why-icon" style="background:#dff3e6;color:#2F7D4F;">✅</div>
       <h4>Reliable Information</h4>
       <p>Authentic and updated content from trusted sources.</p>
     </div>
     <div class="ap-why-card">
-      <div class="ap-why-icon" style="background:#ffe6d1;color:#c9711f;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="ap-why-icon" style="background:#ffe6d1;color:#c9711f;">👥</div>
       <h4>Student Friendly</h4>
       <p>Simple, clean and easy to use.</p>
     </div>
     <div class="ap-why-card">
-      <div class="ap-why-icon" style="background:#ece2ff;color:#7b3fd1;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M6 3h10"/><path d="M6 8h10"/><path d="M8 3c3 3 3 8 0 13"/><path d="M6 13h6"/></svg></div>
+      <div class="ap-why-icon" style="background:#ece2ff;color:#7b3fd1;">₹</div>
       <h4>Completely Free (Initially)</h4>
       <p>Accessible for every student.</p>
     </div>
     <div class="ap-why-card">
-      <div class="ap-why-icon" style="background:#dcebff;color:#1565c0;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M3 17l6-6 4 4 7-8"/><path d="M15 7h5v5"/></svg></div>
+      <div class="ap-why-icon" style="background:#dcebff;color:#1565c0;">📈</div>
       <h4>Helps in Career Growth</h4>
       <p>Guidance beyond just exams.</p>
     </div>
     <div class="ap-why-card">
-      <div class="ap-why-icon" style="background:#ffe0ec;color:#d1447e;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+      <div class="ap-why-icon" style="background:#ffe0ec;color:#d1447e;">❤️</div>
       <h4>Built with Passion</h4>
       <p>Created by students who understand your needs.</p>
     </div>
@@ -244,11 +247,11 @@
 </section>
 
 <!-- Founder & Idea -->
-<!--- <section class="ap-founder">
+<section class="ap-founder">
   <h2>Founder <span>&amp; Idea</span></h2>
   <div class="ap-founder-grid">
     <div class="ap-founder-card blue">
-      <div class="ap-founder-icon">NB</div>
+      <div class="ap-founder-icon">👤</div>
       <div>
         <div class="ap-founder-role">Founder &amp; Developer</div>
         <div class="ap-founder-name">Nikhil Boddu</div>
@@ -257,7 +260,7 @@
       </div>
     </div>
     <div class="ap-founder-card peach">
-      <div class="ap-founder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.6.55 1 1.4 1 2.2V16h6v-.3c0-.8.4-1.65 1-2.2A6 6 0 0 0 12 3z"/></svg></div>
+      <div class="ap-founder-icon">💡</div>
       <div>
         <div class="ap-founder-role">A Small Idea From</div>
         <div class="ap-founder-name">Kodam Ram Prasad</div>
@@ -269,33 +272,33 @@
 </section>
 
 <!-- Our Team -->
-<!--- <section class="ap-team">
+<section class="ap-team">
   <h2>Our <span>Team</span></h2>
   <p class="ap-sub">We sincerely thank our friends and team members for their constant support, encouragement, and contribution.</p>
   <div class="ap-team-grid">
-    <div class="ap-team-item"><span class="ap-team-icon">JR</span><span>Jagithyala Ruchitha</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">MB</span><span>Mandala Bharath</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">ST</span><span>Sadala Tejapriya</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">KA</span><span>Konda Akshaya</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">KN</span><span>Kodam Nainesh</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">CR</span><span>Chikile Rani</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">AM</span><span>Adepu Manmitha</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">SR</span><span>Samala Rajanandini</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">OA</span><span>Oggu Aishwarya</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">NB</span><span>Nakka Bhavana</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">NR</span><span>Nadimetla Ravali</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">KG</span><span>Kondi Ganesh</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">SH</span><span>Suruvu Harshitha</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">GA</span><span>Gorityala Akshaya</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">GT</span><span>Gadapa Tejashwini</span></div>
-    <div class="ap-team-item"><span class="ap-team-icon">GA</span><span>Gosikonda Alekhya</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Jagithyala Ruchitha</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Mandala Bharath</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Sadala Tejapriya</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Konda Akshaya</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Kodam Nainesh</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Chikile Rani</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Adepu Manmitha</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Samala Rajanandini</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Oggu Aishwarya</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Nakka Bhavana</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Nadimetla Ravali</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Kondi Ganesh</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Suruvu Harshitha</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Gorityala Akshaya</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Gadapa Tejashwini</span></div>
+    <div class="ap-team-item"><span class="ap-team-icon">👤</span><span>Gosikonda Alekhya</span></div>
   </div>
 </section>
 
 <!-- Mentor thanks -->
 <section class="ap-mentor">
   <div class="ap-mentor-box">
-    <div class="ap-mentor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div>
+    <div class="ap-mentor-icon">🎓</div>
     <p>Thanks to <b>John Harrison sir</b> for his valuable guidance, constant
       encouragement, and support throughout this journey.</p>
   </div>
@@ -305,7 +308,7 @@
 <section class="ap-thanks">
   <h2>Thanks To</h2>
   <div class="ap-thanks-box">
-    <div class="ap-thanks-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="30" height="30"><path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M2 20l4-1.5c1.8 1 4 1.5 6 1.5s4.2-.5 6-1.5L22 20"/><path d="M8 12h.01M16 12h.01"/></svg></div>
+    <div class="ap-thanks-icon">🙏</div>
     <p>We would like to express our heartfelt thanks to everyone who has supported,
       encouraged, and believed in this idea. Your guidance, suggestions, and continuous
       support motivate us to keep improving Goal2Govt and help more students achieve
