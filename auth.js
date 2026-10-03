@@ -2,180 +2,107 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
-const { readUsers, writeUsers } = require('../lib/db');
-const { sendPasswordResetEmail } = require('../lib/mailer');
+const { User } = require('./db');
+const { sendResetEmail } = require('./mailer');
 
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
-const TOKEN_EXPIRY = '7d';
-const RESET_TOKEN_TTL_MS = 60 * 60 * 1000; // 1 hour
-const SITE_URL = process.env.SITE_URL || 'http://localhost:3000';
+const emailOk = (e) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e || '');
+const sha256 = (s) => crypto.createHash('sha256').update(s).digest('hex');
 
-function hashToken(token) {
-  return crypto.createHash('sha256').update(token).digest('hex');
-}
+const signToken = (user) =>
+  jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN || '7d',
+  });
 
-function publicUser(user) {
-  return { id: user.id, name: user.name, email: user.email };
-}
+const publicUser = (u) => ({ id: u.id, name: u.name, email: u.email });
 
-function isValidEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
+// Middleware: protects routes that need a logged-in user
 function requireAuth(req, res, next) {
-  const header = req.headers.authorization || '';
-  const token = header.startsWith('Bearer ') ? header.slice(7) : null;
-  if (!token) return res.status(401).json({ error: 'Not signed in.' });
+  const token = (req.headers.authorization || '').replace(/^Bearer\s+/i, '');
+  if (!token) return res.status(401).json({ error: 'Not authenticated' });
   try {
-    const payload = jwt.verify(token, JWT_SECRET);
-    req.userId = payload.sub;
+    req.user = jwt.verify(token, process.env.JWT_SECRET);
     next();
-  } catch (err) {
-    return res.status(401).json({ error: 'Session expired. Please log in again.' });
+  } catch {
+    res.status(401).json({ error: 'Invalid or expired token' });
   }
 }
 
-// POST /api/signup  { name, email, password }
 router.post('/signup', async (req, res) => {
   try {
     const { name, email, password } = req.body || {};
-    if (!name || !name.trim()) {
-      return res.status(400).json({ error: 'Full name is required.' });
-    }
-    if (!email || !isValidEmail(email)) {
-      return res.status(400).json({ error: 'Enter a valid email address.' });
-    }
-    if (!password || password.length < 6) {
-      return res.status(400).json({ error: 'Password must be at least 6 characters.' });
-    }
+    if (!name || !emailOk(email) || !password || password.length < 6)
+      return res.status(400).json({ error: 'Name, valid email and a password of 6+ characters are required' });
 
-    const users = readUsers();
-    const emailLower = email.trim().toLowerCase();
-    if (users.some(u => u.email.toLowerCase() === emailLower)) {
-      return res.status(409).json({ error: 'An account with this email already exists — try logging in instead.' });
-    }
+    if (await User.findByEmail(email))
+      return res.status(409).json({ error: 'An account with this email already exists' });
 
-    const passwordHash = await bcrypt.hash(password, 10);
-    const user = {
-      id: crypto.randomUUID(),
-      name: name.trim(),
-      email: email.trim(),
-      passwordHash,
-      createdAt: new Date().toISOString()
-    };
-    users.push(user);
-    writeUsers(users);
-
-    const token = jwt.sign({ sub: user.id }, JWT_SECRET, { expiresIn: TOKEN_EXPIRY });
-    res.status(201).json({ token, user: publicUser(user) });
+    const user = await User.create({ name, email, password: await bcrypt.hash(password, 10) });
+    res.status(201).json({ token: signToken(user), user: publicUser(user) });
   } catch (err) {
-    console.error('Signup error:', err);
-    res.status(500).json({ error: 'Something went wrong. Please try again.' });
+    if (err.code === '23505') return res.status(409).json({ error: 'An account with this email already exists' });
+    console.error('signup:', err);
+    res.status(500).json({ error: 'Server error' });
   }
 });
 
-// POST /api/login  { email, password }
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body || {};
-    if (!email || !password) {
-      return res.status(400).json({ error: 'Email and password are required.' });
-    }
-
-    const users = readUsers();
-    const user = users.find(u => u.email.toLowerCase() === email.trim().toLowerCase());
-    if (!user) {
-      return res.status(401).json({ error: 'No account found with this email. Try signing up.' });
-    }
-
-    const matches = await bcrypt.compare(password, user.passwordHash);
-    if (!matches) {
-      return res.status(401).json({ error: 'Incorrect password.' });
-    }
-
-    const token = jwt.sign({ sub: user.id }, JWT_SECRET, { expiresIn: TOKEN_EXPIRY });
-    res.json({ token, user: publicUser(user) });
+    const user = emailOk(email) && (await User.findByEmail(email));
+    if (!user || !(await bcrypt.compare(password || '', user.password)))
+      return res.status(401).json({ error: 'Invalid email or password' });
+    res.json({ token: signToken(user), user: publicUser(user) });
   } catch (err) {
-    console.error('Login error:', err);
-    res.status(500).json({ error: 'Something went wrong. Please try again.' });
+    console.error('login:', err);
+    res.status(500).json({ error: 'Server error' });
   }
 });
 
-// GET /api/me — returns the signed-in user for the given Bearer token
-router.get('/me', requireAuth, (req, res) => {
-  const users = readUsers();
-  const user = users.find(u => u.id === req.userId);
-  if (!user) return res.status(401).json({ error: 'Session expired. Please log in again.' });
-  res.json({ user: publicUser(user) });
-});
-
-// POST /api/forgot-password  { email }
-// Always responds the same way whether or not the email exists, so this
-// endpoint can't be used to check which emails are registered.
-router.post('/forgot-password', async (req, res) => {
-  const genericReply = { ok: true, message: 'If an account exists for that email, a reset link has been sent.' };
+router.get('/me', requireAuth, async (req, res) => {
   try {
-    const { email } = req.body || {};
-    if (!email || !isValidEmail(email)) {
-      // Still generic — don't reveal validation details for this one.
-      return res.json(genericReply);
-    }
-
-    const users = readUsers();
-    const user = users.find(u => u.email.toLowerCase() === email.trim().toLowerCase());
-    if (!user) return res.json(genericReply);
-
-    const rawToken = crypto.randomBytes(32).toString('hex');
-    user.resetTokenHash = hashToken(rawToken);
-    user.resetTokenExpiresAt = Date.now() + RESET_TOKEN_TTL_MS;
-    writeUsers(users);
-
-    const resetUrl = `${SITE_URL}/reset-password.html?token=${rawToken}`;
-    await sendPasswordResetEmail(user.email, user.name, resetUrl);
-
-    res.json(genericReply);
+    const user = await User.findById(req.user.id);
+    if (!user) return res.status(404).json({ error: 'User not found' });
+    res.json({ user: publicUser(user) });
   } catch (err) {
-    console.error('Forgot-password error:', err);
-    // Still generic, so failures don't leak anything either.
-    res.json(genericReply);
+    console.error('me:', err);
+    res.status(500).json({ error: 'Server error' });
   }
 });
 
-// POST /api/reset-password  { token, password }
+router.post('/forgot-password', async (req, res) => {
+  const generic = { message: 'If that email is registered, a reset link has been sent.' };
+  try {
+    const email = req.body?.email;
+    const user = emailOk(email) && (await User.findByEmail(email));
+    if (user) {
+      const token = crypto.randomBytes(32).toString('hex');
+      await User.setResetToken(user.id, sha256(token), new Date(Date.now() + 60 * 60 * 1000));
+      const base = (process.env.FRONTEND_URL || '').replace(/\/$/, '');
+      await sendResetEmail(user.email, user.name, `${base}/reset-password.html?token=${token}`);
+    }
+    res.json(generic); // same response either way, so emails can't be enumerated
+  } catch (err) {
+    console.error('forgot-password:', err);
+    res.status(500).json({ error: 'Could not send reset email' });
+  }
+});
+
 router.post('/reset-password', async (req, res) => {
   try {
     const { token, password } = req.body || {};
-    if (!token) return res.status(400).json({ error: 'Missing reset token.' });
-    if (!password || password.length < 6) {
-      return res.status(400).json({ error: 'Password must be at least 6 characters.' });
-    }
+    if (!token || !password || password.length < 6)
+      return res.status(400).json({ error: 'Token and a password of 6+ characters are required' });
 
-    const tokenHash = hashToken(token);
-    const users = readUsers();
-    const user = users.find(u => u.resetTokenHash === tokenHash);
+    const user = await User.findByResetToken(sha256(token));
+    if (!user) return res.status(400).json({ error: 'Reset link is invalid or has expired' });
 
-    if (!user || !user.resetTokenExpiresAt || user.resetTokenExpiresAt < Date.now()) {
-      return res.status(400).json({ error: 'This reset link is invalid or has expired. Request a new one.' });
-    }
-
-    user.passwordHash = await bcrypt.hash(password, 10);
-    delete user.resetTokenHash;
-    delete user.resetTokenExpiresAt;
-    writeUsers(users);
-
-    res.json({ ok: true, message: 'Password updated. You can now log in.' });
+    await User.setPassword(user.id, await bcrypt.hash(password, 10));
+    res.json({ message: 'Password updated. You can now log in.' });
   } catch (err) {
-    console.error('Reset-password error:', err);
-    res.status(500).json({ error: 'Something went wrong. Please try again.' });
+    console.error('reset-password:', err);
+    res.status(500).json({ error: 'Server error' });
   }
 });
 
-// POST /api/logout — JWTs are stateless, so there's nothing to invalidate
-// server-side; this route exists so the frontend has a consistent call to
-// make. (A production system might keep a short-lived token blacklist.)
-router.post('/logout', (req, res) => {
-  res.json({ ok: true });
-});
-
-module.exports = router;
+module.exports = { router, requireAuth };
