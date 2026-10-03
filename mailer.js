@@ -14,6 +14,7 @@ function getTransporter() {
 }
 
 async function sendResetEmail(to, name, link) {
+  console.log('RESET LINK:', `${base}/reset-password.html?token=${token}`);
   const info = await getTransporter().sendMail({
     from: process.env.MAIL_FROM || process.env.SMTP_USER,
     to,
