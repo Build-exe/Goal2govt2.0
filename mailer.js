@@ -14,7 +14,7 @@ function getTransporter() {
 }
 
 async function sendResetEmail(to, name, link) {
-  await getTransporter().sendMail({
+  const info = await getTransporter().sendMail({
     from: process.env.MAIL_FROM || process.env.SMTP_USER,
     to,
     subject: 'Reset your Goal2Govt password',
