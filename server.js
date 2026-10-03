@@ -38,8 +38,14 @@ app.use('/api', authRouter);
 // Static site. Server code, users.json and env files are never served.
 const blocked = /^\/(server|db|auth|mailer|migrate-users)\.js$|^\/(users\.json|package(-lock)?\.json|schema\.sql|README-SETUP\.md|\.env.*|\.git.*)$/i;
 app.use((req, res, next) => (blocked.test(req.path) ? res.sendStatus(404) : next()));
-app.use(express.static(__dirname, { dotfiles: 'ignore' }));
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+const fs = require('fs');
+const FRONTEND_DIR = path.join(__dirname, '..', 'frontend');
+if (fs.existsSync(path.join(FRONTEND_DIR, 'index.html'))) {
+  app.use(express.static(FRONTEND_DIR, { dotfiles: 'ignore' }));
+  app.get('/', (req, res) => res.sendFile(path.join(FRONTEND_DIR, 'index.html')));
+} else {
+  app.get('/', (req, res) => res.json({ ok: true, message: 'Goal2Govt API is running' }));
+}
 
 const PORT = process.env.PORT || 3000;
 connectDB()
